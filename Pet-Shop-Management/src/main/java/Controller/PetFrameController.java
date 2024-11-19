@@ -14,7 +14,7 @@ public class PetFrameController {
 
     @FXML
     void goToCart(ActionEvent event) throws IOException  {
-
+        new SceneSwitch(PetPane, "CartFrame.fxml");
     }
 
     @FXML
