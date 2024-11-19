@@ -14,8 +14,10 @@ public class mainFrame extends Application {
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Pet Shop");
         stage.setScene(scene);
+        stage.setMaximized(true);
         stage.show();
     }
+
 
     public static void main(String[] args) {
         launch();
