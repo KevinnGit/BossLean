@@ -14,7 +14,7 @@
 
 <AnchorPane fx:id="mainFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainFrameController">
    <children>
-      <ScrollPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1234.0" prefWidth="1910.0" AnchorPane.bottomAnchor="-154.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+      <ScrollPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1082.0" prefWidth="1920.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2816.0" prefWidth="1928.0" style="-fx-background-color: EFDCCB;">
                <children>
@@ -90,7 +90,7 @@
                               <Font size="36.0" />
                            </font>
                         </Button>
-                        <Label layoutX="783.0" layoutY="538.0" text="About Us">
+                        <Label layoutX="809.0" layoutY="538.0" text="About Us">
                            <font>
                               <Font size="72.0" />
                            </font>
@@ -193,32 +193,32 @@
                                     <Image url="@ICONS/bird%20gakaon.png" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="409.0" fitWidth="886.0" layoutX="1.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0">
+                              <ImageView fitHeight="333.0" fitWidth="585.0" layoutX="1.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0">
                                  <image>
                                     <Image url="@ICONS/gakaon%20iring.png" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="506.0" fitWidth="840.0" layoutX="559.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0">
+                              <ImageView fitHeight="506.0" fitWidth="840.0" layoutX="489.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-0.3682861328125">
                                  <image>
                                     <Image url="@ICONS/gakaon%20iro.png" />
                                  </image>
                               </ImageView>
-                              <Label layoutX="780.0" layoutY="35.0" prefHeight="133.0" prefWidth="475.0" text="Fuel Their Adventures">
+                              <Label layoutX="581.0" layoutY="61.0" prefHeight="133.0" prefWidth="759.0" text="Fuel Their Adventures">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="68.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="200.0" layoutY="298.0" prefHeight="67.0" prefWidth="107.0" text="Bowl">
                                  <font>
                                     <Font name="Franklin Gothic Medium" size="50.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="292.0" layoutY="178.0" prefHeight="67.0" prefWidth="107.0" text="Bowl">
+                              <Label layoutX="1520.0" layoutY="324.0" prefHeight="67.0" prefWidth="107.0" text="Bowl">
                                  <font>
                                     <Font name="Franklin Gothic Medium" size="50.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="1458.0" layoutY="321.0" prefHeight="67.0" prefWidth="107.0" text="Bowl">
-                                 <font>
-                                    <Font name="Franklin Gothic Medium" size="50.0" />
-                                 </font>
-                              </Label>
-                              <Label layoutX="981.0" layoutY="174.0" prefHeight="67.0" prefWidth="65.0" text="By">
+                              <Label layoutX="898.0" layoutY="196.0" prefHeight="67.0" prefWidth="65.0" text="By">
                                  <font>
                                     <Font name="Franklin Gothic Medium" size="50.0" />
                                  </font>
