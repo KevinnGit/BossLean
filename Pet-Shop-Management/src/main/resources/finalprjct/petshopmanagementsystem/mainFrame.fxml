@@ -33,11 +33,6 @@
                         <Font size="48.0" />
                      </font>
                   </Label>
-                  <Label layoutX="1649.0" layoutY="13.0" prefHeight="73.0" prefWidth="111.0" text="Cart" textFill="WHITE">
-                     <font>
-                        <Font size="48.0" />
-                     </font>
-                  </Label>
                   <ImageView fitHeight="722.0" fitWidth="688.0" layoutX="1145.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/download_prev_ui.png" />
@@ -69,22 +64,22 @@
                               <Image url="@ICONS/pet-food.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="149.0" layoutY="315.0" mnemonicParsing="false" onAction="#goToGrooming" style="-fx-background-color: transparent;" text="Grooming">
+                        <Button layoutX="144.0" layoutY="85.0" mnemonicParsing="false" onAction="#goToGrooming" prefHeight="210.0" prefWidth="227.0" style="-fx-background-color: transparent;">
                            <font>
                               <Font size="36.0" />
                            </font>
                         </Button>
-                        <Button layoutX="629.0" layoutY="320.0" mnemonicParsing="false" onAction="#goToPets" style="-fx-background-color: transparent;" text="Pets">
+                        <Button layoutX="580.0" layoutY="72.0" mnemonicParsing="false" onAction="#goToPets" prefHeight="225.0" prefWidth="221.0" style="-fx-background-color: transparent;">
                            <font>
                               <Font size="36.0" />
                            </font>
                         </Button>
-                        <Button layoutX="1013.0" layoutY="314.0" mnemonicParsing="false" onAction="#goToAccessories" style="-fx-background-color: transparent;" text="Accessories">
+                        <Button layoutX="997.0" layoutY="69.0" mnemonicParsing="false" onAction="#goToAccessories" prefHeight="231.0" prefWidth="268.0" style="-fx-background-color: transparent;">
                            <font>
                               <Font size="36.0" />
                            </font>
                         </Button>
-                        <Button layoutX="1523.0" layoutY="315.0" mnemonicParsing="false" onAction="#goToFood" style="-fx-background-color: transparent;" text="Food">
+                        <Button layoutX="1474.0" layoutY="80.0" mnemonicParsing="false" onAction="#goToFood" prefHeight="207.0" prefWidth="207.0" style="-fx-background-color: transparent;">
                            <font>
                               <Font size="36.0" />
                            </font>
@@ -114,8 +109,33 @@
                               <Font size="31.0" />
                            </font>
                         </TextArea>
+                        <Label layoutX="110.0" layoutY="315.0" text="Grooming">
+                           <font>
+                              <Font name="Segoe UI Black" size="54.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="631.0" layoutY="315.0" text="Pets">
+                           <font>
+                              <Font name="Segoe UI Black" size="54.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="974.0" layoutY="315.0" text="Accessories">
+                           <font>
+                              <Font name="Segoe UI Black" size="54.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="1449.0" layoutY="315.0" text="Pet Foods">
+                           <font>
+                              <Font name="Segoe UI Black" size="54.0" />
+                           </font>
+                        </Label>
                      </children>
                   </AnchorPane>
+                  <Button layoutX="1728.0" mnemonicParsing="false" onAction="#goToCart" prefHeight="58.0" prefWidth="159.0" style="-fx-background-color: #94755f;" text="Cart" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Black" size="44.0" />
+                     </font>
+                  </Button>
                </children>
             </AnchorPane>
          </content>

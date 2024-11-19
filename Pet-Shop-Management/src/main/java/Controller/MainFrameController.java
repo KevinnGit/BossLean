@@ -13,22 +13,27 @@ public class MainFrameController {
     private AnchorPane mainFrame;
 
     @FXML
-    void goToAccessories(ActionEvent event) {
-
+    void goToCart(ActionEvent event) throws IOException {
+        new SceneSwitch(mainFrame, "CartFrame.fxml");
     }
 
     @FXML
-    void goToFood(ActionEvent event) {
-
+    void goToAccessories(ActionEvent event) throws IOException {
+        new SceneSwitch(mainFrame, "PetFoodFrame.fxml");
     }
 
     @FXML
-    void goToGrooming(ActionEvent event) {
+    void goToFood(ActionEvent event) throws IOException {
+        new SceneSwitch(mainFrame, "PetFoodFrame.fxml");
+    }
 
+    @FXML
+    void goToGrooming(ActionEvent event) throws IOException {
+        new SceneSwitch(mainFrame, "GroomingFrame.fxml");
     }
 
     @FXML
     void goToPets(ActionEvent event) throws IOException {
-            new SceneSwitch(mainFrame, "BirdFrame.fxml");
+            new SceneSwitch(mainFrame, "PetFrame.fxml");
         }
 }

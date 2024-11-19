@@ -7,28 +7,18 @@ import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 
-public class BirdFrameController {
+public class PetFrameController {
 
     @FXML
-    private AnchorPane birdPane;
+    private AnchorPane PetPane;
 
     @FXML
-    void goToCart(ActionEvent event) {
-
-    }
-
-    @FXML
-    void goToCats(ActionEvent event) {
-
-    }
-
-    @FXML
-    void goToDogs(ActionEvent event) {
+    void goToCart(ActionEvent event) throws IOException  {
 
     }
 
     @FXML
         void goToHome(ActionEvent event) throws IOException {
-            new SceneSwitch(birdPane, "mainFrame.fxml");
+            new SceneSwitch(PetPane, "mainFrame.fxml");
         }
 }
