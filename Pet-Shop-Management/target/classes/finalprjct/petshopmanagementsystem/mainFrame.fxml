@@ -13,11 +13,11 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1310.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainFrameController">
+<AnchorPane fx:id="mainFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1284.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainFrameController">
    <children>
-      <ScrollPane hbarPolicy="ALWAYS" layoutX="10.0" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1284.0" prefWidth="1920.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="-14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-4.0">
+      <ScrollPane hbarPolicy="ALWAYS" layoutX="10.0" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5500.0" prefWidth="1920.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="5586.0" prefWidth="1928.0" style="-fx-background-color: EFDCCB;">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="5332.0" prefWidth="1928.0" style="-fx-background-color: EFDCCB;">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#94755f" height="110.75" layoutX="-1.0" layoutY="-14.0" stroke="BLACK" strokeType="INSIDE" width="1920.0" />
                   <ImageView fx:id="Previous" fitHeight="66.0" fitWidth="64.0" layoutX="5.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
@@ -30,7 +30,7 @@
                         <Image url="@ICONS/dropdown.png" />
                      </image>
                   </ImageView>
-                  <AnchorPane layoutX="-3.0" layoutY="831.0" prefHeight="4740.0" prefWidth="1972.0" style="-fx-background-color: DAC59E;">
+                  <AnchorPane layoutX="-3.0" layoutY="831.0" prefHeight="4660.0" prefWidth="1972.0" style="-fx-background-color: DAC59E;">
                      <children>
                         <Circle fill="#efdccb" layoutX="252.0" layoutY="186.0" radius="112.0" stroke="BLACK" strokeType="INSIDE" />
                         <Circle fill="#efdccb" layoutX="688.0" layoutY="186.0" radius="112.0" stroke="BLACK" strokeType="INSIDE" />
@@ -182,7 +182,7 @@
                               <Image url="@ICONS/Instagram.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="1239.0" layoutY="2955.0" text="BossLeanPetMalu">
+                        <Label layoutX="1239.0" layoutY="2955.0" text="itsme_BossLean2004">
                            <font>
                               <Font name="Franklin Gothic Book" size="64.0" />
                            </font>
@@ -192,7 +192,7 @@
                               <Image url="@ICONS/Telegram%20App.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="293.0" layoutY="3208.0" text="BossLeanPetMalu">
+                        <Label layoutX="293.0" layoutY="3208.0" text="BossLean2004">
                            <font>
                               <Font name="Franklin Gothic Book" size="64.0" />
                            </font>
@@ -202,21 +202,31 @@
                               <Image url="@ICONS/TikTok.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="1247.0" layoutY="3179.0" text="BossLeanPetMalu">
+                        <Label layoutX="1247.0" layoutY="3179.0" text="BossLeanOfficial">
                            <font>
                               <Font name="Franklin Gothic Book" size="64.0" />
                            </font>
                         </Label>
-                        <Label layoutX="231.0" layoutY="3460.0" prefHeight="163.0" prefWidth="812.0" text="Matina Crossing, Davao City ">
+                        <Label layoutX="256.0" layoutY="3441.0" prefHeight="163.0" prefWidth="812.0" text="Matina Crossing, Davao City ">
                            <font>
                               <Font name="Franklin Gothic Demi" size="64.0" />
                            </font>
                         </Label>
-                        <Label layoutX="1216.0" layoutY="3459.0" prefHeight="163.0" prefWidth="448.0" text="09123456789">
+                        <Label layoutX="1257.0" layoutY="3435.0" prefHeight="163.0" prefWidth="448.0" text="09123456789">
                            <font>
                               <Font name="Franklin Gothic Demi" size="64.0" />
                            </font>
                         </Label>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="151.0" layoutY="3439.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@ICONS/address%20icon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1111.0" layoutY="3439.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@ICONS/download.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </AnchorPane>
                   <Button layoutX="1728.0" mnemonicParsing="false" onAction="#goToCart" prefHeight="58.0" prefWidth="159.0" style="-fx-background-color: #94755f;" text="Cart">
