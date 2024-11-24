@@ -1,7 +1,7 @@
 package finalprjct.petshopmanagementsystem;
+
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.AnchorPane;
-
 import java.io.IOException;
 import java.util.Objects;
 
@@ -12,4 +12,5 @@ public class SceneSwitch {
         currentAnchorPane.getChildren().removeAll();
         currentAnchorPane.getChildren().setAll(nextAnchorPane);
     }
+
 }

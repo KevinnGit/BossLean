@@ -10,11 +10,11 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="PetPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1070.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PetFrameController">
+<AnchorPane fx:id="PetPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PetFrameController">
    <children>
-      <ScrollPane layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="3820.0" prefWidth="1920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ScrollPane layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="3856.0" prefWidth="1916.0" style="-fx-background-color: EFDCCB;">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="4824.0" prefWidth="1916.0" style="-fx-background-color: EFDCCB;">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#94755f" height="110.75" layoutX="-1.0" layoutY="-14.0" stroke="BLACK" strokeType="INSIDE" width="1920.0" />
                   <Button layoutX="1716.0" layoutY="9.0" mnemonicParsing="false" onAction="#goToCart" prefHeight="80.0" prefWidth="161.0" style="-fx-background-color: #94755f;" text="CART" textFill="WHITE">
@@ -38,46 +38,31 @@
                         <Image url="@ICONS/parrot.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="70.0" layoutY="528.0" text="Name: Ryle ">
+                  <Label fx:id="bird1Name" layoutX="70.0" layoutY="528.0" text="Name: Ryle ">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="71.0" layoutY="566.0" text="Breed: Parakeet">
+                  <Label fx:id="bird1Breed" layoutX="71.0" layoutY="566.0" text="Breed: Parakeet">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="69.0" layoutY="601.0" text="Age: 2 Years Old">
+                  <Label fx:id="bird1Age" layoutX="69.0" layoutY="601.0" text="Age: 2 Years Old">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="68.0" layoutY="634.0" text="Color: green with yellow, with black stripes   ">
+                  <Label fx:id="bird1Color" layoutX="68.0" layoutY="634.0" text="Color: green with yellow, with black stripes   ">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="68.0" layoutY="667.0" text="and markings, and dark blue-green-black">
+                  <Label fx:id="bird1Price" layoutX="70.0" layoutY="672.0" text="Price: ₱100,000 ">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="70.0" layoutY="701.0" text="flight and tail feathers.">
-                     <font>
-                        <Font name="Segoe UI" size="24.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="69.0" layoutY="741.0" text="Price: ₱100,000 ">
-                     <font>
-                        <Font name="Segoe UI" size="24.0" />
-                     </font>
-                  </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="224.0" layoutY="783.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@ICONS/shopping-cart.png" />
-                     </image>
-                  </ImageView>
                   <Line endX="1716.0" layoutX="200.0" layoutY="1083.0" startX="-200.0" />
                   <Label layoutX="890.0" layoutY="1132.0" prefHeight="70.0" prefWidth="108.0" text="Dog">
                      <font>
@@ -92,36 +77,31 @@
                   </ImageView>
                   <Line endX="285.66668701171875" layoutX="262.0" layoutY="497.0" startX="-202.0" />
                   <Line endX="291.0" layoutX="279.0" layoutY="1655.0" startX="-202.0" />
-                  <Label layoutX="100.0" layoutY="1680.0" text="Name: Ryan ">
+                  <Label fx:id="dog1Name" layoutX="100.0" layoutY="1680.0" text="Name: Ryan ">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="100.0" layoutY="1709.0" text="Breed: Golden Retriever">
+                  <Label fx:id="dog1Breed" layoutX="100.0" layoutY="1709.0" text="Breed: Golden Retriever">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="101.0" layoutY="1742.0" text="Age: 11 Months Old">
+                  <Label fx:id="dog1Age" layoutX="101.0" layoutY="1742.0" text="Age: 11 Months Old">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="100.0" layoutY="1775.0" text="Color:  Light Golden">
+                  <Label fx:id="dog1Color" layoutX="100.0" layoutY="1775.0" text="Color:  Light Golden">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="102.0" layoutY="1810.0" text="Price: ₱150,000:">
+                  <Label fx:id="dog1Price" layoutX="102.0" layoutY="1810.0" text="Price: ₱150,000:">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="252.0" layoutY="1865.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@ICONS/shopping-cart.png" />
-                     </image>
-                  </ImageView>
                   <Line endX="1595.0" layoutX="324.0" layoutY="2134.0" startX="-324.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dac59e" height="781.0" layoutX="102.0" layoutY="2293.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
                   <Label layoutX="842.0" layoutY="2170.0" prefHeight="70.0" prefWidth="108.0" text="Cat">
@@ -135,194 +115,159 @@
                      </image>
                   </ImageView>
                   <Line endX="303.0" layoutX="287.0" layoutY="2683.0" startX="-184.0" />
-                  <Label layoutX="122.0" layoutY="2718.0" text="Name: Fletcher">
+                  <Label fx:id="cat1Name" layoutX="122.0" layoutY="2718.0" text="Name: Fletcher">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="125.0" layoutY="2761.0" text="Breed: Orange">
+                  <Label fx:id="cat1Breed" layoutX="125.0" layoutY="2761.0" text="Breed: Scottish Fold">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="124.0" layoutY="2805.0" text="Age: 6 Months Old">
+                  <Label fx:id="cat1Age" layoutX="124.0" layoutY="2805.0" text="Age: 6 Months Old">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="124.0" layoutY="2847.0" text="Color: Orange">
+                  <Label fx:id="cat1Color" layoutX="124.0" layoutY="2847.0" text="Color: Orange">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="126.0" layoutY="2892.0" text="Price: ₱1,000,000 ">
+                  <Label fx:id="cat1Price" layoutX="126.0" layoutY="2892.0" text="Price: ₱1,000,000 ">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="279.0" layoutY="2969.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@ICONS/shopping-cart.png" />
-                     </image>
-                  </ImageView>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="731.0" layoutY="208.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="686.0" layoutX="731.0" layoutY="197.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
                   <ImageView fitHeight="310.0" fitWidth="306.0" layoutX="823.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/canary.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="743.0" layoutY="537.0" text="Name: Lloyd  ">
+                  <Label fx:id="bird2Name" layoutX="743.0" layoutY="537.0" text="Name: Lloyd  ">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="744.0" layoutY="575.0" text="Breed: Canary">
+                  <Label fx:id="bird2Breed" layoutX="744.0" layoutY="575.0" text="Breed: Canary">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="742.0" layoutY="610.0" text="Age: 5 Months Old">
+                  <Label fx:id="bird2Age" layoutX="742.0" layoutY="610.0" text="Age: 5 Months Old">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="741.0" layoutY="643.0" text="Color: Yellow with a touch of black  ">
+                  <Label fx:id="bird2Color" layoutX="741.0" layoutY="643.0" text="Color: Yellow with a touch of black  ">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="741.0" layoutY="680.0" text="Price: ₱500,000 ">
+                  <Label fx:id="bird2Price" layoutX="740.0" layoutY="680.0" text="Price: ₱500,000 ">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="897.0" layoutY="792.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@ICONS/shopping-cart.png" />
-                     </image>
-                  </ImageView>
-                  <Line endX="285.66668701171875" layoutX="916.0" layoutY="497.0" startX="-202.0" />
+                  <Line endX="303.0" layoutX="916.0" layoutY="497.0" startX="-185.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="1355.0" layoutY="197.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
                   <ImageView fitHeight="320.0" fitWidth="341.0" layoutX="1479.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/macaw.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="1367.0" layoutY="526.0" text="Name: Ken ">
+                  <Label fx:id="bird3Name" layoutX="1367.0" layoutY="526.0" text="Name: Ken ">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="1368.0" layoutY="564.0" text="Breed: Macaw">
+                  <Label fx:id="bird3Breed" layoutX="1368.0" layoutY="564.0" text="Breed: Macaw">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="1366.0" layoutY="599.0" text="Age: 1 Years Old">
+                  <Label fx:id="bird3Age" layoutX="1366.0" layoutY="599.0" text="Age: 1 Years Old">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="1365.0" layoutY="632.0" text="Color: green forehead, fading into a teal   ">
+                  <Label fx:id="bird3Color" layoutX="1365.0" layoutY="632.0" text="Color: green forehead, fading into a teal   ">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="1365.0" layoutY="665.0" text="blue that covers the nape, back, tail, and ">
+                  <Label fx:id="bird3Price" layoutX="1365.0" layoutY="666.0" text="Price: ₱1,000,00 ">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="1367.0" layoutY="699.0" text="wings. ">
-                     <font>
-                        <Font name="Segoe UI" size="24.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="1366.0" layoutY="739.0" text="Price: ₱1,000,00 ">
-                     <font>
-                        <Font name="Segoe UI" size="24.0" />
-                     </font>
-                  </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1521.0" layoutY="781.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@ICONS/shopping-cart.png" />
-                     </image>
-                  </ImageView>
                   <Line endX="285.66668701171875" layoutX="1553.0" layoutY="500.0" startX="-202.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dac59e" height="681.0" layoutX="693.0" layoutY="1270.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dac59e" height="691.0" layoutX="693.0" layoutY="1270.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
                   <ImageView fitHeight="362.0" fitWidth="330.0" layoutX="760.0" layoutY="1338.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/chiwawa.png" />
                      </image>
                   </ImageView>
-                  <Line endX="291.0" layoutX="890.0" layoutY="1644.0" startX="-202.0" />
-                  <Label layoutX="711.0" layoutY="1669.0" text="Name: Jonathan ">
+                  <Line endX="291.0" layoutX="890.0" layoutY="1644.0" startX="-197.0" />
+                  <Label fx:id="dog2Name" layoutX="711.0" layoutY="1669.0" text="Name: Jonathan ">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="711.0" layoutY="1698.0" text="Breed: Chihuahua">
+                  <Label fx:id="dog2Breed" layoutX="711.0" layoutY="1698.0" text="Breed: Chihuahua">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="712.0" layoutY="1731.0" text="Age: 1 Year OId">
+                  <Label fx:id="dog2Age" layoutX="712.0" layoutY="1731.0" text="Age: 1 Year OId">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="711.0" layoutY="1764.0" text="Color:  Brownish Cream">
+                  <Label fx:id="dog2Color" layoutX="711.0" layoutY="1764.0" text="Color:  Brownish Cream">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="713.0" layoutY="1799.0" text="Price: ₱20,000">
+                  <Label fx:id="dog2Price" layoutX="713.0" layoutY="1799.0" text="Price: ₱20,000">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="863.0" layoutY="1854.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@ICONS/shopping-cart.png" />
-                     </image>
-                  </ImageView>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dac59e" height="681.0" layoutX="1306.0" layoutY="1278.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
                   <ImageView fitHeight="273.0" fitWidth="371.0" layoutX="1366.0" layoutY="1335.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/chowchow.png" />
                      </image>
                   </ImageView>
-                  <Line endX="291.0" layoutX="1503.0" layoutY="1652.0" startX="-202.0" />
-                  <Label layoutX="1324.0" layoutY="1677.0" text="Name: Troy ">
+                  <Line endX="291.0" layoutX="1503.0" layoutY="1652.0" startX="-197.0" />
+                  <Label fx:id="dog3Name" layoutX="1324.0" layoutY="1677.0" text="Name: Troy ">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="1324.0" layoutY="1706.0" text="Breed: Chow Chow">
+                  <Label fx:id="dog3Breed" layoutX="1324.0" layoutY="1706.0" text="Breed: Chow Chow">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="1325.0" layoutY="1739.0" text="Age: 6 Months Old">
+                  <Label fx:id="dog3Age" layoutX="1325.0" layoutY="1739.0" text="Age: 6 Months Old">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="1324.0" layoutY="1772.0" text="Color:  White Cream">
+                  <Label fx:id="dog3Color" layoutX="1324.0" layoutY="1772.0" text="Color:  White Cream">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="1326.0" layoutY="1807.0" text="Price: ₱300,000">
+                  <Label fx:id="dog3Price" layoutX="1326.0" layoutY="1807.0" text="Price: ₱300,000">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1476.0" layoutY="1862.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@ICONS/shopping-cart.png" />
-                     </image>
-                  </ImageView>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dac59e" height="781.0" layoutX="711.0" layoutY="2287.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
                   <ImageView fitHeight="366.0" fitWidth="408.0" layoutX="781.0" layoutY="2311.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -330,36 +275,31 @@
                      </image>
                   </ImageView>
                   <Line endX="303.0" layoutX="896.0" layoutY="2677.0" startX="-184.0" />
-                  <Label layoutX="731.0" layoutY="2712.0" text="Name: Yosh">
+                  <Label fx:id="cat2Name" layoutX="731.0" layoutY="2712.0" text="Name: Yosh">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="734.0" layoutY="2755.0" text="Breed: British Longhair">
+                  <Label fx:id="cat2Breed" layoutX="734.0" layoutY="2755.0" text="Breed: British Longhair">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="733.0" layoutY="2799.0" text="Age: 1 Year Old">
+                  <Label fx:id="cat2Age" layoutX="733.0" layoutY="2799.0" text="Age: 1 Year Old">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="733.0" layoutY="2841.0" text="Color: Grey">
+                  <Label fx:id="cat2Color" layoutX="733.0" layoutY="2841.0" text="Color: Grey">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="735.0" layoutY="2886.0" text="Price: ₱150,000 ">
+                  <Label fx:id="cat2Price" layoutX="735.0" layoutY="2886.0" text="Price: ₱150,000 ">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="888.0" layoutY="2963.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@ICONS/shopping-cart.png" />
-                     </image>
-                  </ImageView>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dac59e" height="781.0" layoutX="1329.0" layoutY="2280.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
                   <ImageView fitHeight="366.0" fitWidth="408.0" layoutX="1399.0" layoutY="2304.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -367,32 +307,117 @@
                      </image>
                   </ImageView>
                   <Line endX="303.0" layoutX="1514.0" layoutY="2670.0" startX="-184.0" />
-                  <Label layoutX="1349.0" layoutY="2705.0" text="Name: Mheil">
+                  <Label fx:id="cat3Name" layoutX="1349.0" layoutY="2705.0" text="Name: Mheil">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="1352.0" layoutY="2748.0" text="Breed: Sokoke">
+                  <Label fx:id="cat3Breed" layoutX="1352.0" layoutY="2748.0" text="Breed: Sokoke">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="1351.0" layoutY="2792.0" text="Age: 8 Months Old">
+                  <Label fx:id="cat3Age" layoutX="1351.0" layoutY="2792.0" text="Age: 8 Months Old">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="1351.0" layoutY="2834.0" text="Color: Orange">
+                  <Label fx:id="cat3Color" layoutX="1351.0" layoutY="2834.0" text="Color: Orange">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="1353.0" layoutY="2879.0" text="Price: ₱50,000">
+                  <Label fx:id="cat3Price" layoutX="1353.0" layoutY="2879.0" text="Price: ₱50,000">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1506.0" layoutY="2956.0" pickOnBounds="true" preserveRatio="true">
+                  <Button layoutX="192.0" layoutY="795.0" mnemonicParsing="false" onAction="#addToCartRyle" prefHeight="61.0" prefWidth="224.0" style="-fx-background-color: ddc597;" text="Add to Cart">
+                     <font>
+                        <Font name="Segoe UI Black" size="29.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="58.0" fitWidth="54.0" layoutX="159.0" layoutY="798.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/shopping-cart.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="892.0" layoutY="795.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="224.0" style="-fx-background-color: ddc597;" text="Add to Cart">
+                     <font>
+                        <Font name="Segoe UI Black" size="29.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="58.0" fitWidth="54.0" layoutX="850.0" layoutY="798.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/shopping-cart.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="1486.0" layoutY="792.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="224.0" style="-fx-background-color: ddc597;" text="Add to Cart">
+                     <font>
+                        <Font name="Segoe UI Black" size="29.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="58.0" fitWidth="54.0" layoutX="1456.0" layoutY="798.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/shopping-cart.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="202.0" layoutY="1889.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="224.0" style="-fx-background-color: ddc597;" text="Add to Cart">
+                     <font>
+                        <Font name="Segoe UI Black" size="29.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="58.0" fitWidth="54.0" layoutX="165.0" layoutY="1893.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/shopping-cart.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="835.0" layoutY="1888.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="224.0" style="-fx-background-color: ddc597;" text="Add to Cart">
+                     <font>
+                        <Font name="Segoe UI Black" size="29.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="58.0" fitWidth="54.0" layoutX="805.0" layoutY="1893.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/shopping-cart.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="1457.0" layoutY="1889.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="224.0" style="-fx-background-color: ddc597;" text="Add to Cart">
+                     <font>
+                        <Font name="Segoe UI Black" size="29.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="58.0" fitWidth="54.0" layoutX="1430.0" layoutY="1892.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/shopping-cart.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="216.0" layoutY="3002.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="224.0" style="-fx-background-color: ddc597;" text="Add to Cart">
+                     <font>
+                        <Font name="Segoe UI Black" size="29.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="58.0" fitWidth="54.0" layoutX="183.0" layoutY="3003.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/shopping-cart.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="886.0" layoutY="2991.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="224.0" style="-fx-background-color: ddc597;" text="Add to Cart">
+                     <font>
+                        <Font name="Segoe UI Black" size="29.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="58.0" fitWidth="54.0" layoutX="850.0" layoutY="2994.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/shopping-cart.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="1489.0" layoutY="2991.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="224.0" style="-fx-background-color: ddc597;" text="Add to Cart">
+                     <font>
+                        <Font name="Segoe UI Black" size="29.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="58.0" fitWidth="54.0" layoutX="1462.0" layoutY="2994.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>

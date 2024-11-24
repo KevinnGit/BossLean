@@ -5,6 +5,24 @@ import java.util.List;
 
 public class Cart {
 
+    private static Cart instance; // Singleton instance of Cart
+
+    private List<CartItem> cartItems;
+
+    // Private constructor to ensure Singleton pattern
+    private Cart() {
+        this.cartItems = new ArrayList<>();
+    }
+
+    // Public method to get the singleton instance of Cart
+    public static Cart getInstance() {
+        if (instance == null) {
+            instance = new Cart();
+        }
+        return instance;
+    }
+
+    // CartItem class to represent each item in the cart
     private class CartItem {
         Product product;
         int quantity;
@@ -14,46 +32,41 @@ public class Cart {
             this.quantity = quantity;
         }
 
+        // Calculate total price for a cart item
         public double getTotalPrice() {
             return product.getPrice() * quantity;
         }
 
+        // Update the quantity of an existing item
         public void updateQuantity(int newQuantity) {
             this.quantity = newQuantity;
         }
 
+        // Get the quantity of a product in the cart
         public int getQuantity() {
             return this.quantity;
         }
     }
 
-    private List<CartItem> cartItems;
-
-    public Cart() {
-        this.cartItems = new ArrayList<>();
-    }
-
-    // Add a product with a specific quantity to the cart
+    // Add a product to the cart or update the quantity if it already exists
     public void addProduct(Product product, int quantity) {
-        // Check if the product already exists in the cart
         for (CartItem item : cartItems) {
             if (item.product.equals(product)) {
-                item.updateQuantity(item.getQuantity() + quantity); // Increase the quantity if product already exists
+                item.updateQuantity(item.getQuantity() + quantity);
                 return;
             }
         }
-        // If product doesn't exist, add it to the cart
         cartItems.add(new CartItem(product, quantity));
     }
 
-    // Remove or update the quantity of a product from the cart
+    // Update the quantity of a product in the cart
     public void updateProductQuantity(Product product, int newQuantity) {
         for (CartItem item : cartItems) {
             if (item.product.equals(product)) {
                 if (newQuantity <= 0) {
-                    cartItems.remove(item); // Remove the product if quantity is 0 or less
+                    cartItems.remove(item);
                 } else {
-                    item.updateQuantity(newQuantity); // Update the quantity
+                    item.updateQuantity(newQuantity);
                 }
                 return;
             }
@@ -61,7 +74,7 @@ public class Cart {
         System.out.println("Product not found in the cart.");
     }
 
-    // Get the total cost of all items in the cart
+    // Calculate the total price of all items in the cart
     public double calculateTotal() {
         double total = 0.0;
         for (CartItem item : cartItems) {
@@ -70,28 +83,30 @@ public class Cart {
         return total;
     }
 
-    // Get the formatted cart string for display in TextArea
+    // Get detailed information of the cart in a formatted string
     public String getCartDetails() {
         StringBuilder sb = new StringBuilder();
 
         if (cartItems.isEmpty()) {
             sb.append("The cart is empty.\n");
         } else {
-            // Add header
             sb.append(String.format("%-30s %-15s %-15s %-10s%n", "Product Name", "Quantity", "Price (Each)", "Total Price"));
             sb.append("-------------------------------------------------------------------\n");
 
-            // Add each product's details
             for (CartItem item : cartItems) {
                 sb.append(String.format("%-30s %-15d $%-14.2f $%-10.2f%n",
                         item.product.getName(), item.quantity, item.product.getPrice(), item.getTotalPrice()));
             }
 
-            // Add total cost
             sb.append("-------------------------------------------------------------------\n");
             sb.append(String.format("%60s $%-10.2f%n", "Total Price:", calculateTotal()));
         }
 
         return sb.toString();
+    }
+
+    // Clear all items in the cart
+    public void clear() {
+        cartItems.clear();
     }
 }
