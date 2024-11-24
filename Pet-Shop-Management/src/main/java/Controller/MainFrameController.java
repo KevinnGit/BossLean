@@ -40,6 +40,7 @@ public class MainFrameController implements Initializable {
     private AnchorPane dog3;
     int click = 0;
     int preclick = 3;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
     dog2.setVisible(false);

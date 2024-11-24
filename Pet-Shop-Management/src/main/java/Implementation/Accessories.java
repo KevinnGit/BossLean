@@ -7,8 +7,7 @@ public class Accessories extends Product {
     private String size;
 
 
-    public Accessories(String name, double price, int stockQuantity, String description,
-                       String type, String color, String size) {
+    public Accessories(String name, double price, int stockQuantity, String description, String type, String color, String size) {
         super(name, price, stockQuantity, description);
         this.type = type;
         this.color = color;
