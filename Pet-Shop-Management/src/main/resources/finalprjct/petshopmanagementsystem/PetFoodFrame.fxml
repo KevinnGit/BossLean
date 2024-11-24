@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="PetFoodPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PetFoodFrameController">
+<AnchorPane fx:id="PetFoodPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="3694.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PetFoodFrameController">
     <children>
         <ScrollPane layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1388.0" prefWidth="1916.0" style="-fx-background-color: EFDCCB;">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="3692.0" prefWidth="1916.0" style="-fx-background-color: EFDCCB;">
                     <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#94755f" height="110.75" layoutX="-1.0" layoutY="-14.0" stroke="BLACK" strokeType="INSIDE" width="1920.0" />
                         <Button layoutX="1716.0" layoutY="9.0" mnemonicParsing="false" onAction="#goToCart" prefHeight="80.0" prefWidth="161.0" style="-fx-background-color: #94755f;" text="CART" textFill="WHITE">
@@ -23,6 +28,209 @@
                                 <Font name="Segoe UI Black" size="28.0" />
                             </font>
                         </Button>
+                  <Label layoutX="874.0" layoutY="139.0" text="Bird Food">
+                     <font>
+                        <Font name="Segoe UI Black" size="36.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="73.0" layoutY="259.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <ImageView fitHeight="260.0" fitWidth="272.0" layoutX="152.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/bird%20%20food-Photoroom.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="83.0" layoutY="623.0" text="Brand: Parakeet(Seed)">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="858.0" layoutY="1349.0">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="273.0" layoutY="841.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/shopping-cart.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="285.66668701171875" layoutX="277.0" layoutY="557.0" startX="-202.0" />
+                  <ComboBox layoutX="100.0" layoutY="726.0" prefHeight="51.0" prefWidth="182.0" promptText="Quantity" />
+                  <ComboBox layoutX="306.0" layoutY="726.0" prefHeight="51.0" prefWidth="182.0" promptText="Grams" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="714.0" layoutY="267.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <ImageView fitHeight="291.0" fitWidth="320.0" layoutX="793.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/BF2.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="754.0" layoutY="620.0" text="Brand: Kaytee(Seed)">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1499.0" layoutY="1357.0">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="919.0" layoutY="841.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/shopping-cart.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="285.66668701171875" layoutX="918.0" layoutY="565.0" startX="-202.0" />
+                  <ComboBox layoutX="741.0" layoutY="734.0" prefHeight="51.0" prefWidth="182.0" promptText="Quantity" />
+                  <ComboBox layoutX="947.0" layoutY="734.0" prefHeight="51.0" prefWidth="182.0" promptText="Grams" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="1311.0" layoutY="270.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <ImageView fitHeight="291.0" fitWidth="320.0" layoutX="1448.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/bf3.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="1320.0" layoutY="602.0" text="Brand: Nut N' Berry">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1516.0" layoutY="844.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/shopping-cart.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="285.66668701171875" layoutX="1515.0" layoutY="568.0" startX="-202.0" />
+                  <ComboBox layoutX="1338.0" layoutY="737.0" prefHeight="51.0" prefWidth="182.0" promptText="Quantity" />
+                  <ComboBox layoutX="1544.0" layoutY="737.0" prefHeight="51.0" prefWidth="182.0" promptText="Grams" />
+                  <Label layoutX="1471.0" layoutY="658.0" text="(Nut)">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <Line endX="1729.0" layoutX="202.0" layoutY="1089.0" startX="-203.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="79.0" layoutY="1330.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <ImageView fitHeight="276.0" fitWidth="332.0" layoutX="158.0" layoutY="1343.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/df1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="147.0" layoutY="1689.0" text="Brand: Pedigree">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="279.0" layoutY="1912.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/shopping-cart.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="285.66668701171875" layoutX="283.0" layoutY="1628.0" startX="-202.0" />
+                  <ComboBox layoutX="106.0" layoutY="1797.0" prefHeight="51.0" prefWidth="182.0" promptText="Quantity" />
+                  <ComboBox layoutX="312.0" layoutY="1797.0" prefHeight="51.0" prefWidth="182.0" promptText="Grams" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="706.0" layoutY="1319.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <ImageView fitHeight="260.0" fitWidth="272.0" layoutX="810.0" layoutY="1339.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/df2.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="738.0" layoutY="1679.0" text="Brand: Kibble n' Bits ">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="906.0" layoutY="1901.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/shopping-cart.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="285.66668701171875" layoutX="910.0" layoutY="1617.0" startX="-202.0" />
+                  <ComboBox layoutX="733.0" layoutY="1786.0" prefHeight="51.0" prefWidth="182.0" promptText="Quantity" />
+                  <ComboBox layoutX="939.0" layoutY="1786.0" prefHeight="51.0" prefWidth="182.0" promptText="Grams" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="1318.0" layoutY="1320.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <ImageView fitHeight="260.0" fitWidth="272.0" layoutX="1397.0" layoutY="1333.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/df3.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="1366.0" layoutY="1675.0" text="Brand: Boss Dogs">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1518.0" layoutY="1902.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/shopping-cart.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="285.66668701171875" layoutX="1522.0" layoutY="1618.0" startX="-202.0" />
+                  <ComboBox layoutX="1345.0" layoutY="1787.0" prefHeight="51.0" prefWidth="182.0" promptText="Quantity" />
+                  <ComboBox layoutX="1551.0" layoutY="1787.0" prefHeight="51.0" prefWidth="182.0" promptText="Grams" />
+                  <Line endX="1700.0" layoutX="216.0" layoutY="2157.0" startX="-216.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="73.0" layoutY="2423.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <ImageView fitHeight="398.0" fitWidth="379.0" layoutX="128.0" layoutY="2395.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/cf1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="169.0" layoutY="2775.0" text="Brand: Goodest">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="273.0" layoutY="3005.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/shopping-cart.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="285.66668701171875" layoutX="277.0" layoutY="2721.0" startX="-202.0" />
+                  <ComboBox layoutX="100.0" layoutY="2890.0" prefHeight="51.0" prefWidth="182.0" promptText="Quantity" />
+                  <ComboBox layoutX="306.0" layoutY="2890.0" prefHeight="51.0" prefWidth="182.0" promptText="Grams" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="728.0" layoutY="2412.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <ImageView fitHeight="260.0" fitWidth="272.0" layoutX="807.0" layoutY="2425.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/cf2.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="817.0" layoutY="2776.0" text="Brand: Whiskas">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="928.0" layoutY="2994.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/shopping-cart.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="285.66668701171875" layoutX="932.0" layoutY="2710.0" startX="-202.0" />
+                  <ComboBox layoutX="755.0" layoutY="2879.0" prefHeight="51.0" prefWidth="182.0" promptText="Quantity" />
+                  <ComboBox layoutX="961.0" layoutY="2879.0" prefHeight="51.0" prefWidth="182.0" promptText="Grams" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="1323.0" layoutY="2413.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <ImageView fitHeight="260.0" fitWidth="272.0" layoutX="1455.0" layoutY="2432.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/cf3.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="1397.0" layoutY="2773.0" text="Brand: Pro Plan">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1523.0" layoutY="2995.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ICONS/shopping-cart.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="285.66668701171875" layoutX="1527.0" layoutY="2711.0" startX="-202.0" />
+                  <ComboBox layoutX="1350.0" layoutY="2880.0" prefHeight="51.0" prefWidth="182.0" promptText="Quantity" />
+                  <ComboBox layoutX="1556.0" layoutY="2880.0" prefHeight="51.0" prefWidth="182.0" promptText="Grams" />
+                  <Label layoutX="881.0" layoutY="1151.0" text="Dog Food">
+                     <font>
+                        <Font name="Segoe UI Black" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="889.0" layoutY="2251.0" text="Cat Food">
+                     <font>
+                        <Font name="Segoe UI Black" size="36.0" />
+                     </font>
+                  </Label>
                     </children>
                 </AnchorPane>
             </content>

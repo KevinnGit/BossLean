@@ -56,7 +56,7 @@ public class MainFrameController implements Initializable {
 
     @FXML
     void goToAccessories(ActionEvent event) throws IOException {
-        new SceneSwitch(mainFrame, "PetFoodFrame.fxml");
+        new SceneSwitch(mainFrame, "AccessoriesFrame.fxml");
     }
 
     @FXML
