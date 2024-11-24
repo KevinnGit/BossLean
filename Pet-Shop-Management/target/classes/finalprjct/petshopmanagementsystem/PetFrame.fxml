@@ -34,7 +34,7 @@
                   </Label>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="58.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
                   <ImageView fitHeight="286.0" fitWidth="418.0" layoutX="92.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
-                     naa<image>
+                     <image>
                         <Image url="@ICONS/parrot.png" />
                      </image>
                   </ImageView>
