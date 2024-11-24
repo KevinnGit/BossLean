@@ -1,0 +1,27 @@
+#myTextArea {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent;
+}
+
+
+.button {
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 2px; /* Adjust the width of the border as needed */
+    -fx-shape: "M 0,0 A 46,46 0 1,1 92,92 A 46,46 0 1,1 0,0"; /* Circle with radius 46 (half of 92) */
+    -fx-min-width: 92px; /* Set width to 92px */
+    -fx-min-height: 92px; /* Set height to 92px */
+    -fx-max-width: 92px; /* Set width to 92px */
+    -fx-max-height: 92px; /* Set height to 92px */
+    -fx-pref-width: 92px; /* Preferred width 92px */
+    -fx-pref-height: 92px; /* Preferred height 92px */
+    -fx-padding: 0; /* Remove padding inside the button */
+    -fx-alignment: center; /* Align content in the center */
+    -fx-font-size: 16px; /* Adjust text size as needed */
+}
+
+/* When the button is pressed, change the inner color to white */
+.button:pressed {
+    -fx-background-color: white;
+}

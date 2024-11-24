@@ -1,0 +1,6 @@
+.transparent-textarea {
+    -fx-background-color: transparent; /* Makes the outer background transparent */
+    -fx-control-inner-background: transparent; /* Makes the inner area transparent */
+    -fx-text-fill: black; /* Text color */
+    -fx-border-color: transparent; /* Removes border if not needed */
+}
