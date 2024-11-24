@@ -221,6 +221,16 @@
                   <Line endX="285.66668701171875" layoutX="1527.0" layoutY="2711.0" startX="-202.0" />
                   <ComboBox layoutX="1350.0" layoutY="2880.0" prefHeight="51.0" prefWidth="182.0" promptText="Quantity" />
                   <ComboBox layoutX="1556.0" layoutY="2880.0" prefHeight="51.0" prefWidth="182.0" promptText="Grams" />
+                  <Label layoutX="881.0" layoutY="1151.0" text="Dog Food">
+                     <font>
+                        <Font name="Segoe UI Black" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="889.0" layoutY="2251.0" text="Cat Food">
+                     <font>
+                        <Font name="Segoe UI Black" size="36.0" />
+                     </font>
+                  </Label>
                     </children>
                 </AnchorPane>
             </content>
