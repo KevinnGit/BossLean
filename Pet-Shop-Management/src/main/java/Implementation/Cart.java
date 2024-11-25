@@ -83,28 +83,32 @@ public class Cart {
         return total;
     }
 
-    // Get detailed information of the cart in a simplified format
     public String getCartDetails() {
         StringBuilder sb = new StringBuilder();
 
         if (cartItems.isEmpty()) {
             sb.append("The cart is empty.\n");
         } else {
-            // Updated column widths for proper alignment
-            sb.append(String.format("%-20s %-20s %-20s%n", "Name", "Quantity", "Total Price"));
-            sb.append("----------------------------------------------\n");
+            // Header with wider spacing
+            sb.append(String.format("%-45s %-45s %-45s%n", "Products", "Quantity", "Price"));
+            sb.append("-------------------------------------------------------------------------------------------------------------\n");
 
+            // Cart items with extended spacing
             for (CartItem item : cartItems) {
-                sb.append(String.format("%-20s %-20d $%-19.2f%n",
-                        item.product.getName(), item.quantity, item.getTotalPrice()));  // Use getBreed() instead of getName()
+                sb.append(String.format("%-45s %-45d $%-44.2f%n",
+                        item.product.getName(), item.quantity, item.getTotalPrice()));
             }
 
-            sb.append("----------------------------------------------\n");
-            sb.append(String.format("%-40s $%-19.2f%n", "Total:", calculateTotal()));
+            // Footer with wider spacing
+            sb.append("-------------------------------------------------------------------------------------------------------------\n");
+            sb.append(String.format("%-90s $%-44.2f%n", "Total:", calculateTotal()));
         }
 
         return sb.toString();
     }
+
+
+
 
 
 
