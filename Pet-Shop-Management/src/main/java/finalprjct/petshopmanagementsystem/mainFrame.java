@@ -12,7 +12,7 @@ public class mainFrame extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(mainFrame.class.getResource("mainFrame.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Boss Lean PetMalu");
+        stage.setTitle("Boss Lean PetMalul");
         stage.setScene(scene);
         stage.setMaximized(true);
         stage.show();
