@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -19,11 +20,16 @@
                                 <Font name="Segoe UI Black" size="28.0" />
                             </font>
                         </Button>
-                  <TextArea fx:id="cartTextArea" layoutX="148.0" layoutY="177.0" prefHeight="540.0" prefWidth="1612.0">
+                  <TextArea fx:id="cartTextArea" layoutX="504.0" layoutY="171.0" prefHeight="852.0" prefWidth="1046.0">
                      <font>
                         <Font size="32.0" />
                      </font>
                   </TextArea>
+                  <Label layoutX="882.0" layoutY="104.0" text="Cart Details">
+                     <font>
+                        <Font name="Segoe UI Black" size="43.0" />
+                     </font>
+                  </Label>
                     </children>
                 </AnchorPane>
             </content>

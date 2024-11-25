@@ -91,12 +91,12 @@ public class Cart {
             sb.append("The cart is empty.\n");
         } else {
             // Updated column widths for proper alignment
-            sb.append(String.format("%-20s %-20s %-20s%n", "Product Name", "Quantity", "Total Price"));
+            sb.append(String.format("%-20s %-20s %-20s%n", "Name", "Quantity", "Total Price"));
             sb.append("----------------------------------------------\n");
 
             for (CartItem item : cartItems) {
-                sb.append(String.format("%-20s %-30d $%-30f%n",
-                        item.product.getName(), item.quantity, item.getTotalPrice()));
+                sb.append(String.format("%-20s %-20d $%-19.2f%n",
+                        item.product.getName(), item.quantity, item.getTotalPrice()));  // Use getBreed() instead of getName()
             }
 
             sb.append("----------------------------------------------\n");
