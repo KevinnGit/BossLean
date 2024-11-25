@@ -83,27 +83,30 @@ public class Cart {
         return total;
     }
 
-    // Get detailed information of the cart in a formatted string
+    // Get detailed information of the cart in a simplified format
     public String getCartDetails() {
         StringBuilder sb = new StringBuilder();
 
         if (cartItems.isEmpty()) {
             sb.append("The cart is empty.\n");
         } else {
-            sb.append(String.format("%-30s %-15s %-15s %-10s%n", "Product Name", "Quantity", "Price (Each)", "Total Price"));
-            sb.append("-------------------------------------------------------------------\n");
+            // Updated column widths for proper alignment
+            sb.append(String.format("%-20s %-20s %-20s%n", "Product Name", "Quantity", "Total Price"));
+            sb.append("----------------------------------------------\n");
 
             for (CartItem item : cartItems) {
-                sb.append(String.format("%-30s %-15d $%-14.2f $%-10.2f%n",
-                        item.product.getName(), item.quantity, item.product.getPrice(), item.getTotalPrice()));
+                sb.append(String.format("%-20s %-30d $%-30f%n",
+                        item.product.getName(), item.quantity, item.getTotalPrice()));
             }
 
-            sb.append("-------------------------------------------------------------------\n");
-            sb.append(String.format("%60s $%-10.2f%n", "Total Price:", calculateTotal()));
+            sb.append("----------------------------------------------\n");
+            sb.append(String.format("%-40s $%-19.2f%n", "Total:", calculateTotal()));
         }
 
         return sb.toString();
     }
+
+
 
     // Clear all items in the cart
     public void clear() {
