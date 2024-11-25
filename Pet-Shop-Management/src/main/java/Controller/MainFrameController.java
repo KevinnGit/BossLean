@@ -66,7 +66,7 @@ public class MainFrameController implements Initializable {
     }
 
     @FXML
-    void goToGrooming(ActionEvent event) throws IOException {
+    void goToGroomings(ActionEvent event) throws IOException {
         new SceneSwitch(mainFrame, "GroomingFrame.fxml");
     }
 
@@ -163,8 +163,6 @@ public class MainFrameController implements Initializable {
             timeline.play();
         }
     }
-
-
 }
 
 

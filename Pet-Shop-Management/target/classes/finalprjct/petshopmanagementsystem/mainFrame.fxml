@@ -56,7 +56,7 @@
                               <Image url="@ICONS/pet-food.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="144.0" layoutY="85.0" mnemonicParsing="false" onAction="#goToGrooming" prefHeight="210.0" prefWidth="227.0" style="-fx-background-color: transparent;">
+                        <Button layoutX="144.0" layoutY="85.0" mnemonicParsing="false" onAction="#goToGroomings" prefHeight="210.0" prefWidth="227.0" style="-fx-background-color: transparent;">
                            <font>
                               <Font size="36.0" />
                            </font>

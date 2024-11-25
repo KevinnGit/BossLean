@@ -95,17 +95,18 @@ public class Cart {
 
             // Cart items with extended spacing
             for (CartItem item : cartItems) {
-                sb.append(String.format("%-45s %-45d $%-44.2f%n",
+                sb.append(String.format("%-45s %-45d ₱%-44.2f%n", // Peso sign added here
                         item.product.getName(), item.quantity, item.getTotalPrice()));
             }
 
             // Footer with wider spacing
             sb.append("-------------------------------------------------------------------------------------------------------------\n");
-            sb.append(String.format("%-90s $%-44.2f%n", "Total:", calculateTotal()));
+            sb.append(String.format("%-90s ₱%-44.2f%n", "Total:", calculateTotal())); // Peso sign added here
         }
 
         return sb.toString();
     }
+
 
 
 
