@@ -10,9 +10,9 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="PetPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PetFrameController">
+<AnchorPane fx:id="PetPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1096.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PetFrameController">
    <children>
-      <ScrollPane layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ScrollPane hbarPolicy="NEVER" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1096.0" prefWidth="1920.0" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="4824.0" prefWidth="1916.0" style="-fx-background-color: EFDCCB;">
                <children>
@@ -332,7 +332,7 @@
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Button layoutX="192.0" layoutY="795.0" mnemonicParsing="false" onAction="#addToCartRyle" prefHeight="61.0" prefWidth="224.0" style="-fx-background-color: ddc597;" text="Add to Cart">
+                  <Button layoutX="153.0" layoutY="795.0" mnemonicParsing="false" onAction="#addToCartRyle" prefHeight="61.0" prefWidth="306.0" style="-fx-background-color: ddc597;" text="Add to Cart">
                      <font>
                         <Font name="Segoe UI Black" size="29.0" />
                      </font>
@@ -342,7 +342,7 @@
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="892.0" layoutY="795.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="224.0" style="-fx-background-color: ddc597;" text="Add to Cart">
+                  <Button layoutX="850.0" layoutY="795.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="292.0" style="-fx-background-color: ddc597;" text="Add to Cart">
                      <font>
                         <Font name="Segoe UI Black" size="29.0" />
                      </font>
@@ -352,7 +352,7 @@
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="1486.0" layoutY="792.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="224.0" style="-fx-background-color: ddc597;" text="Add to Cart">
+                  <Button layoutX="1468.0" layoutY="795.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="272.0" style="-fx-background-color: ddc597;" text="Add to Cart">
                      <font>
                         <Font name="Segoe UI Black" size="29.0" />
                      </font>
@@ -362,7 +362,7 @@
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="202.0" layoutY="1889.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="224.0" style="-fx-background-color: ddc597;" text="Add to Cart">
+                  <Button layoutX="167.0" layoutY="1889.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="274.0" style="-fx-background-color: ddc597;" text="Add to Cart">
                      <font>
                         <Font name="Segoe UI Black" size="29.0" />
                      </font>
@@ -372,7 +372,7 @@
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="835.0" layoutY="1888.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="224.0" style="-fx-background-color: ddc597;" text="Add to Cart">
+                  <Button layoutX="807.0" layoutY="1888.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="270.0" style="-fx-background-color: ddc597;" text="Add to Cart">
                      <font>
                         <Font name="Segoe UI Black" size="29.0" />
                      </font>
@@ -382,7 +382,7 @@
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="1457.0" layoutY="1889.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="224.0" style="-fx-background-color: ddc597;" text="Add to Cart">
+                  <Button layoutX="1428.0" layoutY="1889.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="274.0" style="-fx-background-color: ddc597;" text="Add to Cart">
                      <font>
                         <Font name="Segoe UI Black" size="29.0" />
                      </font>
@@ -392,7 +392,7 @@
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="216.0" layoutY="3002.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="224.0" style="-fx-background-color: ddc597;" text="Add to Cart">
+                  <Button layoutX="184.0" layoutY="3002.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="268.0" style="-fx-background-color: ddc597;" text="Add to Cart">
                      <font>
                         <Font name="Segoe UI Black" size="29.0" />
                      </font>
@@ -402,7 +402,7 @@
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="886.0" layoutY="2991.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="224.0" style="-fx-background-color: ddc597;" text="Add to Cart">
+                  <Button layoutX="838.0" layoutY="2991.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="294.0" style="-fx-background-color: ddc597;" text="Add to Cart">
                      <font>
                         <Font name="Segoe UI Black" size="29.0" />
                      </font>
@@ -412,7 +412,7 @@
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="1489.0" layoutY="2991.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="224.0" style="-fx-background-color: ddc597;" text="Add to Cart">
+                  <Button layoutX="1461.0" layoutY="2991.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="274.0" style="-fx-background-color: ddc597;" text="Add to Cart">
                      <font>
                         <Font name="Segoe UI Black" size="29.0" />
                      </font>

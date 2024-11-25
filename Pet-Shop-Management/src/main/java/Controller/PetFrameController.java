@@ -19,7 +19,7 @@ public class PetFrameController {
     Animals bird3 = new Animals("Ken", 1000000, 2, "green forehead, fading into a teal blue", 1, "Macaw");
 
     Animals dog1 = new Animals("Ryan", 15000, 5, "Light golden", 11, "Golden Retriever" );
-    Animals dog2 = new Animals("Jonathatn", 20000, 5, "Brownish Cream", 1, "Chihuahua");
+    Animals dog2 = new Animals("Jonathan", 20000, 5, "Brownish Cream", 1, "Chihuahua");
     Animals dog3 = new Animals("Troy", 300000, 5, "White Cream", 6, "Chow Chow");
 
     Animals cat1 = new Animals("Fletcher", 1000000, 5, "Orange", 6, "Scottish Fold");
