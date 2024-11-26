@@ -15,6 +15,12 @@ public class Product {
         this.description = description;
     }
 
+    public Product(String name, double price, String description){
+        this.name = name;
+        this.price = price;
+        this.description = description;
+    }
+
     // Getters and Setters (optional, if needed)
     public String getName() {
         return name;

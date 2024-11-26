@@ -112,7 +112,7 @@
                         <Font name="Segoe UI Black" size="29.0" />
                      </font>
                      <graphic>
-                        <ImageView fitHeight="58.0" fitWidth="54.0" onDragDetected="#availNailCutting" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="58.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@ICONS/shopping-cart.png" />
                            </image>
