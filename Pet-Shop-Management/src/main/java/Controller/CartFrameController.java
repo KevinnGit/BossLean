@@ -64,7 +64,17 @@ public class CartFrameController {
     @FXML
     void goToHome(ActionEvent event) {
         try {
-            new SceneSwitch(CartPane, "mainFrame.fxml");
+            // Go back to the previous scene
+            SceneSwitch.goBackToPreviousScene(CartPane);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void goToCustomerDetails(ActionEvent event) {
+        try {
+            new SceneSwitch(CartPane, "CustomerFrame.fxml");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

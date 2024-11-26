@@ -53,8 +53,13 @@ public class GroomingFrameController {
 
 
     @FXML
-    void goToCart(ActionEvent event) throws IOException {
-        new SceneSwitch(GroomingPane, "CartFrame.fxml");
+    void goToCart(ActionEvent event) {
+        try {
+            // Switch to the CartFrame scene and track the navigation
+            new SceneSwitch(GroomingPane, "CartFrame.fxml");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
