@@ -38,11 +38,6 @@
                         <Image url="@ICONS/collard.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="dogcollar1type" layoutX="120.0" layoutY="642.0" text="Collar (S)">
-                     <font>
-                        <Font name="Segoe UI" size="48.0" />
-                     </font>
-                  </Label>
                   <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="120.0" layoutY="914.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
@@ -55,12 +50,12 @@
                         <Image url="@ICONS/leashd.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="dogleash1type" layoutX="246.0" layoutY="1514.0" text="Leash (S)">
+                  <Label fx:id="dogleash1type" layoutX="120.0" layoutY="1514.0" text="(S)">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="270.0" layoutY="1769.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="120.0" layoutY="1769.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
@@ -78,12 +73,12 @@
                         <Image url="@ICONS/collarc.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="catcollar1type" layoutX="223.0" layoutY="2580.0" text="Collar (S)">
+                  <Label fx:id="catcollar1type" layoutX="120.0" layoutY="2580.0" text="(S)">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="291.0" layoutY="2865.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="120.0" layoutY="2865.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
@@ -95,12 +90,12 @@
                         <Image url="@ICONS/leashc.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="catleash1type" layoutX="249.0" layoutY="3464.0" text="Leash (S)">
+                  <Label fx:id="catleash1type" layoutX="120.0" layoutY="3464.0" text="(S)">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="285.0" layoutY="3735.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="120.0" layoutY="3735.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
@@ -112,12 +107,12 @@
                         <Image url="@ICONS/COLLARD2.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="dogcollar2type" layoutX="765.0" layoutY="635.0" text="Collar (M)">
+                  <Label fx:id="dogcollar2type" layoutX="765.0" layoutY="635.0" text="(M)">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="854.0" layoutY="914.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="765.0" layoutY="914.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
@@ -129,12 +124,12 @@
                         <Image url="@ICONS/COLLARD3.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="dogcollar3type" layoutX="1499.0" layoutY="635.0" text="Collar (L)">
+                  <Label fx:id="dogcollar3type" layoutX="1375.0" layoutY="633.0" text="(L)">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1536.0" layoutY="917.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1375.0" layoutY="917.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
@@ -146,12 +141,12 @@
                         <Image url="@ICONS/LEASHD2.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="dogleash2type" layoutX="870.0" layoutY="1503.0" text="Leash (M)">
+                  <Label fx:id="dogleash2type" layoutX="765.0" layoutY="1503.0" text="(M)">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="915.0" layoutY="1755.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="765.0" layoutY="1769.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
@@ -163,12 +158,12 @@
                         <Image url="@ICONS/LEASHD3.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="dogleash3type" layoutX="1478.0" layoutY="1494.0" text="Leash (L)">
+                  <Label fx:id="dogleash3type" layoutX="1375.0" layoutY="1494.0" text="(L)">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1535.0" layoutY="1748.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1375.0" layoutY="1769.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
@@ -180,12 +175,12 @@
                         <Image url="@ICONS/COLLARC2.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="catcollar2type" layoutX="871.0" layoutY="2579.0" text="Collar (M)">
+                  <Label fx:id="catcollar2type" layoutX="765.0" layoutY="2579.0" text="(M)">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="925.0" layoutY="2869.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="765.0" layoutY="2865.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
@@ -197,12 +192,12 @@
                         <Image url="@ICONS/COLLARC3.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="catcollar3type" layoutX="1474.0" layoutY="2577.0" text="Collar (L)">
+                  <Label fx:id="catcollar3type" layoutX="1375.0" layoutY="2577.0" text="(L)">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1531.0" layoutY="2874.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1375.0" layoutY="2865.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
@@ -214,12 +209,12 @@
                         <Image url="@ICONS/LEASHC2.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="catleash2type" layoutX="888.0" layoutY="3465.0" text="Leash (M)">
+                  <Label fx:id="catleash2type" layoutX="765.0" layoutY="3465.0" text="(M)">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="934.0" layoutY="3730.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="765.0" layoutY="3730.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
@@ -231,205 +226,263 @@
                         <Image url="@ICONS/LEASHC3.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="catleash3type" layoutX="1505.0" layoutY="3457.0" text="Leash (L)">
+                  <Label fx:id="catleash3type" layoutX="1375.0" layoutY="3457.0" text="(L)">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1572.0" layoutY="3731.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1375.0" layoutY="3731.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
                   <Line endX="259.0" layoutX="1574.0" layoutY="3441.0" startX="-229.0" />
-                  <Label fx:id="dogcollar1length" layoutX="120.0" layoutY="798.0" text="Length: 20-30 cm  ">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="dogcollar2length" layoutX="790.0" layoutY="783.0" text="Size: 30-40 cm  ">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="dogcollar3length" layoutX="1468.0" layoutY="795.0" text="Size: 50-60 cm  ">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="dogleash1length" layoutX="206.0" layoutY="1643.0" text="Length: 120 cm  ">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="dogleash2length" layoutX="809.0" layoutY="1640.0" text="Length: 150-180 cm ">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="dogleash3length" layoutX="1432.0" layoutY="1632.0" text="Length: 180-200 cm ">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="catcollar1length" layoutX="195.0" layoutY="2748.0" text="Length: 15-20 cm  ">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="catcollar2length" layoutX="830.0" layoutY="2742.0" text="Length: 20-25 cm ">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="catcollar3length" layoutX="1439.0" layoutY="2745.0" text="Length: 25-30 cm  ">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="catleash1length" layoutX="211.0" layoutY="3615.0" text="Length: 120 cm  ">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="catleash2length" layoutX="808.0" layoutY="3618.0" text="Length: 150-180 cm ">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="catleash3length" layoutX="1434.0" layoutY="3611.0" text="Length: 300-500 cm ">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="dogcollar1price" layoutX="120.0" layoutY="843.0" text="Price: ₱500">
-                     <font>
-                        <Font name="Segoe UI Black" size="48.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="dogcollar2price" layoutX="776.0" layoutY="835.0" text="Price: ₱700">
-                     <font>
-                        <Font name="Segoe UI Black" size="48.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="dogcollar3price" layoutX="1434.0" layoutY="837.0" text="Price: ₱1000">
-                     <font>
-                        <Font name="Segoe UI Black" size="48.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="dogleash1price" layoutX="187.0" layoutY="1694.0" text="Price: ₱300">
-                     <font>
-                        <Font name="Segoe UI Black" size="48.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="dogleash2price" layoutX="824.0" layoutY="1685.0" text="Price: ₱500">
-                     <font>
-                        <Font name="Segoe UI Black" size="48.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="dogleash3price" layoutX="1448.0" layoutY="1678.0" text="Price: ₱800">
-                     <font>
-                        <Font name="Segoe UI Black" size="48.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="catcollar1price" layoutX="197.0" layoutY="2798.0" text="Price: ₱200">
-                     <font>
-                        <Font name="Segoe UI Black" size="48.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="catleash1price" layoutX="201.0" layoutY="3664.0" text="Price: ₱200">
-                     <font>
-                        <Font name="Segoe UI Black" size="48.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="catcollar2price" layoutX="832.0" layoutY="2796.0" text="Price: ₱500">
-                     <font>
-                        <Font name="Segoe UI Black" size="48.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="catcollar3price" layoutX="1448.0" layoutY="2797.0" text="Price: ₱700">
-                     <font>
-                        <Font name="Segoe UI Black" size="48.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="catleash3price" layoutX="1461.0" layoutY="3655.0" text="Price: ₱500">
-                     <font>
-                        <Font name="Segoe UI Black" size="48.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="catleash2price" layoutX="835.0" layoutY="3662.0" text="Price: ₱350">
-                     <font>
-                        <Font name="Segoe UI Black" size="48.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="dogcollar1color" layoutX="120.0" layoutY="718.0" text="Black">
+                  <Label fx:id="dogcollar1length" layoutX="120.0" layoutY="780.0" text="20-30cm  ">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dogcollar2color" layoutX="851.0" layoutY="711.0" text="Black">
+                  <Label fx:id="dogcollar2length" layoutX="765.0" layoutY="780.0" text="30-40cm  ">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dogcollar3color" layoutX="1539.0" layoutY="715.0" text="Grey">
+                  <Label fx:id="dogcollar3length" layoutX="1375.0" layoutY="780.0" text="50-60cm  ">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dogleash1color" layoutX="283.0" layoutY="1576.0" text="Red">
+                  <Label fx:id="dogleash1length" layoutX="120.0" layoutY="1643.0" text="120cm  ">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dogleash2color" layoutX="937.0" layoutY="1570.0" text="Red">
+                  <Label fx:id="dogleash2length" layoutX="765.0" layoutY="1643.0" text="150-180cm ">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dogleash3color" layoutX="1506.0" layoutY="1562.0" text="Brown">
+                  <Label fx:id="dogleash3length" layoutX="1375.0" layoutY="1632.0" text="180-200cm ">
+                     <font>
+                        <Font name="Segoe UI" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="catcollar1length" layoutX="120.0" layoutY="2737.0" text="15-20cm  ">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <Label fx:id="catcollar1color" layoutX="239.0" layoutY="2664.0" text="Sky Blue">
+                  <Label fx:id="catcollar2length" layoutX="765.0" layoutY="2737.0" text="20-25cm ">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <Label fx:id="catcollar2color" layoutX="865.0" layoutY="2660.0" text="Dark Green">
+                  <Label fx:id="catcollar3length" layoutX="1375.0" layoutY="2737.0" text="25-30cm  ">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <Label fx:id="catcollar3color" layoutX="1473.0" layoutY="2654.0" text="Navy Blue">
+                  <Label fx:id="catleash1length" layoutX="120.0" layoutY="3606.0" text="120cm  ">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="catleash2length" layoutX="765.0" layoutY="3606.0" text="150-180cm ">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="catleash3length" layoutX="1375.0" layoutY="3606.0" text="300-500cm ">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dogcollar1price" layoutX="120.0" layoutY="843.0" text=" ₱500">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dogcollar2price" layoutX="765.0" layoutY="843.0" text="₱700">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dogcollar3price" layoutX="1375.0" layoutY="843.0" text="₱1000">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dogleash1price" layoutX="120.0" layoutY="1694.0" text="₱300">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dogleash2price" layoutX="765.0" layoutY="1694.0" text="₱500">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dogleash3price" layoutX="1375.0" layoutY="1678.0" text="₱800">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="catcollar1price" layoutX="120.0" layoutY="2798.0" text="₱200">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="catleash1price" layoutX="120.0" layoutY="3664.0" text="₱200">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="catcollar2price" layoutX="765.0" layoutY="2796.0" text="₱500">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="catcollar3price" layoutX="1375.0" layoutY="2796.0" text="₱700">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="catleash3price" layoutX="1375.0" layoutY="3662.0" text="₱500">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="catleash2price" layoutX="765.0" layoutY="3662.0" text="₱350">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dogcollar1color" layoutX="120.0" layoutY="710.0" text="Black">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dogcollar2color" layoutX="765.0" layoutY="710.0" text="Black">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dogcollar3color" layoutX="1375.0" layoutY="710.0" text="Grey">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dogleash1color" layoutX="120.0" layoutY="1580.0" text="Red">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dogleash2color" layoutX="765.0" layoutY="1570.0" text="Red">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dogleash3color" layoutX="1375.0" layoutY="1562.0" text="Brown">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="catcollar1color" layoutX="120.0" layoutY="2664.0" text="Sky Blue">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="catcollar2color" layoutX="765.0" layoutY="2664.0" text="Dark Green">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="catcollar3color" layoutX="1375.0" layoutY="2664.0" text="Navy Blue">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
                   <Line endX="226.0" layoutX="353.0" layoutY="2549.0" startX="-262.0" />
-                  <Label fx:id="catleash1color" layoutX="282.0" layoutY="3536.0" text="Black">
+                  <Label fx:id="catleash1color" layoutX="120.0" layoutY="3536.0" text="Black">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <Label fx:id="catleash2color" layoutX="908.0" layoutY="3538.0" text="Colorful">
+                  <Label fx:id="catleash2color" layoutX="765.0" layoutY="3538.0" text="Colorful">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <Label fx:id="catleash3color" layoutX="1519.0" layoutY="3537.0" text="Orange">
+                  <Label fx:id="catleash3color" layoutX="1375.0" layoutY="3537.0" text="Orange">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <Button layoutX="110.0" layoutY="905.0" mnemonicParsing="false" onAction="#AddtoCartDCollarS" prefHeight="81.0" prefWidth="386.0" style="-fx-background-color: transparent;" />
-                  <Button layoutX="790.0" layoutY="908.0" mnemonicParsing="false" onAction="#AddtoCartDCollarM" prefHeight="81.0" prefWidth="176.0" style="-fx-background-color: transparent;" />
-                  <Label fx:id="dogcollar1price1" layoutX="198.0" layoutY="917.0" text="Add To Cart">
+                  <Button layoutX="133.0" layoutY="901.0" mnemonicParsing="false" onAction="#AddtoCartDCollarS" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font></Button>
+                  <Button layoutX="751.0" layoutY="905.0" mnemonicParsing="false" onAction="#AddtoCartDCollarM" prefHeight="81.0" prefWidth="382.0" style="-fx-background-color: transparent;" />
+                  <Label fx:id="dogcollar1type" layoutX="120.0" layoutY="633.0" text="(S)">
+                     <font>
+                        <Font name="Segoe UI" size="48.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="776.0" layoutY="898.0" mnemonicParsing="false" onAction="#AddtoCartDCollarM" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
                      <font>
                         <Font name="Segoe UI Black" size="48.0" />
                      </font>
-                  </Label>
+                  </Button>
+                  <Button layoutX="1380.0" layoutY="905.0" mnemonicParsing="false" onAction="#AddtoCartDCollarL" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="130.0" layoutY="1759.0" mnemonicParsing="false" onAction="#AddtoCartDLeashS" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="777.0" layoutY="1755.0" mnemonicParsing="false" onAction="#AddtoCartDLeashM" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="1393.0" layoutY="1751.0" mnemonicParsing="false" onAction="#AddtoCartDLeashL" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="138.0" layoutY="2851.0" mnemonicParsing="false" onAction="#AddtoCartCCollarS" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="781.0" layoutY="2850.0" mnemonicParsing="false" onAction="#AddtoCartCCollarM" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="1381.0" layoutY="2850.0" mnemonicParsing="false" onAction="#AddtoCartCCollarL" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="130.0" layoutY="3717.0" mnemonicParsing="false" onAction="#AddtoCartCLeashS" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="776.0" layoutY="3716.0" mnemonicParsing="false" onAction="#AddtoCartCLeashM" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="1381.0" layoutY="3715.0" mnemonicParsing="false" onAction="#AddtoCartCLeashL" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Button>
                     </children>
                 </AnchorPane>
             </content>
