@@ -90,12 +90,12 @@ public class Cart {
             sb.append("The cart is empty.\n");
         } else {
             // Header with wider spacing
-            sb.append(String.format("%-45s %-45s %-45s%n", "Products", "Quantity", "Price"));
+            sb.append(String.format("%-70s %-45s %-45s%n", "Products", "Quantity", "Price"));
             sb.append("-------------------------------------------------------------------------------------------------------------\n");
 
             // Cart items with extended spacing
             for (CartItem item : cartItems) {
-                sb.append(String.format("%-45s %-45d ₱%-44.2f%n", // Peso sign added here
+                sb.append(String.format("%-70s %-45d ₱%-44.2f%n", // Peso sign added here
                         item.product.getName(), item.quantity, item.getTotalPrice()));
             }
 

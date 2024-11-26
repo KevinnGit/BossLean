@@ -8,4 +8,6 @@ module finalprjct.petshopmanagementsystem {
     exports finalprjct.petshopmanagementsystem;
     exports Controller;
     opens Controller to javafx.fxml;
+    exports Implementation;
+    opens Implementation to javafx.fxml;
 }
