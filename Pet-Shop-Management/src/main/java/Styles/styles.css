@@ -25,3 +25,7 @@
 .button:pressed {
     -fx-background-color: white;
 }
+.table-cell {
+    -fx-font-size: 20px; /* Adjust the font size */
+    -fx-font-family: "Segoe UI"; /* Set the font family */
+}

@@ -1,11 +1,17 @@
 package Controller;
 
+import Implementation.Cart;
+import Implementation.CartItem;
 import finalprjct.petshopmanagementsystem.SceneSwitch;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.layout.AnchorPane;
-import Implementation.Cart;
+
 import java.io.IOException;
 
 public class CartFrameController {
@@ -14,22 +20,45 @@ public class CartFrameController {
     private AnchorPane CartPane;
 
     @FXML
-    TextArea cartTextArea;
+    private TableColumn<CartItem, String> Product;
 
-    // This method is automatically called when the FXML is loaded
     @FXML
-    public void initialize() {
-        // Fetch the cart details from the Cart instance
-        Cart cart = Cart.getInstance();
-        String cartDetails = cart.getCartDetails();
+    private TableColumn<CartItem, Integer> Quantity;
 
-        // Update the cartTextArea with the fetched cart details
-        cartTextArea.setText(cartDetails);
+    @FXML
+    private TableColumn<CartItem, String> Price; // Change to String for formatted price
+
+    @FXML
+    private Label Total;
+
+    @FXML
+    private TableView<CartItem> cartTable;
+
+    private ObservableList<CartItem> cartData;
+
+    public void initialize() {
+        cartData = FXCollections.observableArrayList();
+
+        // Bind the TableView columns to the appropriate properties in CartItem
+        Product.setCellValueFactory(cellData -> cellData.getValue().productNameProperty());
+        Quantity.setCellValueFactory(cellData -> cellData.getValue().quantityProperty().asObject());
+
+        // Format price as a String and prevent scientific notation
+        Price.setCellValueFactory(cellData ->
+                new javafx.beans.property.SimpleStringProperty(String.format("%.2f", cellData.getValue().getTotalPrice()))
+        );
+
+        updateCartTable();
     }
 
-    // Method to update the cart text area
-    public void setCartDetails(String cartDetails) {
-        cartTextArea.setText(cartDetails);
+    private void updateCartTable() {
+        cartData.clear();
+        Cart cart = Cart.getInstance();
+        cartData.addAll(cart.getCartItems());
+        cartTable.setItems(cartData);
+
+        // Update the total amount label with formatted value
+        Total.setText("₱" + String.format("%.2f", cart.calculateTotal()));
     }
 
     @FXML
@@ -40,5 +69,4 @@ public class CartFrameController {
             throw new RuntimeException(e);
         }
     }
-
 }

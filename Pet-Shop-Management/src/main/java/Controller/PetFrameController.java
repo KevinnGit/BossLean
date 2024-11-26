@@ -19,17 +19,17 @@ import java.util.Optional;
 
 public class PetFrameController {
 
-    Animals bird1 = new Animals("Parakeet", 100000, 5, "green with yellow, with black stripes", 2, "Parakeet");
-    Animals bird2 = new Animals("Canary", 500000, 10, "Yellow with a touch of black", 5, "Canary");
-    Animals bird3 = new Animals("Macaw", 1000000, 2, "green forehead, fading into a teal blue", 1, "Macaw");
+    Animals bird1 = new Animals("Parakeet", 100000, 5, "green with yellow, with black stripes", 2, "Ryle");
+    Animals bird2 = new Animals("Canary", 500000, 10, "Yellow with a touch of black", 5, "Lloyd");
+    Animals bird3 = new Animals("Macaw", 1000000, 2, "green forehead, fading into a teal blue", 1, "Ken");
 
-    Animals dog1 = new Animals("Golden Retriever", 15000, 5, "Light golden", 11, "Golden Retriever" );
-    Animals dog2 = new Animals("Chihuahua", 20000, 5, "Brownish Cream", 1, "Chihuahua");
-    Animals dog3 = new Animals("Chow Chow", 300000, 5, "White Cream", 6, "Chow Chow");
+    Animals dog1 = new Animals("Golden Retriever", 15000, 5, "Light golden", 11, "Ryan" );
+    Animals dog2 = new Animals("Chihuahua", 20000, 5, "Brownish Cream", 1, "Jonathan");
+    Animals dog3 = new Animals("Chow Chow", 300000, 5, "White Cream", 6, "Troy");
 
-    Animals cat1 = new Animals("Scottish Fold", 1000000, 5, "Orange", 6, "Scottish Fold");
-    Animals cat2 = new Animals("British Long Hair", 150000, 4, "Grey", 1, "British Long Hair");
-    Animals cat3 = new Animals("Sokoke", 50000, 4, "Orange with red stripes", 8, "Sokoke");
+    Animals cat1 = new Animals("Scottish Fold", 1000000, 5, "Orange", 6, "Fletcher");
+    Animals cat2 = new Animals("British Long Hair", 150000, 4, "Grey", 1, "Yosh");
+    Animals cat3 = new Animals("Sokoke", 50000, 4, "Orange with red stripes", 8, "Mheil");
 
 
     @FXML

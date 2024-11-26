@@ -6,8 +6,8 @@ public class Animals extends Product{
     private String breed;
 
 
-    public Animals(String name, double price, int stockQuantity, String description, int age, String breed) {
-        super(name, price, stockQuantity, description);
+    public Animals(String breed, double price, int stockQuantity, String description, int age, String name) {
+        super(breed, price, stockQuantity, description);
         this.age = age;
         this.breed = breed;
     }
