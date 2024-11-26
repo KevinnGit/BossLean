@@ -38,7 +38,7 @@
                         <Image url="@ICONS/bird%20%20food-Photoroom.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="BfoodName1" layoutX="96.0" layoutY="624.0" text="Brand: Vitacraft(Seed)">
+                  <Label fx:id="BfoodName1" layoutX="147.0" layoutY="624.0" text="Brand: Vitacraft">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
@@ -55,7 +55,7 @@
                         <Image url="@ICONS/BF2.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="BfoodName2" layoutX="760.0" layoutY="624.0" text="Brand: Kaytee(Seed)">
+                  <Label fx:id="BfoodName2" layoutX="820.0" layoutY="624.0" text="Brand: Kaytee">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
