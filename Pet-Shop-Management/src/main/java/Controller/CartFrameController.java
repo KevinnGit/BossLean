@@ -7,6 +7,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -73,10 +74,23 @@ public class CartFrameController {
 
     @FXML
     void goToCustomerDetails(ActionEvent event) {
-        try {
-            new SceneSwitch(CartPane, "CustomerFrame.fxml");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        Cart cart = Cart.getInstance();
+        double total = cart.calculateTotal();
+
+
+        if (total == 0.0) {
+
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Cannot Checkout");
+            alert.setContentText("You cannot checkout since you haven't bought anything.");
+            alert.showAndWait();
+        } else {
+            try {
+                new SceneSwitch(CartPane, "CustomerFrame.fxml");
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 }
