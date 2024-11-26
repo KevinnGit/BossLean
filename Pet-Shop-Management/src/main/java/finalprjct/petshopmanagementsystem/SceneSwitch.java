@@ -7,17 +7,18 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Stack;
 
 public class SceneSwitch {
 
-    private static String previousScene = null; // Store the previous scene name
-    private static String currentScene = null;  // Store the current scene name
+    private static Stack<String> sceneHistory = new Stack<>(); // Stack to store the scene history
 
     // Constructor to load the scene and switch the current scene
     public SceneSwitch(AnchorPane rootPane, String fxml) throws IOException {
-        // Track the previous and current scene before switching
-        previousScene = currentScene;  // Save the current scene as the previous scene
-        currentScene = fxml;           // Set the new scene as the current scene
+        // Before loading the new scene, ensure that we're not pushing the same scene multiple times
+        if (sceneHistory.isEmpty() || !sceneHistory.peek().equals(fxml)) {
+            sceneHistory.push(fxml); // Push the current scene to the history before switching
+        }
 
         // Load the new scene
         FXMLLoader loader = new FXMLLoader(getClass().getResource(fxml));
@@ -31,17 +32,35 @@ public class SceneSwitch {
 
     // Method to go back to the previous scene
     public static void goBackToPreviousScene(AnchorPane rootPane) throws IOException {
-        if (previousScene != null && !previousScene.isEmpty()) {
-            // Switch to the previous scene
-            new SceneSwitch(rootPane, previousScene);
-        } else {
-            // Default to mainFrame.fxml if no previous scene exists
-            new SceneSwitch(rootPane, "mainFrame.fxml");
+        if (!sceneHistory.isEmpty()) {
+            // Remove the current scene from the history to get the previous one
+            sceneHistory.pop();
+
+            // Check if the previous scene is CustomerFrame, and if so, go to the previous-previous scene
+            if (!sceneHistory.isEmpty() && sceneHistory.peek().equals("CustomerFrame.fxml")) {
+                // Pop twice to get the scene before CustomerFrame
+                sceneHistory.pop();
+
+                if (!sceneHistory.isEmpty()) {
+                    String previousPreviousScene = sceneHistory.peek();
+                    new SceneSwitch(rootPane, previousPreviousScene);  // Go to the previous-previous scene
+                } else {
+                    // If no previous scene exists, default to mainFrame
+                    new SceneSwitch(rootPane, "mainFrame.fxml");
+                }
+            } else if (!sceneHistory.isEmpty()) {
+                // If it's not CustomerFrame, just go to the previous scene
+                String previous = sceneHistory.peek();
+                new SceneSwitch(rootPane, previous);
+            } else {
+                // Default to mainFrame.fxml if no previous scene exists
+                new SceneSwitch(rootPane, "mainFrame.fxml");
+            }
         }
     }
 
     // Getter for the current scene (optional)
     public static String getCurrentScene() {
-        return currentScene;
+        return sceneHistory.isEmpty() ? null : sceneHistory.peek();
     }
 }

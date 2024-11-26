@@ -15,10 +15,6 @@ public class CustomerFrameController {
     @FXML
     private void goToHome(ActionEvent event) {
         try {
-            // Set the previous scene as PetFrame before switching
-
-
-            // Switch to the CartFrame
             new SceneSwitch(CustomerPane,"CartFrame.fxml");
         } catch (IOException e) {
             e.printStackTrace();
