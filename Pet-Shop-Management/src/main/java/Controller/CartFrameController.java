@@ -93,4 +93,63 @@ public class CartFrameController {
             }
         }
     }
+
+    @FXML
+    void removeItem(ActionEvent event) {
+        // Get the selected item from the table
+        CartItem selectedItem = cartTable.getSelectionModel().getSelectedItem();
+
+        if (selectedItem != null) {
+            // Show a confirmation alert
+            Alert confirmationAlert = new Alert(Alert.AlertType.CONFIRMATION);
+            confirmationAlert.setTitle("Confirm Deletion");
+            confirmationAlert.setHeaderText("Are you sure you want to remove this item?");
+            confirmationAlert.setContentText("Product: " + selectedItem.getProduct().getName());
+
+            // Wait for the user's response
+            confirmationAlert.showAndWait().ifPresent(response -> {
+                if (response == javafx.scene.control.ButtonType.OK) {
+                    // Remove the item from the Cart singleton
+                    Cart cart = Cart.getInstance();
+                    cart.removeCartItem(selectedItem);
+
+                    // Refresh the table to show the updated cart
+                    updateCartTable();
+                }
+            });
+        } else {
+            // Show an alert if no item is selected
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Warning");
+            alert.setHeaderText("No Item Selected");
+            alert.setContentText("Please select an item to remove.");
+            alert.showAndWait();
+        }
+    }
+
+
+    @FXML
+    void clearCart(ActionEvent event) {
+        // Show a confirmation alert
+        Alert confirmationAlert = new Alert(Alert.AlertType.CONFIRMATION);
+        confirmationAlert.setTitle("Confirm Clear Cart");
+        confirmationAlert.setHeaderText("Are you sure you want to clear the cart?");
+        confirmationAlert.setContentText("This will remove all items from your cart.");
+
+        // Wait for the user's response
+        confirmationAlert.showAndWait().ifPresent(response -> {
+            if (response == javafx.scene.control.ButtonType.OK) {
+                // Clear the cart in the Cart singleton
+                Cart cart = Cart.getInstance();
+                cart.clear();
+
+                // Clear the data in the observable list
+                cartData.clear();
+
+                // Update the total price display
+                Total.setText("₱0.00");
+            }
+        });
+    }
+
 }

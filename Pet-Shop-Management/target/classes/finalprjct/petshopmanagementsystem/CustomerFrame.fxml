@@ -6,7 +6,10 @@
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
@@ -95,12 +98,21 @@
                         <Font size="40.0" />
                      </font>
                   </Button>
-                  <TextArea layoutX="1086.0" layoutY="145.0" prefHeight="884.0" prefWidth="776.0" />
                   <RadioButton layoutX="497.0" layoutY="885.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="351.0" text="Cash">
                      <font>
                         <Font size="40.0" />
                      </font>
                   </RadioButton>
+                  <Pane layoutX="1069.0" layoutY="143.0" prefHeight="878.0" prefWidth="792.0" style="-fx-background-color: #94755f;">
+                     <children>
+                        <TextArea layoutX="1.0" layoutY="202.0" prefHeight="676.0" prefWidth="790.0" />
+                        <ImageView fitHeight="242.0" fitWidth="256.0" layoutX="242.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@ICONS/logo%20boss%20lean.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
                </children>
             </AnchorPane>
          </content>

@@ -49,4 +49,8 @@ public class Cart {
     public void clear() {
         cartItems.clear();
     }
+
+    public void removeCartItem(CartItem item) {
+        cartItems.remove(item); // Removes the item from the list
+    }
 }
