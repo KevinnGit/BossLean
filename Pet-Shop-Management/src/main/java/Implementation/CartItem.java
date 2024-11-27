@@ -50,7 +50,6 @@ public class CartItem {
         this.quantity.set(newQuantity);
         this.totalPrice.set(product.getPrice() * newQuantity);
     }
-
     public Product getProduct() {
         return this.product;
     }
