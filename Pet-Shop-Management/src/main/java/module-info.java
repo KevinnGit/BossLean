@@ -2,6 +2,7 @@ module finalprjct.petshopmanagementsystem {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.desktop;
+    requires java.sql;
 
 
     opens finalprjct.petshopmanagementsystem to javafx.fxml;
