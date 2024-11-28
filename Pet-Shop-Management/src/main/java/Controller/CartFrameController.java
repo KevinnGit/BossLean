@@ -86,12 +86,12 @@ public class CartFrameController {
             alert.setContentText("You cannot checkout since you haven't bought anything.");
             alert.showAndWait();
         } else {
-            try {
-                new SceneSwitch(CartPane, "CustomerFrame.fxml");
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+        try {
+            new SceneSwitch(CartPane, "CustomerFrame.fxml");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
+    }
     }
 
     @FXML
