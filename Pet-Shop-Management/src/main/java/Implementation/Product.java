@@ -1,13 +1,12 @@
 package Implementation;
 
 public class Product {
-
     private String name;
     private double price;
     private int stockQuantity;
     private String description;
 
-
+    // Full constructor
     public Product(String name, double price, int stockQuantity, String description) {
         this.name = name;
         this.price = price;
@@ -15,13 +14,12 @@ public class Product {
         this.description = description;
     }
 
-    public Product(String name, double price, String description){
-        this.name = name;
-        this.price = price;
-        this.description = description;
+    // Partial constructor for products with no initial stock
+    public Product(String name, double price, String description) {
+        this(name, price, 0, description);
     }
 
-    // Getters and Setters (optional, if needed)
+    // Getters and setters
     public String getName() {
         return name;
     }
@@ -54,4 +52,19 @@ public class Product {
         this.description = description;
     }
 
+    // Method to decrease stock
+    public boolean decreaseStock(int quantity) {
+        if (quantity > 0 && quantity <= stockQuantity) {
+            stockQuantity -= quantity;
+            return true; // Successfully decreased stock
+        }
+        return false; // Insufficient stock or invalid quantity
+    }
+
+    // Method to increase stock
+    public void increaseStock(int quantity) {
+        if (quantity > 0) {
+            stockQuantity += quantity;
+        }
+    }
 }

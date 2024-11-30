@@ -2,6 +2,7 @@ package Controller;
 
 import Implementation.Cart;
 import Implementation.Food;
+import Implementation.Product;
 import finalprjct.petshopmanagementsystem.SceneSwitch;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -163,8 +164,7 @@ public class PetFoodFrameController {
         alert.showAndWait(); // Show the alert and wait for user acknowledgment
     }
 
-    @FXML
-    void AddToCartPedigree(ActionEvent event) {
+    private void handleAddToCart(Product product, String productName) {
         TextInputDialog dialog = new TextInputDialog();
         dialog.setTitle("Enter Quantity");
         dialog.setHeaderText("Enter the quantity of the product you want to add to the cart:");
@@ -179,13 +179,19 @@ public class PetFoodFrameController {
                 int quantity = Integer.parseInt(quantityString);
 
                 if (quantity > 0) {
-                    // Add the product to the cart with the given quantity
-                    Cart cart = Cart.getInstance();
-                    cart.addProduct(Dogfood1, quantity);
-                    System.out.println("Product added to cart: Bird1, Quantity: " + quantity);
+                    // Check if there's enough stock
+                    if (product.decreaseStock(quantity)) {
+                        // Add the product to the cart with the given quantity
+                        Cart cart = Cart.getInstance();
+                        cart.addProduct(product, quantity);
+                        System.out.println("Product added to cart: " + productName + ", Quantity: " + quantity);
 
-                    // Show success message
-                    showAlert("Success", "Item successfully added to the cart!");
+                        // Show success message
+                        showAlert("Success", "Item successfully added to the cart!");
+                    } else {
+                        // Show error message for insufficient stock
+                        showAlert("Error", "Insufficient stock. Available stock: " + product.getStockQuantity());
+                    }
                 } else {
                     showAlert("Error", "Please enter a positive quantity.");
                 }
@@ -194,270 +200,51 @@ public class PetFoodFrameController {
                 showAlert("Error", "Please enter a valid quantity.");
             }
         });
+    }
+
+    @FXML
+    void AddToCartPedigree(ActionEvent event) {
+        handleAddToCart(Dogfood1, "Dogfood1");
     }
 
     @FXML
     void AddToCartVitacraft(ActionEvent event) {
-        TextInputDialog dialog = new TextInputDialog();
-        dialog.setTitle("Enter Quantity");
-        dialog.setHeaderText("Enter the quantity of the product you want to add to the cart:");
-        dialog.setContentText("Quantity:");
-
-        // Show the dialog and wait for user input
-        Optional<String> result = dialog.showAndWait();
-
-        // Check if the user entered something and parse it to an integer
-        result.ifPresent(quantityString -> {
-            try {
-                int quantity = Integer.parseInt(quantityString);
-
-                if (quantity > 0) {
-                    // Add the product to the cart with the given quantity
-                    Cart cart = Cart.getInstance();
-                    cart.addProduct(Birdfood1, quantity);
-                    System.out.println("Product added to cart: Bird1, Quantity: " + quantity);
-
-                    // Show success message
-                    showAlert("Success", "Item successfully added to the cart!");
-                } else {
-                    showAlert("Error", "Please enter a positive quantity.");
-                }
-            } catch (NumberFormatException e) {
-                // Handle case when the input is not a valid number
-                showAlert("Error", "Please enter a valid quantity.");
-            }
-        });
+        handleAddToCart(Birdfood1, "Birdfood1");
     }
 
     @FXML
     void addToCartBossDogs(ActionEvent event) {
-        TextInputDialog dialog = new TextInputDialog();
-        dialog.setTitle("Enter Quantity");
-        dialog.setHeaderText("Enter the quantity of the product you want to add to the cart:");
-        dialog.setContentText("Quantity:");
-
-        // Show the dialog and wait for user input
-        Optional<String> result = dialog.showAndWait();
-
-        // Check if the user entered something and parse it to an integer
-        result.ifPresent(quantityString -> {
-            try {
-                int quantity = Integer.parseInt(quantityString);
-
-                if (quantity > 0) {
-                    // Add the product to the cart with the given quantity
-                    Cart cart = Cart.getInstance();
-                    cart.addProduct(Dogfood3, quantity);
-                    System.out.println("Product added to cart: Bird1, Quantity: " + quantity);
-
-                    // Show success message
-                    showAlert("Success", "Item successfully added to the cart!");
-                } else {
-                    showAlert("Error", "Please enter a positive quantity.");
-                }
-            } catch (NumberFormatException e) {
-                // Handle case when the input is not a valid number
-                showAlert("Error", "Please enter a valid quantity.");
-            }
-        });
+        handleAddToCart(Dogfood3, "Dogfood3");
     }
 
     @FXML
     void addToCartGoodest(ActionEvent event) {
-        TextInputDialog dialog = new TextInputDialog();
-        dialog.setTitle("Enter Quantity");
-        dialog.setHeaderText("Enter the quantity of the product you want to add to the cart:");
-        dialog.setContentText("Quantity:");
-
-        // Show the dialog and wait for user input
-        Optional<String> result = dialog.showAndWait();
-
-        // Check if the user entered something and parse it to an integer
-        result.ifPresent(quantityString -> {
-            try {
-                int quantity = Integer.parseInt(quantityString);
-
-                if (quantity > 0) {
-                    // Add the product to the cart with the given quantity
-                    Cart cart = Cart.getInstance();
-                    cart.addProduct(Catfood1, quantity);
-                    System.out.println("Product added to cart: Bird1, Quantity: " + quantity);
-
-                    // Show success message
-                    showAlert("Success", "Item successfully added to the cart!");
-                } else {
-                    showAlert("Error", "Please enter a positive quantity.");
-                }
-            } catch (NumberFormatException e) {
-                // Handle case when the input is not a valid number
-                showAlert("Error", "Please enter a valid quantity.");
-            }
-        });
+        handleAddToCart(Catfood1, "Catfood1");
     }
 
     @FXML
     void addToCartKaytee(ActionEvent event) {
-        TextInputDialog dialog = new TextInputDialog();
-        dialog.setTitle("Enter Quantity");
-        dialog.setHeaderText("Enter the quantity of the product you want to add to the cart:");
-        dialog.setContentText("Quantity:");
-
-        // Show the dialog and wait for user input
-        Optional<String> result = dialog.showAndWait();
-
-        // Check if the user entered something and parse it to an integer
-        result.ifPresent(quantityString -> {
-            try {
-                int quantity = Integer.parseInt(quantityString);
-
-                if (quantity > 0) {
-                    // Add the product to the cart with the given quantity
-                    Cart cart = Cart.getInstance();
-                    cart.addProduct(Birdfood2, quantity);
-                    System.out.println("Product added to cart: Bird1, Quantity: " + quantity);
-
-                    // Show success message
-                    showAlert("Success", "Item successfully added to the cart!");
-                } else {
-                    showAlert("Error", "Please enter a positive quantity.");
-                }
-            } catch (NumberFormatException e) {
-                // Handle case when the input is not a valid number
-                showAlert("Error", "Please enter a valid quantity.");
-            }
-        });
+        handleAddToCart(Birdfood2, "Birdfood2");
     }
 
     @FXML
     void addToCartKibbl(ActionEvent event) {
-        TextInputDialog dialog = new TextInputDialog();
-        dialog.setTitle("Enter Quantity");
-        dialog.setHeaderText("Enter the quantity of the product you want to add to the cart:");
-        dialog.setContentText("Quantity:");
-
-        // Show the dialog and wait for user input
-        Optional<String> result = dialog.showAndWait();
-
-        // Check if the user entered something and parse it to an integer
-        result.ifPresent(quantityString -> {
-            try {
-                int quantity = Integer.parseInt(quantityString);
-
-                if (quantity > 0) {
-                    // Add the product to the cart with the given quantity
-                    Cart cart = Cart.getInstance();
-                    cart.addProduct(Dogfood2, quantity);
-                    System.out.println("Product added to cart: Bird1, Quantity: " + quantity);
-
-                    // Show success message
-                    showAlert("Success", "Item successfully added to the cart!");
-                } else {
-                    showAlert("Error", "Please enter a positive quantity.");
-                }
-            } catch (NumberFormatException e) {
-                // Handle case when the input is not a valid number
-                showAlert("Error", "Please enter a valid quantity.");
-            }
-        });
+        handleAddToCart(Dogfood2, "Dogfood2");
     }
 
     @FXML
     void addToCartProPlan(ActionEvent event) {
-        TextInputDialog dialog = new TextInputDialog();
-        dialog.setTitle("Enter Quantity");
-        dialog.setHeaderText("Enter the quantity of the product you want to add to the cart:");
-        dialog.setContentText("Quantity:");
-
-        // Show the dialog and wait for user input
-        Optional<String> result = dialog.showAndWait();
-
-        // Check if the user entered something and parse it to an integer
-        result.ifPresent(quantityString -> {
-            try {
-                int quantity = Integer.parseInt(quantityString);
-
-                if (quantity > 0) {
-                    // Add the product to the cart with the given quantity
-                    Cart cart = Cart.getInstance();
-                    cart.addProduct(Catfood3, quantity);
-                    System.out.println("Product added to cart: Bird1, Quantity: " + quantity);
-
-                    // Show success message
-                    showAlert("Success", "Item successfully added to the cart!");
-                } else {
-                    showAlert("Error", "Please enter a positive quantity.");
-                }
-            } catch (NumberFormatException e) {
-                // Handle case when the input is not a valid number
-                showAlert("Error", "Please enter a valid quantity.");
-            }
-        });
+        handleAddToCart(Catfood3, "Catfood3");
     }
 
     @FXML
     void addToCartWhiskas(ActionEvent event) {
-        TextInputDialog dialog = new TextInputDialog();
-        dialog.setTitle("Enter Quantity");
-        dialog.setHeaderText("Enter the quantity of the product you want to add to the cart:");
-        dialog.setContentText("Quantity:");
-
-        // Show the dialog and wait for user input
-        Optional<String> result = dialog.showAndWait();
-
-        // Check if the user entered something and parse it to an integer
-        result.ifPresent(quantityString -> {
-            try {
-                int quantity = Integer.parseInt(quantityString);
-
-                if (quantity > 0) {
-                    // Add the product to the cart with the given quantity
-                    Cart cart = Cart.getInstance();
-                    cart.addProduct(Catfood2, quantity);
-                    System.out.println("Product added to cart: Bird1, Quantity: " + quantity);
-
-                    // Show success message
-                    showAlert("Success", "Item successfully added to the cart!");
-                } else {
-                    showAlert("Error", "Please enter a positive quantity.");
-                }
-            } catch (NumberFormatException e) {
-                // Handle case when the input is not a valid number
-                showAlert("Error", "Please enter a valid quantity.");
-            }
-        });
+        handleAddToCart(Catfood2, "Catfood2");
     }
 
     @FXML
     void addtoCartNut(ActionEvent event) {
-        TextInputDialog dialog = new TextInputDialog();
-        dialog.setTitle("Enter Quantity");
-        dialog.setHeaderText("Enter the quantity of the product you want to add to the cart:");
-        dialog.setContentText("Quantity:");
-
-        // Show the dialog and wait for user input
-        Optional<String> result = dialog.showAndWait();
-
-        // Check if the user entered something and parse it to an integer
-        result.ifPresent(quantityString -> {
-            try {
-                int quantity = Integer.parseInt(quantityString);
-
-                if (quantity > 0) {
-                    // Add the product to the cart with the given quantity
-                    Cart cart = Cart.getInstance();
-                    cart.addProduct(Birdfood3, quantity);
-                    System.out.println("Product added to cart: Bird1, Quantity: " + quantity);
-
-                    // Show success message
-                    showAlert("Success", "Item successfully added to the cart!");
-                } else {
-                    showAlert("Error", "Please enter a positive quantity.");
-                }
-            } catch (NumberFormatException e) {
-                // Handle case when the input is not a valid number
-                showAlert("Error", "Please enter a valid quantity.");
-            }
-        });
+        handleAddToCart(Birdfood3, "Birdfood3");
     }
 
     @FXML

@@ -59,6 +59,35 @@ public class GroomingFrameController {
         ServicesPrice3.setText("Price: ₱" + petWash.getPrice());
     }
 
+    private void handleAddToCart(Services service, String serviceName) {
+        TextInputDialog dialog = new TextInputDialog();
+        dialog.setTitle("Enter Quantity");
+        dialog.setHeaderText("Enter the quantity of the service you want to avail:");
+        dialog.setContentText("Quantity:");
+
+        // Show the dialog and wait for user input
+        Optional<String> result = dialog.showAndWait();
+
+        result.ifPresent(quantityString -> {
+            try {
+                int quantity = Integer.parseInt(quantityString);
+
+                if (quantity > 0) {
+                    // Add the service to the cart with the given quantity
+                    Cart cart = Cart.getInstance();
+                    cart.addProduct(service, quantity);
+                    System.out.println("Service added to cart: " + serviceName + ", Quantity: " + quantity);
+
+                    // Show success message
+                    showAlert("Success", "Service successfully added to the cart!");
+                } else {
+                    showAlert("Error", "Please enter a positive quantity.");
+                }
+            } catch (NumberFormatException e) {
+                showAlert("Error", "Please enter a valid quantity.");
+            }
+        });
+    }
 
     @FXML
     void addToCartRyle(ActionEvent event) {
@@ -67,108 +96,22 @@ public class GroomingFrameController {
 
     @FXML
     void availEarCare(ActionEvent event) {
-        TextInputDialog dialog = new TextInputDialog();
-        dialog.setTitle("Enter Quantity");
-        dialog.setHeaderText("Enter the quantity of the product you want to add to the cart:");
-        dialog.setContentText("Quantity:");
-
-        // Show the dialog and wait for user input
-        Optional<String> result = dialog.showAndWait();
-
-        // Check if the user entered something and parse it to an integer
-        result.ifPresent(quantityString -> {
-            try {
-                int quantity = Integer.parseInt(quantityString);
-
-                if (quantity > 0) {
-                    // Add the product to the cart with the given quantity
-                    Cart cart = Cart.getInstance();
-                    cart.addProduct(earCare, quantity);
-                    System.out.println("Product added to cart: Bird1, Quantity: " + quantity);
-
-                    // Show success message
-                    showAlert("Success", "Item successfully added to the cart!");
-                } else {
-                    showAlert("Error", "Please enter a positive quantity.");
-                }
-            } catch (NumberFormatException e) {
-                // Handle case when the input is not a valid number
-                showAlert("Error", "Please enter a valid quantity.");
-            }
-        });
+        handleAddToCart(earCare, "Ear Care");
     }
 
     @FXML
     void availNailCutting(ActionEvent event) {
-        TextInputDialog dialog = new TextInputDialog();
-        dialog.setTitle("Enter Quantity");
-        dialog.setHeaderText("Enter the quantity of the product you want to add to the cart:");
-        dialog.setContentText("Quantity:");
-
-        // Show the dialog and wait for user input
-        Optional<String> result = dialog.showAndWait();
-
-        // Check if the user entered something and parse it to an integer
-        result.ifPresent(quantityString -> {
-            try {
-                int quantity = Integer.parseInt(quantityString);
-
-                if (quantity > 0) {
-                    // Add the product to the cart with the given quantity
-                    Cart cart = Cart.getInstance();
-                    cart.addProduct(nailCutting, quantity);
-                    System.out.println("Product added to cart: Bird1, Quantity: " + quantity);
-
-                    // Show success message
-                    showAlert("Success", "Item successfully added to the cart!");
-                } else {
-                    showAlert("Error", "Please enter a positive quantity.");
-                }
-            } catch (NumberFormatException e) {
-                // Handle case when the input is not a valid number
-                showAlert("Error", "Please enter a valid quantity.");
-            }
-        });
+        handleAddToCart(nailCutting, "Nail Cutting");
     }
 
     @FXML
     void availPetWash(ActionEvent event) {
-        TextInputDialog dialog = new TextInputDialog();
-        dialog.setTitle("Enter Quantity");
-        dialog.setHeaderText("Enter the quantity of the product you want to add to the cart:");
-        dialog.setContentText("Quantity:");
-
-        // Show the dialog and wait for user input
-        Optional<String> result = dialog.showAndWait();
-
-        // Check if the user entered something and parse it to an integer
-        result.ifPresent(quantityString -> {
-            try {
-                int quantity = Integer.parseInt(quantityString);
-
-                if (quantity > 0) {
-                    // Add the product to the cart with the given quantity
-                    Cart cart = Cart.getInstance();
-                    cart.addProduct(petWash, quantity);
-                    System.out.println("Product added to cart: Bird1, Quantity: " + quantity);
-
-                    // Show success message
-                    showAlert("Success", "Item successfully added to the cart!");
-                } else {
-                    showAlert("Error", "Please enter a positive quantity.");
-                }
-            } catch (NumberFormatException e) {
-                // Handle case when the input is not a valid number
-                showAlert("Error", "Please enter a valid quantity.");
-            }
-        });
+        handleAddToCart(petWash, "Pet Wash");
     }
-
 
     @FXML
     void goToCart(ActionEvent event) {
         try {
-            // Switch to the CartFrame scene and track the navigation
             new SceneSwitch(GroomingPane, "CartFrame.fxml");
         } catch (IOException e) {
             e.printStackTrace();
@@ -176,8 +119,11 @@ public class GroomingFrameController {
     }
 
     @FXML
-    void goToHome(ActionEvent event) throws IOException {
-        new SceneSwitch(GroomingPane, "mainFrame.fxml");
+    void goToHome(ActionEvent event) {
+        try {
+            new SceneSwitch(GroomingPane, "mainFrame.fxml");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
-
 }
