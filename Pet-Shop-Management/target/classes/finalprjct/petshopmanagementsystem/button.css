@@ -1,0 +1,21 @@
+.custom-button {
+    -fx-background-color: #a28f70;
+    -fx-text-fill: white;
+
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded corners */
+    -fx-background-radius: 12px;
+    -fx-padding: 10 20;
+
+    -fx-cursor: hand; /* Pointer on hover */
+}
+
+.custom-button:hover {
+    -fx-background-color: #b9a580; /* Lightened background for hover */
+    -fx-border-color: #b9a580; /* Optional: match border with background */
+}
+
+.custom-button:pressed {
+    -fx-background-color: #8e7b60; /* Slightly darker for pressed state */
+    -fx-border-color: #8e7b60; /* Optional: match border with pressed background */
+}
