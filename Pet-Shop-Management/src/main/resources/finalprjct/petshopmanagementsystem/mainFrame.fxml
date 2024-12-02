@@ -350,6 +350,7 @@
                         <Image url="@ICONS/Boss%20Lean%20PetMalu.png" />
                      </image>
                   </ImageView>
+                  <Button layoutX="7.0" layoutY="6.0" mnemonicParsing="false" onAction="#goToAdmin" style="-fx-background-color: #94755f;" text="Admin" textAlignment="CENTER" underline="true" />
                </children>
             </AnchorPane>
          </content>

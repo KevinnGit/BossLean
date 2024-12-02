@@ -10,7 +10,6 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextInputDialog;
 import javafx.scene.layout.AnchorPane;
-
 import java.io.IOException;
 import java.util.Optional;
 
@@ -355,8 +354,6 @@ public class AccessoriesFrameController {
     void AddtoCartDLeashS(ActionEvent event) {
         handleAddToCart(dogleash1, "Dog Leash(S)");
     }
-
-
 
     @FXML
     void goToCart(ActionEvent event) throws IOException {

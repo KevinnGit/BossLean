@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="manageStocksPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.adminStocksController">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1092.0" prefWidth="1920.0" vbarPolicy="NEVER" AnchorPane.bottomAnchor="-12.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2514.0" prefWidth="1916.0" style="-fx-background-color: EFDCCB;">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#94755f" height="111.0" layoutX="-1.0" layoutY="-14.0" stroke="BLACK" strokeType="INSIDE" width="1930.0" />
+                  <AnchorPane layoutX="-7.0" layoutY="97.0" prefHeight="2510.0" prefWidth="247.0" style="-fx-background-color: a28f70; -fx-background-radius: 10;">
+                     <children>
+                        <VBox layoutX="17.0" layoutY="33.0" prefHeight="2420.0" prefWidth="247.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#goToMain" prefHeight="104.0" prefWidth="255.0" styleClass="custom-button" stylesheets="@button.css" text="Go to Main">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="26.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="45.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#goToStocks" prefHeight="104.0" prefWidth="255.0" styleClass="custom-button" stylesheets="@button.css" text="Manage Stocks">
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Segoe UI Black" size="26.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#goToSales" prefHeight="104.0" prefWidth="255.0" styleClass="custom-button" stylesheets="@button.css" text="View Sales">
+                                 <VBox.margin>
+                                    <Insets top="40.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Segoe UI Black" size="28.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="15.0" layoutY="7.0" text="Boss Lean PetMalu ">
+                     <font>
+                        <Font name="Segoe UI Black" size="58.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="326.0" layoutY="280.0" prefHeight="400.0" prefWidth="422.0" style="-fx-background-color: #ddc597; -fx-background-radius: 35;">
+                     <children>
+                        <Label layoutX="19.0" layoutY="34.0" prefHeight="46.0" prefWidth="125.0" text="Birds">
+                           <font>
+                              <Font name="Segoe UI Black" size="48.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="105.0" prefHeight="46.0" prefWidth="220.0" text="Choose Bird: ">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <MenuButton layoutX="228.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="162.0" text="Birds">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Parakeett" />
+                            <MenuItem mnemonicParsing="false" text="Canary" />
+                              <MenuItem mnemonicParsing="false" text="Macaw" />
+                          </items>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </MenuButton>
+                        <Label layoutX="14.0" layoutY="163.0" prefHeight="46.0" prefWidth="252.0" text="Current Stocks:">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="218.0" prefHeight="46.0" prefWidth="204.0" text="Enter Stock:">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
+                        <Button layoutX="127.0" layoutY="284.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="971.0" layoutY="151.0" prefHeight="70.0" prefWidth="204.0" text="Animals">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="883.0" layoutY="277.0" prefHeight="400.0" prefWidth="422.0" style="-fx-background-color: #ddc597; -fx-background-radius: 35;">
+                     <children>
+                        <Label layoutX="19.0" layoutY="34.0" prefHeight="46.0" prefWidth="125.0" text="Dogs">
+                           <font>
+                              <Font name="Segoe UI Black" size="48.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="105.0" prefHeight="46.0" prefWidth="220.0" text="Choose Dog: ">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <MenuButton layoutX="228.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="162.0" text="Dogs">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Golden Retriever" />
+                              <MenuItem mnemonicParsing="false" text="Chihuahua" />
+                              <MenuItem mnemonicParsing="false" text="Chow Chow" />
+                           </items>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </MenuButton>
+                        <Label layoutX="14.0" layoutY="163.0" prefHeight="46.0" prefWidth="252.0" text="Current Stocks:">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="218.0" prefHeight="46.0" prefWidth="204.0" text="Enter Stock:">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
+                        <Button layoutX="127.0" layoutY="284.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="1406.0" layoutY="275.0" prefHeight="400.0" prefWidth="422.0" style="-fx-background-color: #ddc597; -fx-background-radius: 35;">
+                     <children>
+                        <Label layoutX="19.0" layoutY="34.0" prefHeight="46.0" prefWidth="125.0" text="Cats">
+                           <font>
+                              <Font name="Segoe UI Black" size="48.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="105.0" prefHeight="46.0" prefWidth="220.0" text="Choose Cat: ">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <MenuButton layoutX="228.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="162.0" text="Cats">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Scottish Fold" />
+                              <MenuItem mnemonicParsing="false" text="British Long Hair" />
+                              <MenuItem mnemonicParsing="false" text="Sokoke" />
+                           </items>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </MenuButton>
+                        <Label layoutX="14.0" layoutY="163.0" prefHeight="46.0" prefWidth="252.0" text="Current Stocks:">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="218.0" prefHeight="46.0" prefWidth="204.0" text="Enter Stock:">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
+                        <Button layoutX="127.0" layoutY="284.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="974.0" layoutY="754.0" prefHeight="70.0" prefWidth="254.0" text="Pet Food">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="321.0" layoutY="861.0" prefHeight="400.0" prefWidth="442.0" style="-fx-background-color: #ddc597; -fx-background-radius: 35;">
+                     <children>
+                        <Label layoutX="19.0" layoutY="34.0" prefHeight="70.0" prefWidth="269.0" text="Bird Food">
+                           <font>
+                              <Font name="Segoe UI Black" size="48.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="105.0" prefHeight="46.0" prefWidth="226.0" text="Choose Food: ">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <MenuButton layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Bird Food">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="VitaCraft" />
+                              <MenuItem mnemonicParsing="false" text="Kaytee" />
+                              <MenuItem mnemonicParsing="false" text="Nut N' Berry" />
+                           </items>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </MenuButton>
+                        <Label layoutX="14.0" layoutY="163.0" prefHeight="46.0" prefWidth="252.0" text="Current Stocks:">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="218.0" prefHeight="46.0" prefWidth="204.0" text="Enter Stock:">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
+                        <Button layoutX="127.0" layoutY="284.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="895.0" layoutY="863.0" prefHeight="400.0" prefWidth="448.0" style="-fx-background-color: #ddc597; -fx-background-radius: 35;">
+                     <children>
+                        <Label layoutX="19.0" layoutY="34.0" prefHeight="70.0" prefWidth="269.0" text="Dog Food">
+                           <font>
+                              <Font name="Segoe UI Black" size="48.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="105.0" prefHeight="46.0" prefWidth="226.0" text="Choose Food: ">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <MenuButton layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Dog Food">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Pedigree" />
+                              <MenuItem mnemonicParsing="false" text="Kibble n' Bits" />
+                              <MenuItem mnemonicParsing="false" text="Boss Dogs" />
+                           </items>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </MenuButton>
+                        <Label layoutX="14.0" layoutY="163.0" prefHeight="46.0" prefWidth="252.0" text="Current Stocks:">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="218.0" prefHeight="46.0" prefWidth="204.0" text="Enter Stock:">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
+                        <Button layoutX="127.0" layoutY="284.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="1416.0" layoutY="866.0" prefHeight="400.0" prefWidth="448.0" style="-fx-background-color: #ddc597; -fx-background-radius: 35;">
+                     <children>
+                        <Label layoutX="19.0" layoutY="34.0" prefHeight="70.0" prefWidth="269.0" text="Cat Food">
+                           <font>
+                              <Font name="Segoe UI Black" size="48.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="105.0" prefHeight="46.0" prefWidth="226.0" text="Choose Food: ">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <MenuButton layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Cat Food">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Goodest" />
+                              <MenuItem mnemonicParsing="false" text="Whiskas" />
+                              <MenuItem mnemonicParsing="false" text="Pro Plan" />
+                           </items>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </MenuButton>
+                        <Label layoutX="14.0" layoutY="163.0" prefHeight="46.0" prefWidth="252.0" text="Current Stocks:">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="218.0" prefHeight="46.0" prefWidth="204.0" text="Enter Stock:">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
+                        <Button layoutX="127.0" layoutY="284.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="956.0" layoutY="1336.0" prefHeight="70.0" prefWidth="298.0" text="Accessories">
+                     <font>
+                        <Font name="Segoe UI Black" size="48.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="394.0" layoutY="1481.0" prefHeight="400.0" prefWidth="564.0" style="-fx-background-color: #ddc597; -fx-background-radius: 35;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="34.0" prefHeight="70.0" prefWidth="423.0" text="Dog Collar">
+                           <font>
+                              <Font name="Segoe UI Black" size="48.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="105.0" prefHeight="46.0" prefWidth="226.0" text="Choose Food: ">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <MenuButton layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Dog Collar">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Dog Collar(S)" />
+                              <MenuItem mnemonicParsing="false" text="Dog Collar(M)" />
+                              <MenuItem mnemonicParsing="false" text="Dog Collar(L)" />
+                           </items>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </MenuButton>
+                        <Label layoutX="14.0" layoutY="163.0" prefHeight="46.0" prefWidth="252.0" text="Current Stocks:">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="218.0" prefHeight="46.0" prefWidth="204.0" text="Enter Stock:">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
+                        <Button layoutX="185.0" layoutY="297.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="1101.0" layoutY="1480.0" prefHeight="400.0" prefWidth="564.0" style="-fx-background-color: #ddc597; -fx-background-radius: 35;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="34.0" prefHeight="70.0" prefWidth="423.0" text="Dog Leash">
+                           <font>
+                              <Font name="Segoe UI Black" size="48.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="105.0" prefHeight="46.0" prefWidth="226.0" text="Choose Food: ">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <MenuButton layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Dog Leash">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Dog Leash(S)" />
+                              <MenuItem mnemonicParsing="false" text="Dog Leash(M)" />
+                              <MenuItem mnemonicParsing="false" text="Dog Leash(L)" />
+                           </items>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </MenuButton>
+                        <Label layoutX="14.0" layoutY="163.0" prefHeight="46.0" prefWidth="252.0" text="Current Stocks:">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="218.0" prefHeight="46.0" prefWidth="204.0" text="Enter Stock:">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
+                        <Button layoutX="185.0" layoutY="297.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="395.0" layoutY="1930.0" prefHeight="400.0" prefWidth="564.0" style="-fx-background-color: #ddc597; -fx-background-radius: 35;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="34.0" prefHeight="70.0" prefWidth="423.0" text="Cat Collar">
+                           <font>
+                              <Font name="Segoe UI Black" size="48.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="105.0" prefHeight="46.0" prefWidth="226.0" text="Choose Food: ">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <MenuButton layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Cat Collar">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Cat Collar(S)" />
+                              <MenuItem mnemonicParsing="false" text="Cat Collar(M)" />
+                              <MenuItem mnemonicParsing="false" text="Cat Collar(L)" />
+                           </items>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </MenuButton>
+                        <Label layoutX="14.0" layoutY="163.0" prefHeight="46.0" prefWidth="252.0" text="Current Stocks:">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="218.0" prefHeight="46.0" prefWidth="204.0" text="Enter Stock:">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
+                        <Button layoutX="185.0" layoutY="297.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="1099.0" layoutY="1932.0" prefHeight="400.0" prefWidth="564.0" style="-fx-background-color: #ddc597; -fx-background-radius: 35;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="34.0" prefHeight="70.0" prefWidth="423.0" text="Cat Leash">
+                           <font>
+                              <Font name="Segoe UI Black" size="48.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="105.0" prefHeight="46.0" prefWidth="226.0" text="Choose Food: ">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <MenuButton layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Cat Leash">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Cat Leash(S)" />
+                              <MenuItem mnemonicParsing="false" text="Cat Leash(M)" />
+                              <MenuItem mnemonicParsing="false" text="Cat Leash(L)" />
+                           </items>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </MenuButton>
+                        <Label layoutX="14.0" layoutY="163.0" prefHeight="46.0" prefWidth="252.0" text="Current Stocks:">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="218.0" prefHeight="46.0" prefWidth="204.0" text="Enter Stock:">
+                           <font>
+                              <Font name="Segoe UI Black" size="32.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
+                        <Button layoutX="185.0" layoutY="297.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

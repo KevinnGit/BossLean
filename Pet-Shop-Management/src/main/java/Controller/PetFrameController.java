@@ -4,13 +4,10 @@ import Implementation.Animals;
 import Implementation.Cart;
 import Implementation.Product;
 import finalprjct.petshopmanagementsystem.SceneSwitch;
-import finalprjct.petshopmanagementsystem.mainFrame;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
 import javafx.scene.control.TextInputDialog;
 import javafx.scene.layout.AnchorPane;
 

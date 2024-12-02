@@ -75,6 +75,13 @@ public class MainFrameController implements Initializable {
         new SceneSwitch(mainFrame, "PetFrame.fxml");
 
         }
+
+    @FXML
+    void goToAdmin(ActionEvent event) throws IOException {
+        new SceneSwitch(mainFrame, "adminMenu.fxml");
+    }
+
+
     @FXML
     void NextPicture(ActionEvent event) {
         click++;
