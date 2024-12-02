@@ -62,7 +62,7 @@
                               <Font name="Segoe UI Black" size="46.0" />
                            </font>
                         </Label>
-                        <TableView editable="true" layoutX="140.0" layoutY="162.0" prefHeight="698.0" prefWidth="1403.0">
+                        <TableView fx:id="SalesHIstory" editable="true" layoutX="140.0" layoutY="162.0" prefHeight="698.0" prefWidth="1403.0">
                           <columns>
                             <TableColumn prefWidth="75.0" text="Product" />
                             <TableColumn prefWidth="75.0" text="Quantity" />

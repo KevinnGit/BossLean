@@ -2,6 +2,7 @@ package Controller;
 
 import Implementation.Animals;
 import Implementation.Cart;
+import Implementation.DBConnector;
 import Implementation.Product;
 import finalprjct.petshopmanagementsystem.SceneSwitch;
 import javafx.event.ActionEvent;
@@ -13,21 +14,22 @@ import javafx.scene.layout.AnchorPane;
 
 
 import java.io.IOException;
+import java.sql.Connection;
 import java.util.Optional;
 
 public class PetFrameController {
 
-    Animals bird1 = new Animals("Parakeet", 100000, 5, "green with yellow, with black stripes", 2, "Ryle");
-    Animals bird2 = new Animals("Canary", 500000, 10, "Yellow with a touch of black", 5, "Lloyd");
-    Animals bird3 = new Animals("Macaw", 1000000, 2, "green forehead, fading into a teal blue", 1, "Ken");
+    Animals bird1 = new Animals("Parakeet", 100000, DBConnector.getStockByBreedName("Parakeet"), "green with yellow, with black stripes", 2, "Ryle");
+    Animals bird2 = new Animals("Canary", 500000, DBConnector.getStockByBreedName("Canary"), "Yellow with a touch of black", 5, "Lloyd");
+    Animals bird3 = new Animals("Macaw", 1000000, DBConnector.getStockByBreedName("Macaw"), "green forehead, fading into a teal blue", 1, "Ken");
 
-    Animals dog1 = new Animals("Golden Retriever", 15000, 5, "Light golden", 11, "Ryan" );
-    Animals dog2 = new Animals("Chihuahua", 20000, 5, "Brownish Cream", 1, "Jonathan");
-    Animals dog3 = new Animals("Chow Chow", 300000, 5, "White Cream", 6, "Troy");
+    Animals dog1 = new Animals("Golden Retriever", 15000, DBConnector.getStockByBreedName("Golden Retriever"), "Light golden", 11, "Ryan" );
+    Animals dog2 = new Animals("Chihuahua", 20000, DBConnector.getStockByBreedName("Chichuchua"), "Brownish Cream", 1, "Jonathan");
+    Animals dog3 = new Animals("Chow Chow", 300000, DBConnector.getStockByBreedName("Chow Chow"), "White Cream", 6, "Troy");
 
-    Animals cat1 = new Animals("Scottish Fold", 1000000, 5, "Orange", 6, "Fletcher");
-    Animals cat2 = new Animals("British Long Hair", 150000, 4, "Grey", 1, "Yosh");
-    Animals cat3 = new Animals("Sokoke", 50000, 4, "Orange with red stripes", 8, "Mheil");
+    Animals cat1 = new Animals("Scottish Fold", 1000000, DBConnector.getStockByBreedName("Scottish Fold"), "Orange", 6, "Fletcher");
+    Animals cat2 = new Animals("British Long Hair", 150000, DBConnector.getStockByBreedName("British Long Hair"), "Grey", 1, "Yosh");
+    Animals cat3 = new Animals("Sokoke", 50000, DBConnector.getStockByBreedName("Sokoke"), "Orange with red stripes", 8, "Mheil");
 
 
     @FXML
@@ -342,4 +344,5 @@ public class PetFrameController {
         void goToHome(ActionEvent event) throws IOException {
         new SceneSwitch(PetPane, "mainFrame.fxml");
         }
+
 }

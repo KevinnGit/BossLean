@@ -12,7 +12,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="manageStocksPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.adminStocksController">
+<AnchorPane fx:id="manageStocksPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1084.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.adminStocksController">
    <children>
       <ScrollPane hbarPolicy="NEVER" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1092.0" prefWidth="1920.0" vbarPolicy="NEVER" AnchorPane.bottomAnchor="-12.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
@@ -68,9 +68,9 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <MenuButton layoutX="228.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="162.0" text="Birds">
+                        <MenuButton fx:id="MenuBirds" layoutX="228.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="162.0" text="Birds">
                           <items>
-                            <MenuItem mnemonicParsing="false" text="Parakeett" />
+                            <MenuItem mnemonicParsing="false" text="Parakeet" />
                             <MenuItem mnemonicParsing="false" text="Canary" />
                               <MenuItem mnemonicParsing="false" text="Macaw" />
                           </items>
@@ -83,7 +83,7 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <Label layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
+                        <Label fx:id="BirdStock" layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
                            <font>
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
@@ -93,8 +93,8 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
-                        <Button layoutX="127.0" layoutY="284.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
+                        <TextField fx:id="TxtBirdStock" layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
+                        <Button layoutX="127.0" layoutY="284.0" mnemonicParsing="false" onAction="#AddStockBirds" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
                            <font>
                               <Font size="25.0" />
                            </font>
@@ -118,7 +118,7 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <MenuButton layoutX="228.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="162.0" text="Dogs">
+                        <MenuButton fx:id="MenuDogs" layoutX="228.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="162.0" text="Dogs">
                            <items>
                               <MenuItem mnemonicParsing="false" text="Golden Retriever" />
                               <MenuItem mnemonicParsing="false" text="Chihuahua" />
@@ -133,7 +133,7 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <Label layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
+                        <Label fx:id="DogsStock" layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
                            <font>
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
@@ -143,8 +143,8 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
-                        <Button layoutX="127.0" layoutY="284.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
+                        <TextField fx:id="TxtDogStock" layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
+                        <Button layoutX="127.0" layoutY="284.0" mnemonicParsing="false" onAction="#AddStockDogs" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
                            <font>
                               <Font size="25.0" />
                            </font>
@@ -163,7 +163,7 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <MenuButton layoutX="228.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="162.0" text="Cats">
+                        <MenuButton fx:id="MenuCats" layoutX="228.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="162.0" text="Cats">
                            <items>
                               <MenuItem mnemonicParsing="false" text="Scottish Fold" />
                               <MenuItem mnemonicParsing="false" text="British Long Hair" />
@@ -178,7 +178,7 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <Label layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
+                        <Label fx:id="CatsStock" layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
                            <font>
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
@@ -188,8 +188,8 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
-                        <Button layoutX="127.0" layoutY="284.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
+                        <TextField fx:id="TxtCatStock" layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
+                        <Button layoutX="127.0" layoutY="284.0" mnemonicParsing="false" onAction="#AddStockCats" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
                            <font>
                               <Font size="25.0" />
                            </font>
@@ -213,7 +213,7 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <MenuButton layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Bird Food">
+                        <MenuButton fx:id="MenuBirdFood" layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Bird Food">
                            <items>
                               <MenuItem mnemonicParsing="false" text="VitaCraft" />
                               <MenuItem mnemonicParsing="false" text="Kaytee" />
@@ -228,7 +228,7 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <Label layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
+                        <Label fx:id="BirdFoodStock" layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
                            <font>
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
@@ -238,8 +238,8 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
-                        <Button layoutX="127.0" layoutY="284.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
+                        <TextField fx:id="TxtBirdFoodStock" layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
+                        <Button layoutX="127.0" layoutY="284.0" mnemonicParsing="false" onAction="#AddStockBirdFood" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
                            <font>
                               <Font size="25.0" />
                            </font>
@@ -258,7 +258,7 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <MenuButton layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Dog Food">
+                        <MenuButton fx:id="MenuDogFood" layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Dog Food">
                            <items>
                               <MenuItem mnemonicParsing="false" text="Pedigree" />
                               <MenuItem mnemonicParsing="false" text="Kibble n' Bits" />
@@ -273,7 +273,7 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <Label layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
+                        <Label fx:id="DogFoodStock" layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
                            <font>
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
@@ -283,8 +283,8 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
-                        <Button layoutX="127.0" layoutY="284.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
+                        <TextField fx:id="TxtDogFoodStock" layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
+                        <Button layoutX="127.0" layoutY="284.0" mnemonicParsing="false" onAction="#AddStockDogFood" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
                            <font>
                               <Font size="25.0" />
                            </font>
@@ -303,7 +303,7 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <MenuButton layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Cat Food">
+                        <MenuButton fx:id="MenuCatFood" layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Cat Food">
                            <items>
                               <MenuItem mnemonicParsing="false" text="Goodest" />
                               <MenuItem mnemonicParsing="false" text="Whiskas" />
@@ -318,7 +318,7 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <Label layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
+                        <Label fx:id="CatFoodStock" layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
                            <font>
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
@@ -328,8 +328,8 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
-                        <Button layoutX="127.0" layoutY="284.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
+                        <TextField fx:id="TxtCatFoodStock" layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
+                        <Button layoutX="127.0" layoutY="284.0" mnemonicParsing="false" onAction="#AddStockCatFood" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
                            <font>
                               <Font size="25.0" />
                            </font>
@@ -353,7 +353,7 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <MenuButton layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Dog Collar">
+                        <MenuButton fx:id="MenuDogCollar" layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Dog Collar">
                            <items>
                               <MenuItem mnemonicParsing="false" text="Dog Collar(S)" />
                               <MenuItem mnemonicParsing="false" text="Dog Collar(M)" />
@@ -368,7 +368,7 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <Label layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
+                        <Label fx:id="DogCollarStock" layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
                            <font>
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
@@ -378,8 +378,8 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
-                        <Button layoutX="185.0" layoutY="297.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
+                        <TextField fx:id="TxtDogCollarStock" layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
+                        <Button layoutX="185.0" layoutY="297.0" mnemonicParsing="false" onAction="#AddStockDogCollar" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
                            <font>
                               <Font size="25.0" />
                            </font>
@@ -398,7 +398,7 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <MenuButton layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Dog Leash">
+                        <MenuButton fx:id="MenuDogLeash" layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Dog Leash">
                            <items>
                               <MenuItem mnemonicParsing="false" text="Dog Leash(S)" />
                               <MenuItem mnemonicParsing="false" text="Dog Leash(M)" />
@@ -413,7 +413,7 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <Label layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
+                        <Label fx:id="DogLeashStock" layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
                            <font>
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
@@ -423,8 +423,8 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
-                        <Button layoutX="185.0" layoutY="297.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
+                        <TextField fx:id="TxtDogLeashStock" layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
+                        <Button layoutX="185.0" layoutY="297.0" mnemonicParsing="false" onAction="#AddStockDogLeash" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
                            <font>
                               <Font size="25.0" />
                            </font>
@@ -443,7 +443,7 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <MenuButton layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Cat Collar">
+                        <MenuButton fx:id="MenuCatCollar" layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Cat Collar">
                            <items>
                               <MenuItem mnemonicParsing="false" text="Cat Collar(S)" />
                               <MenuItem mnemonicParsing="false" text="Cat Collar(M)" />
@@ -458,7 +458,7 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <Label layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
+                        <Label fx:id="CatCollarStock" layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
                            <font>
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
@@ -468,8 +468,8 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
-                        <Button layoutX="185.0" layoutY="297.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
+                        <TextField fx:id="TxtCatCollarStock" layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
+                        <Button layoutX="185.0" layoutY="297.0" mnemonicParsing="false" onAction="#AddStockCatCollar" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
                            <font>
                               <Font size="25.0" />
                            </font>
@@ -488,7 +488,7 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <MenuButton layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Cat Leash">
+                        <MenuButton fx:id="MenuCatLeash" layoutX="233.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" text="Cat Leash">
                            <items>
                               <MenuItem mnemonicParsing="false" text="Cat Leash(S)" />
                               <MenuItem mnemonicParsing="false" text="Cat Leash(M)" />
@@ -503,7 +503,7 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <Label layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
+                        <Label fx:id="CatLeashStock" layoutX="271.0" layoutY="165.0" prefHeight="46.0" prefWidth="112.0" text="0">
                            <font>
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
@@ -513,8 +513,8 @@
                               <Font name="Segoe UI Black" size="32.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
-                        <Button layoutX="185.0" layoutY="297.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
+                        <TextField fx:id="TxtCatLeashStock" layoutX="211.0" layoutY="222.0" prefHeight="39.0" prefWidth="169.0" />
+                        <Button layoutX="185.0" layoutY="297.0" mnemonicParsing="false" onAction="#AddStockCatLeash" prefHeight="62.0" prefWidth="163.0" styleClass="custom-button" stylesheets="@button.css" text="ADD">
                            <font>
                               <Font size="25.0" />
                            </font>

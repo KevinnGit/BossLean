@@ -2,6 +2,7 @@ package Controller;
 
 import Implementation.Accessories;
 import Implementation.Cart;
+import Implementation.DBConnector;
 import Implementation.Product;
 import finalprjct.petshopmanagementsystem.SceneSwitch;
 import javafx.event.ActionEvent;
@@ -15,21 +16,22 @@ import java.util.Optional;
 
 public class AccessoriesFrameController {
 
-    Accessories dogcollar1 = new Accessories("Dog Collar(S)",500,10,"Collar For Dogs","Small","Black","20-30cm");
-    Accessories dogcollar2 = new Accessories("Dog Collar(M)",700,10,"Collar For Dogs","Medium","Black","30-40cm");
-    Accessories dogcollar3 = new Accessories("Dog Collar(L)",1000,10,"Collar For Dogs","Large","Grey","50-60cm");
 
-    Accessories dogleash1 = new Accessories("Dog Leash(S)",300,10,"Leash For Dogs","Small","Red","120cm");
-    Accessories dogleash2 = new Accessories("Dog Leash(M)",500,10,"Leash For Dogs","Medium","Red","150-180cm");
-    Accessories dogleash3 = new Accessories("Dog Leash(L)",800,10,"Leash For Dogs","Large","Brown","180-200cm");
+    Accessories dogcollar1 = new Accessories("Dog Collar(S)",500,DBConnector.getStockByAccessoriesName("Dog Collar(S)"),"Collar For Dogs","Small","Black","20-30cm");
+    Accessories dogcollar2 = new Accessories("Dog Collar(M)",700,DBConnector.getStockByAccessoriesName("Dog Collar(M)"),"Collar For Dogs","Medium","Black","30-40cm");
+    Accessories dogcollar3 = new Accessories("Dog Collar(L)",1000,DBConnector.getStockByAccessoriesName("Dog Collar(L)"),"Collar For Dogs","Large","Grey","50-60cm");
 
-    Accessories catcollar1 = new Accessories("Cat Collar(S)",200,10,"Collar For Cats","Small","Sky Blue","15-20cm");
-    Accessories catcollar2 = new Accessories("Cat Collar(M)",500,10,"Collar For Cats","Medium","Dark Green","20-25cm");
-    Accessories catcollar3 = new Accessories("Cat Collar(L)",700,10,"Collar For Cats","Large","Navy Blue","25-30cm");
+    Accessories dogleash1 = new Accessories("Dog Leash(S)",300,DBConnector.getStockByAccessoriesName("Dog Leash(S)"),"Leash For Dogs","Small","Red","120cm");
+    Accessories dogleash2 = new Accessories("Dog Leash(M)",500,DBConnector.getStockByAccessoriesName("Dog Leash(M)"),"Leash For Dogs","Medium","Red","150-180cm");
+    Accessories dogleash3 = new Accessories("Dog Leash(L)",800,DBConnector.getStockByAccessoriesName("Dog Leash(L)"),"Leash For Dogs","Large","Brown","180-200cm");
 
-    Accessories catleash1 = new Accessories("Cat Leash(S)",200,10,"Leash For Cats","Small","Black","120cm");
-    Accessories catleash2 = new Accessories("Cat Leash(M)",350,10,"Leash For Cats","Medium","Colorful","150-180cm");
-    Accessories catleash3 = new Accessories("Cat Leash(L)",500,10,"Leash For Cats","Large","Orange","300-500cm");
+    Accessories catcollar1 = new Accessories("Cat Collar(S)",200,DBConnector.getStockByAccessoriesName("Cat Collar(S)"),"Collar For Cats","Small","Sky Blue","15-20cm");
+    Accessories catcollar2 = new Accessories("Cat Collar(M)",500,DBConnector.getStockByAccessoriesName("Cat Collar(M)"),"Collar For Cats","Medium","Dark Green","20-25cm");
+    Accessories catcollar3 = new Accessories("Cat Collar(L)",700,DBConnector.getStockByAccessoriesName("Cat Collar(L)"),"Collar For Cats","Large","Navy Blue","25-30cm");
+
+    Accessories catleash1 = new Accessories("Cat Leash(S)",200,DBConnector.getStockByAccessoriesName("Cat Leash(S)"),"Leash For Cats","Small","Black","120cm");
+    Accessories catleash2 = new Accessories("Cat Leash(M)",350,DBConnector.getStockByAccessoriesName("Cat Leash(M)"),"Leash For Cats","Medium","Colorful","150-180cm");
+    Accessories catleash3 = new Accessories("Cat Leash(L)",500,DBConnector.getStockByAccessoriesName("Cat Leash(L)"),"Leash For Cats","Large","Orange","300-500cm");
 
 
     @FXML

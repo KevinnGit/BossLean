@@ -1,6 +1,7 @@
 package Controller;
 
 import Implementation.Cart;
+import Implementation.DBConnector;
 import Implementation.Food;
 import Implementation.Product;
 import finalprjct.petshopmanagementsystem.SceneSwitch;
@@ -16,17 +17,17 @@ import java.util.Optional;
 
 public class PetFoodFrameController {
 
-    Food Birdfood1 = new Food("VitaCraft", 700, 20, "1000 Grams", "Seed");
-    Food Birdfood2 = new Food("Kaytee", 999, 20, "1000 Grams", "Seed");
-    Food Birdfood3 = new Food("Nut N' Berry", 700, 20, "1000 Grams", "Seed");
+    Food Birdfood1 = new Food("VitaCraft", 700, DBConnector.getStockByPetFoodName("VitaCraft"), "1000 Grams", "Seed");
+    Food Birdfood2 = new Food("Kaytee", 999, DBConnector.getStockByPetFoodName("Kaytee"), "1000 Grams", "Seed");
+    Food Birdfood3 = new Food("Nut N' Berry", 700, DBConnector.getStockByPetFoodName("Nut N' Berry"), "1000 Grams", "Seed");
 
-    Food Dogfood1 = new Food("Pedigree", 1500, 20, "1000 Grams", "Dry Food");
-    Food Dogfood2 = new Food("Kibble n' Bits", 600, 20, "500 Grams", "Dry Food");
-    Food Dogfood3 = new Food("Boss Dogs", 700, 20, "500 Grams", "Dry Food");
+    Food Dogfood1 = new Food("Pedigree", 1500, DBConnector.getStockByPetFoodName("Pedigree"), "1000 Grams", "Dry Food");
+    Food Dogfood2 = new Food("Kibble n' Bits", 600, DBConnector.getStockByPetFoodName("Boss Dogs"), "500 Grams", "Dry Food");
+    Food Dogfood3 = new Food("Boss Dogs", 700, DBConnector.getStockByPetFoodName("Goodest"), "500 Grams", "Dry Food");
 
-    Food Catfood1 = new Food("Goodest", 300, 20, "250 Grams", "Treats");
-    Food Catfood2 = new Food("Whiskas", 800, 20, "500 Grams", "Treats");
-    Food Catfood3 = new Food("Pro Plan", 1000, 20, "1000 Grams", "Treats");
+    Food Catfood1 = new Food("Goodest", 300, DBConnector.getStockByPetFoodName("Goodest"), "250 Grams", "Treats");
+    Food Catfood2 = new Food("Whiskas", 800, DBConnector.getStockByPetFoodName("Whiskas"), "500 Grams", "Treats");
+    Food Catfood3 = new Food("Pro Plan", 1000, DBConnector.getStockByPetFoodName("Pro Plan"), "1000 Grams", "Treats");
 
 
 
