@@ -6,7 +6,6 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Line?>
@@ -14,9 +13,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="mainFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1344.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainFrameController">
+<AnchorPane fx:id="mainFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainFrameController">
    <children>
-      <ScrollPane hbarPolicy="NEVER" layoutX="10.0" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1344.0" prefWidth="1920.0" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ScrollPane hbarPolicy="NEVER" layoutX="10.0" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1096.0" prefWidth="1920.0" vbarPolicy="NEVER" AnchorPane.bottomAnchor="-16.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="5332.0" prefWidth="1928.0" style="-fx-background-color: EFDCCB;">
                <children>
@@ -31,13 +30,36 @@
                         <Image url="@ICONS/dropdown.png" />
                      </image>
                   </ImageView>
-                  <AnchorPane layoutX="-3.0" layoutY="831.0" prefHeight="4660.0" prefWidth="1972.0" style="-fx-background-color: DAC59E;">
+                  <AnchorPane layoutX="-5.0" layoutY="847.0" prefHeight="4644.0" prefWidth="1922.0" style="-fx-background-color: DAC59E;">
                      <children>
+                        <AnchorPane layoutX="22.0" layoutY="704.0" prefHeight="575.0" prefWidth="1864.0" style="-fx-background-color: #c7b198; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0, 4); -fx-background-radius: 35;">
+                           <children>
+                              <ImageView fitHeight="340.0" fitWidth="340.0" layoutX="187.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@ICONS/Lean.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="82.0" layoutY="380.0" text="Lean Adrian Murillo">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="48.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="24.0" layoutY="430.0" prefHeight="70.0" prefWidth="630.0" text="Owner Of Boss Lean PetMalu">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="44.0" />
+                                 </font>
+                              </Label>
+                              <Text layoutX="834.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Starting a pet shop is more than just a business venture; it's a heartfelt commitmentto celebrating the bond between humans and animals. At its core, the shop would reflect a deep love and respect for all creatures, offering not just products but a haven for pet owners to find everything they need to care for their beloved companions. From high-quality food and comfortable bedding to toys that spark joyand supplies that ensure health, every item would be thoughtfully selected to promote the well-being of animals. The shop would also serve as a space for educating customers on responsible pet ownership, fostering compassion, and supporting initiatives like adoption drives or partnerships with local shelters. Above all, it would stand as a testament to the belief that pets are family and deserve the best care and love." textAlignment="JUSTIFY" wrappingWidth="936.8033447265625">
+                                 <font>
+                                    <Font name="Microsoft YaHei UI" size="27.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
                         <Circle fill="#efdccb" layoutX="252.0" layoutY="186.0" radius="112.0" stroke="BLACK" strokeType="INSIDE" />
                         <Circle fill="#efdccb" layoutX="688.0" layoutY="186.0" radius="112.0" stroke="BLACK" strokeType="INSIDE" />
                         <Circle fill="#efdccb" layoutX="1130.0" layoutY="186.0" radius="112.0" stroke="BLACK" strokeType="INSIDE" />
                         <Circle fill="#efdccb" layoutX="1580.0" layoutY="186.0" radius="112.0" stroke="BLACK" strokeType="INSIDE" />
-                        <Pane layoutX="22.0" layoutY="720.0" prefHeight="628.0" prefWidth="1842.0" style="-fx-background-radius: 15; -fx-background-color: B59F78; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 2, 2);" />
                         <ImageView accessibleRole="BUTTON" fitHeight="152.0" fitWidth="144.0" layoutX="178.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@ICONS/grooming.png" />
@@ -78,24 +100,9 @@
                               <Font size="36.0" />
                            </font>
                         </Button>
-                        <Label layoutX="749.0" layoutY="574.0" text="About Us">
+                        <Label layoutX="791.0" layoutY="553.0" text="About Us">
                            <font>
                               <Font name="Segoe UI Black" size="72.0" />
-                           </font>
-                        </Label>
-                        <ImageView fitHeight="340.0" fitWidth="340.0" layoutX="185.0" layoutY="799.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@ICONS/Lean.jpg" />
-                           </image>
-                        </ImageView>
-                        <Label layoutX="106.0" layoutY="1155.0" text="Lean Adrian Murillo" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Black" size="48.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="41.0" layoutY="1214.0" prefHeight="70.0" prefWidth="630.0" text="Owner Of Boss Lean PetMalu" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Black" size="44.0" />
                            </font>
                         </Label>
                         <Label layoutX="110.0" layoutY="315.0" text="Grooming">
@@ -118,69 +125,12 @@
                               <Font name="Segoe UI Black" size="54.0" />
                            </font>
                         </Label>
-                        <Pane layoutX="31.0" layoutY="1424.0" prefHeight="628.0" prefWidth="1842.0" style="-fx-background-radius: 15; -fx-background-color: B59F78; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 2, 2);">
-                           <children>
-                              <Text layoutX="82.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At our pet shop, love for animals is at the heart of everything we do,and it shines brightest through the dedication of our most hardworking employee. This person embodies compassion, treating every pet with care and ensuring their needs are met with patience and tenderness. Whether it's arranging comfortable habitats, assisting customers with expert advice, or staying late to ensure every animal is fed and safe, their commitment goes above and beyond. Their passion for animals is contagious, inspiring the rest of the team and creating a warm, welcoming atmosphere where pets and their owners feel valued. They remind us daily that our mission is not just about running a business but about making a difference in the lives of animals and the people who love them." textAlignment="JUSTIFY" wrappingWidth="1069.8033447265625">
-                                 <font>
-                                    <Font name="Segoe UI Black" size="32.0" />
-                                 </font>
-                              </Text>
-                              <Pane prefHeight="628.0" prefWidth="1842.0" style="-fx-background-radius: 15; -fx-background-color: B59F78; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 2, 2);">
-                                 <children>
-                                    <Text layoutX="82.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At our pet shop, love for animals is at the heart of everything we do,and it shines brightest through the dedication of our most hardworking employee. This person embodies compassion, treating every pet with care and ensuring their needs are met with patience and tenderness. Whether it's arranging comfortable habitats, assisting customers with expert advice, or staying late to ensure every animal is fed and safe, their commitment goes above and beyond. Their passion for animals is contagious, inspiring the rest of the team and creating a warm, welcoming atmosphere where pets and their owners feel valued. They remind us daily that our mission is not just about running a business but about making a difference in the lives of animals and the people who love them." textAlignment="JUSTIFY" wrappingWidth="1069.8033447265625">
-                                       <font>
-                                          <Font name="Segoe UI Black" size="32.0" />
-                                       </font>
-                                    </Text>
-                                 </children>
-                              </Pane>
-                           </children>
-                        </Pane>
-                        <Pane layoutX="33.0" layoutY="2097.0" prefHeight="628.0" prefWidth="1842.0" style="-fx-background-radius: 15; -fx-background-color: B59F78; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 2, 2);">
-                           <children>
-                              <Text layoutX="680.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Love for animals means treating them with kindness, respect, and compassion, recognizing them as living beings who enrich our lives in countless ways. It’s about ensuring their well-being, providing them with care, and creating a safe and loving environment where they can thrive. This love inspires us to protect, nurture, and cherish them as an integral part of our world." textAlignment="JUSTIFY" wrappingWidth="1093.8033447265625">
-                                 <font>
-                                    <Font name="Segoe UI Black" size="41.0" />
-                                 </font>
-                              </Text>
-                           </children>
-                        </Pane>
-                        <ImageView fitHeight="355.0" fitWidth="268.0" layoutX="1393.0" layoutY="1468.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@ICONS/ryle.jpg" />
-                           </image>
-                        </ImageView>
-                        <Label layoutX="1369.0" layoutY="1844.0" text="Ryle Jade Tabay" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Black" size="49.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="1269.0" layoutY="1912.0" text="Most Hardwoking Employee" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Black" size="42.0" />
-                           </font>
-                        </Label>
-                        <ImageView fitHeight="398.0" fitWidth="315.0" layoutX="185.0" layoutY="2128.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@ICONS/kevin.jpg" />
-                           </image>
-                        </ImageView>
-                        <Label layoutX="150.0" layoutY="2536.0" text="Kevin John Anga" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Black" size="47.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="223.0" layoutY="2606.0" text="Manager" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Black" size="47.0" />
-                           </font>
-                        </Label>
                         <ImageView fitHeight="176.0" fitWidth="159.0" layoutX="145.0" layoutY="2925.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@ICONS/Facebook.png" />
                            </image>
                         </ImageView>
-                        <Line endX="1699.0" layoutX="217.0" layoutY="2768.0" startX="-217.0" />
+                        <Line endX="1699.0" layoutX="217.0" layoutY="2730.0" startX="-217.0" />
                         <Label layoutX="136.0" layoutY="2793.0" text="You can contact us in our social media accounts">
                            <font>
                               <Font name="Segoe UI Black" size="72.0" />
@@ -241,11 +191,54 @@
                               <Image url="@ICONS/download.png" />
                            </image>
                         </ImageView>
-                        <Text layoutX="761.0" layoutY="768.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Starting a pet shop is more than just a business venture; it's a heartfelt commitmentto celebrating the bond between humans and animals. At its core, the shop would reflect a deep love and respect for all creatures, offering not just products but a haven for pet owners to find everything they need to care for their beloved companions. From high-quality food and comfortable bedding to toys that spark joyand supplies that ensure health, every item would be thoughtfully selected to promote the well-being of animals. The shop would also serve as a space for educating customers on responsible pet ownership, fostering compassion, and supporting initiatives like adoption drives or partnerships with local shelters. Above all, it would stand as a testament to the belief that pets are family and deserve the best care and love." textAlignment="JUSTIFY" wrappingWidth="1047.13671875">
-                           <font>
-                              <Font name="Segoe UI Black" size="32.0" />
-                           </font>
-                        </Text>
+                        <AnchorPane layoutX="27.0" layoutY="1377.0" prefHeight="575.0" prefWidth="1864.0" style="-fx-background-color: #c7b198; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0, 4); -fx-background-radius: 35;">
+                           <children>
+                              <Text layoutX="77.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At our pet shop, love for animals is at the heart of everything we do,and it shines brightest through the dedication of our most hardworking employee. This person embodies compassion, treating every pet with care and ensuring their needs are met with patience and tenderness. Whether it's arranging comfortable habitats, assisting customers with expert advice, or staying late to ensure every animal is fed and safe, their commitment goes above and beyond. Their passion for animals is contagious, inspiring the rest of the team and creating a warm, welcoming atmosphere where pets and their owners feel valued. They remind us daily that our mission is not just about running a business but about making a difference in the lives of animals and the people who love them." textAlignment="JUSTIFY" wrappingWidth="936.8033447265625">
+                                 <font>
+                                    <Font name="Microsoft YaHei UI" size="27.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="355.0" fitWidth="268.0" layoutX="1330.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@ICONS/ryle.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="1271.0" layoutY="429.0" text="Ryle Jade Tabay">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="49.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="1171.0" layoutY="493.0" text="Most Hardwoking Employee">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="42.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="29.0" layoutY="2052.0" prefHeight="575.0" prefWidth="1864.0" style="-fx-background-color: #c7b198; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0, 4); -fx-background-radius: 35;">
+                           <children>
+                              <Text layoutX="851.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Love for animals means treating them with kindness, respect, and compassion, recognizing them as living beings who enrich our lives in countless ways. It’s about ensuring their well-being, providing them with care, and creating a safe and loving environment where they can thrive. This love inspires us to protect, nurture, and cherish them as an integral part of our world." textAlignment="JUSTIFY" wrappingWidth="936.8033447265625">
+                                 <font>
+                                    <Font name="Microsoft YaHei UI" size="27.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="354.0" fitWidth="265.0" layoutX="181.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@ICONS/kevin.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="140.0" layoutY="409.0" text="Kevin John Anga">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="47.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="219.0" layoutY="456.0" text="Manager">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="47.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
                      </children>
                   </AnchorPane>
                   <Button layoutX="1728.0" mnemonicParsing="false" onAction="#goToCart" prefHeight="58.0" prefWidth="159.0" style="-fx-background-color: #94755f;" text="Cart">

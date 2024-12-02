@@ -9,6 +9,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.control.TextInputDialog;
 import javafx.scene.layout.AnchorPane;
 import java.io.IOException;
@@ -181,6 +182,43 @@ public class AccessoriesFrameController {
     @FXML
     private Label dogleash3type;
 
+    @FXML
+    private TextField ccl;
+
+    @FXML
+    private TextField ccm;
+
+    @FXML
+    private TextField ccs;
+
+    @FXML
+    private TextField cll;
+
+    @FXML
+    private TextField clm;
+
+    @FXML
+    private TextField cls;
+
+    @FXML
+    private TextField dcl;
+
+    @FXML
+    private TextField dcm;
+
+    @FXML
+    private TextField dcs;
+
+    @FXML
+    private TextField dll;
+
+    @FXML
+    private TextField dlm;
+
+    @FXML
+    private TextField dls;
+
+
 
     @FXML
     public void initialize(){
@@ -190,32 +228,41 @@ public class AccessoriesFrameController {
         dogcollar1color.setText("Color: " + dogcollar1color.getText());
         dogcollar1length.setText("Length: " + dogcollar1length.getText());
         dogcollar1price.setText("Price: " + dogcollar1price.getText());
+        dcs.setText("Stock: " + dogcollar1.getStockQuantity());
 
         dogcollar2type.setText("Collar " + dogcollar2type.getText());
         dogcollar2color.setText("Color " + dogcollar2color.getText());
         dogcollar2length.setText("Length " + dogcollar2length.getText());
         dogcollar2price.setText("Price " + dogcollar2price.getText());
+        dcm.setText("Stock: " + dogcollar2.getStockQuantity());
 
         dogcollar3type.setText("Collar " + dogcollar3type.getText());
         dogcollar3color.setText("Color " + dogcollar3color.getText());
         dogcollar3length.setText("Length " + dogcollar3length.getText());
         dogcollar3price.setText("Price " + dogcollar3price.getText());
+        dcl.setText("Stock: " + dogcollar3.getStockQuantity());
 
         //Set label for dog leash
         dogleash1type.setText("Leash " + dogleash1type.getText());
         dogleash1color.setText("Color " + dogleash1color.getText());
         dogleash1length.setText("Length " + dogleash1length.getText());
         dogleash1price.setText("Price " + dogleash1price.getText());
+        dls.setText("Stock: " + dogleash1.getStockQuantity());
+
 
         dogleash2type.setText("Leash " + dogleash2type.getText());
         dogleash2color.setText("Color " + dogleash2color.getText());
         dogleash2length.setText("Length " + dogleash2length.getText());
         dogleash2price.setText("Price " + dogleash2price.getText());
+        dlm.setText("Stock: " + dogleash2.getStockQuantity());
+
 
         dogleash3type.setText("Leash " + dogleash3type.getText());
         dogleash3color.setText("Color " + dogleash3color.getText());
         dogleash3length.setText("Length " + dogleash3length.getText());
         dogleash3price.setText("Price " + dogleash3price.getText());
+        dll.setText("Stock: " + dogleash3.getStockQuantity());
+
 
 
         // Set Label for cat collars
@@ -223,32 +270,44 @@ public class AccessoriesFrameController {
         catcollar1color.setText("Color " + catcollar1color.getText());
         catcollar1length.setText("Length " + catcollar1length.getText());
         catcollar1price.setText("Price " + catcollar1price.getText());
+        ccs.setText("Stock: " + catcollar1.getStockQuantity());
+
 
         catcollar2type.setText("Collar " + catcollar2type.getText());
         catcollar2color.setText("Color " + catcollar2color.getText());
         catcollar2length.setText("Length " + catcollar2length.getText());
         catcollar2price.setText("Price " + catcollar2price.getText());
+        ccm.setText("Stock: " + catcollar2.getStockQuantity());
+
 
         catcollar3type.setText("Collar " + catcollar3type.getText());
         catcollar3color.setText("Color " + catcollar3color.getText());
         catcollar3length.setText("Length " + catcollar3length.getText());
         catcollar3price.setText("Price " + catcollar3price.getText());
+        ccl.setText("Stock: " + catcollar3.getStockQuantity());
+
 
         // Set Label for cat leash
         catleash1type.setText("Leash " + catleash1type.getText());
         catleash1color.setText("Color " + catleash1color.getText());
         catleash1length.setText("Length " + catleash1length.getText());
         catleash1price.setText("Price " + catleash1price.getText());
+        cls.setText("Stock: " + catleash1.getStockQuantity());
+
 
         catleash2type.setText("Leash " + catleash2type.getText());
         catleash2color.setText("Color " + catleash2color.getText());
         catleash2length.setText("Length " + catleash2length.getText());
         catleash2price.setText("Price " + catleash2price.getText());
+        clm.setText("Stock: " + catleash2.getStockQuantity());
+
 
         catleash3type.setText("Leash " + catleash3type.getText());
         catleash3color.setText("Color " + catleash3color.getText());
         catleash3length.setText("Length " + catleash3length.getText());
         catleash3price.setText("Price " + catleash3price.getText());
+        cll.setText("Stock: " + catleash3.getStockQuantity());
+
     }
 
     private void showAlert(String title, String message) {

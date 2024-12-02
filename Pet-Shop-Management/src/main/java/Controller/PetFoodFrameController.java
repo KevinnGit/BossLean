@@ -9,6 +9,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.control.TextInputDialog;
 import javafx.scene.layout.AnchorPane;
 
@@ -116,45 +117,81 @@ public class PetFoodFrameController {
     private AnchorPane PetFoodPane;
 
     @FXML
+    private TextField tabf1;
+
+    @FXML
+    private TextField tabf2;
+
+    @FXML
+    private TextField tabf3;
+
+    @FXML
+    private TextField tacf1;
+
+    @FXML
+    private TextField tacf2;
+
+    @FXML
+    private TextField tacf3;
+
+    @FXML
+    private TextField tadf1;
+
+    @FXML
+    private TextField tadf2;
+
+    @FXML
+    private TextField tadf3;
+
+    @FXML
     public void initialize() {
         // Set Label for Bird Food
         BfoodName1.setText("Brand: " + Birdfood1.getName());
         BfoodDes1.setText(Birdfood1.getDescription());
         BfoodPrice1.setText("Price: " + Birdfood1.getPrice());
+        tabf1.setText("Stock: " + Birdfood1.getStockQuantity());
 
         BfoodName2.setText("Brand: " + Birdfood2.getName());
         BfoodDes2.setText(Birdfood2.getDescription());
         BfoodPrice2.setText("Price: " + Birdfood2.getPrice());
+        tabf2.setText("Stock: " + Birdfood2.getStockQuantity());
 
         BfoodName3.setText("Brand: " + Birdfood3.getName());
         BfoodDes3.setText(Birdfood3.getDescription());
         BfoodPrice3.setText("Price: " + Birdfood3.getPrice());
+        tabf3.setText("Stock: " + Birdfood3.getStockQuantity());
 
         // Set Label for Dog Food
         DfoodName1.setText("Brand: " + Dogfood1.getName());
         DfoodDes1.setText(Dogfood1.getDescription());
         DfoodPrice1.setText("Price: " + Dogfood1.getPrice());
+        tadf1.setText("Stock: " + Dogfood1.getStockQuantity());
 
         DfoodName2.setText("Brand: " + Dogfood2.getName());
         DfoodDes2.setText(Dogfood2.getDescription());
         DfoodPrice2.setText("Price: " + Dogfood2.getPrice());
+        tadf2.setText("Stock: " + Dogfood2.getStockQuantity());
 
         DfoodName3.setText("Brand: " + Dogfood3.getName());
         DfoodDes3.setText(Dogfood3.getDescription());
         DfoodPrice3.setText("Price: " + Dogfood3.getPrice());
+        tadf3.setText("Stock: " + Dogfood3.getStockQuantity());
 
         // Set Label for Cat Food
         CfoodName1.setText("Brand: " + Catfood1.getName());
         CfoodDes1.setText(Catfood1.getDescription());
         CfoodPrice1.setText("Price: " + Catfood1.getPrice());
+        tacf1.setText("Stock: " + Catfood1.getStockQuantity());
 
         CfoodName2.setText("Brand: " + Catfood2.getName());
         CfoodDes2.setText(Catfood2.getDescription());
         CfoodPrice2.setText("Price: " + Catfood2.getPrice());
+        tacf2.setText("Stock: " + Catfood2.getStockQuantity());
 
         CfoodName3.setText("Brand: " + Catfood3.getName());
         CfoodDes3.setText(Catfood3.getDescription());
         CfoodPrice3.setText("Price: " + Catfood3.getPrice());
+        tacf3.setText("Stock: " + Catfood3.getStockQuantity());
     }
 
     private void showAlert(String title, String message) {

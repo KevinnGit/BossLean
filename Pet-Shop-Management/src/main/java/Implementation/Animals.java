@@ -6,10 +6,12 @@ public class Animals extends Product{
     private String breed;
 
 
+
     public Animals(String breed, double price, int stockQuantity, String description, int age, String name) {
         super(breed, price, stockQuantity, description);
         this.age = age;
         this.breed = breed;
+
     }
 
 
@@ -21,5 +23,7 @@ public class Animals extends Product{
     public String getBreed() {
         return breed;
     }
+
+
 
 }
