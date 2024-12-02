@@ -20,7 +20,7 @@ public class adminSalesController {
 
     @FXML
     void goToStocks(ActionEvent event) throws IOException {
-        new SceneSwitch(adminSalesPane, "adminStocks.fxml");
+        new SceneSwitch(adminSalesPane, "adminManageStocks.fxml");
     }
 
 }

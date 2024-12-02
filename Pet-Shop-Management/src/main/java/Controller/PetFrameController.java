@@ -8,6 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextInputDialog;
 import javafx.scene.layout.AnchorPane;
 
@@ -168,30 +169,58 @@ public class PetFrameController {
     @FXML
     private Label dog3Price;
 
+    @FXML
+    private TextArea tabird1;
+
+    @FXML
+    private TextArea tabird2;
+
+    @FXML
+    private TextArea tabird3;
+
+    @FXML
+    private TextArea tadog1;
+
+    @FXML
+    private TextArea tadog2;
+
+    @FXML
+    private TextArea tadog3;
+
+    @FXML
+    private TextArea tacAt1;
+
+    @FXML
+    private TextArea tacAt2;
+
+    @FXML
+    private TextArea tacAt3;
+
+
 
 
     @FXML
     public void initialize() {
         // Set labels for bird1
-
         bird1Age.setText("Age: " + bird1.getAge() + " years old");
         bird1Color.setText("Color: " + bird1.getDescription());
         bird1Breed.setText("Breed: " + bird1.getBreed());
         bird1Price.setText("Price: " + bird1.getPrice());
+        tabird1.setText("Stock: " + bird1.getStockQuantity());
 
         // Set labels for bird2
-
-        bird2Age.setText("Age: " +  bird2.getAge()+ " Months old");
+        bird2Age.setText("Age: " + bird2.getAge() + " Months old");
         bird2Color.setText("Color: " + bird2.getDescription());
         bird2Breed.setText("Breed: " + bird2.getBreed());
         bird2Price.setText("Price: " + bird2.getPrice());
+        tabird2.setText("Stock: " + bird2.getStockQuantity());
 
         // Set labels for bird3
-
-        bird3Age.setText("Age: " + bird3.getAge()+ " years old");
+        bird3Age.setText("Age: " + bird3.getAge() + " years old");
         bird3Color.setText("Color: " + bird3.getDescription());
         bird3Breed.setText("Breed: " + bird3.getBreed());
         bird3Price.setText("Price: " + bird3.getPrice());
+        tabird3.setText("Stock: " + bird3.getStockQuantity());
 
         // Set labels for dog1
 
@@ -199,6 +228,7 @@ public class PetFrameController {
         dog1Color.setText("Color: " + dog1.getDescription());
         dog1Breed.setText("Breed: " + dog1.getBreed());
         dog1Price.setText("Price: " + dog1.getPrice());
+        tadog1.setText("Stock: " + dog1.getStockQuantity());
 
         // Set labels for dog2
 
@@ -206,6 +236,8 @@ public class PetFrameController {
         dog2Color.setText("Color: " + dog2.getDescription());
         dog2Breed.setText("Breed: " + dog2.getBreed());
         dog2Price.setText("Price: " + dog2.getPrice());
+        tadog2.setText("Stock: " + dog2.getStockQuantity());
+
 
         // Set labels for dog3
 
@@ -213,6 +245,7 @@ public class PetFrameController {
         dog3Color.setText("Color: " + dog3.getDescription());
         dog3Breed.setText("Breed: " + dog3.getBreed());
         dog3Price.setText("Price: " + dog3.getPrice());
+        tadog3.setText("Stock: " + dog3.getStockQuantity());
 
         // Set labels for cat1
 
@@ -220,6 +253,9 @@ public class PetFrameController {
         cat1Color.setText("Color: " + cat1.getDescription());
         cat1Breed.setText("Breed: " + cat1.getBreed());
         cat1Price.setText("Price: " + cat1.getPrice());
+        tacAt1.setText("Stock: " + cat1.getStockQuantity());
+
+
 
         // Set labels for cat2
 
@@ -227,6 +263,7 @@ public class PetFrameController {
         cat2Color.setText("Color: " + cat2.getDescription());
         cat2Breed.setText("Breed: " + cat2.getBreed());
         cat2Price.setText("Price: " + cat2.getPrice());
+        tacAt2.setText("Stock: " + cat2.getStockQuantity());
 
         // Set labels for cat3
 
@@ -234,6 +271,7 @@ public class PetFrameController {
         cat3Color.setText("Color: " + cat3.getDescription()+ " Months old");
         cat3Breed.setText("Breed: " + cat3.getBreed());
         cat3Price.setText("Price: " + cat3.getPrice());
+        tacAt3.setText("Stock: " + cat3.getStockQuantity());
     }
 
     private void showAlert(String title, String message) {

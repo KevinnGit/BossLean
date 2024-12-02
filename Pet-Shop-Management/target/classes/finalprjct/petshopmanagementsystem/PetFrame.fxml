@@ -3,6 +3,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -10,9 +11,9 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="PetPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1096.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PetFrameController">
+<AnchorPane fx:id="PetPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PetFrameController">
    <children>
-      <ScrollPane hbarPolicy="NEVER" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1096.0" prefWidth="1920.0" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ScrollPane hbarPolicy="NEVER" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="4824.0" prefWidth="1916.0" style="-fx-background-color: EFDCCB;">
                <children>
@@ -77,27 +78,27 @@
                   </ImageView>
                   <Line endX="285.66668701171875" layoutX="262.0" layoutY="497.0" startX="-202.0" />
                   <Line endX="291.0" layoutX="279.0" layoutY="1655.0" startX="-202.0" />
-                  <Label fx:id="dog1Name" layoutX="100.0" layoutY="1680.0" text="Name: Ryan ">
+                  <Label fx:id="dog1Name" layoutX="100.0" layoutY="1667.0" text="Name: Ryan ">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dog1Breed" layoutX="100.0" layoutY="1709.0" text="Breed: Golden Retriever">
+                  <Label fx:id="dog1Breed" layoutX="100.0" layoutY="1696.0" text="Breed: Golden Retriever">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dog1Age" layoutX="101.0" layoutY="1742.0" text="Age: 11 Months Old">
+                  <Label fx:id="dog1Age" layoutX="101.0" layoutY="1729.0" text="Age: 11 Months Old">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dog1Color" layoutX="100.0" layoutY="1775.0" text="Color:  Light Golden">
+                  <Label fx:id="dog1Color" layoutX="100.0" layoutY="1762.0" text="Color:  Light Golden">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dog1Price" layoutX="102.0" layoutY="1810.0" text="Price: ₱150,000:">
+                  <Label fx:id="dog1Price" layoutX="102.0" layoutY="1797.0" text="Price: ₱150,000:">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
@@ -115,27 +116,27 @@
                      </image>
                   </ImageView>
                   <Line endX="303.0" layoutX="287.0" layoutY="2683.0" startX="-184.0" />
-                  <Label fx:id="cat1Name" layoutX="122.0" layoutY="2718.0" text="Name: Fletcher">
+                  <Label fx:id="cat1Name" layoutX="122.0" layoutY="2699.0" text="Name: Fletcher">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="cat1Breed" layoutX="125.0" layoutY="2761.0" text="Breed: Scottish Fold">
+                  <Label fx:id="cat1Breed" layoutX="125.0" layoutY="2742.0" text="Breed: Scottish Fold">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="cat1Age" layoutX="124.0" layoutY="2805.0" text="Age: 6 Months Old">
+                  <Label fx:id="cat1Age" layoutX="124.0" layoutY="2786.0" text="Age: 6 Months Old">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="cat1Color" layoutX="124.0" layoutY="2847.0" text="Color: Orange">
+                  <Label fx:id="cat1Color" layoutX="124.0" layoutY="2828.0" text="Color: Orange">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="cat1Price" layoutX="126.0" layoutY="2892.0" text="Price: ₱1,000,000 ">
+                  <Label fx:id="cat1Price" layoutX="126.0" layoutY="2873.0" text="Price: ₱1,000,000 ">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
@@ -211,27 +212,27 @@
                      </image>
                   </ImageView>
                   <Line endX="291.0" layoutX="890.0" layoutY="1644.0" startX="-197.0" />
-                  <Label fx:id="dog2Name" layoutX="711.0" layoutY="1669.0" text="Name: Jonathan ">
+                  <Label fx:id="dog2Name" layoutX="711.0" layoutY="1656.0" text="Name: Jonathan ">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dog2Breed" layoutX="711.0" layoutY="1698.0" text="Breed: Chihuahua">
+                  <Label fx:id="dog2Breed" layoutX="711.0" layoutY="1685.0" text="Breed: Chihuahua">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dog2Age" layoutX="712.0" layoutY="1731.0" text="Age: 1 Year OId">
+                  <Label fx:id="dog2Age" layoutX="712.0" layoutY="1718.0" text="Age: 1 Year OId">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dog2Color" layoutX="711.0" layoutY="1764.0" text="Color:  Brownish Cream">
+                  <Label fx:id="dog2Color" layoutX="711.0" layoutY="1751.0" text="Color:  Brownish Cream">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dog2Price" layoutX="713.0" layoutY="1799.0" text="Price: ₱20,000">
+                  <Label fx:id="dog2Price" layoutX="713.0" layoutY="1786.0" text="Price: ₱20,000">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
@@ -243,27 +244,27 @@
                      </image>
                   </ImageView>
                   <Line endX="291.0" layoutX="1503.0" layoutY="1652.0" startX="-197.0" />
-                  <Label fx:id="dog3Name" layoutX="1324.0" layoutY="1677.0" text="Name: Troy ">
+                  <Label fx:id="dog3Name" layoutX="1324.0" layoutY="1663.0" text="Name: Troy ">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dog3Breed" layoutX="1324.0" layoutY="1706.0" text="Breed: Chow Chow">
+                  <Label fx:id="dog3Breed" layoutX="1324.0" layoutY="1692.0" text="Breed: Chow Chow">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dog3Age" layoutX="1325.0" layoutY="1739.0" text="Age: 6 Months Old">
+                  <Label fx:id="dog3Age" layoutX="1325.0" layoutY="1725.0" text="Age: 6 Months Old">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dog3Color" layoutX="1324.0" layoutY="1772.0" text="Color:  White Cream">
+                  <Label fx:id="dog3Color" layoutX="1324.0" layoutY="1758.0" text="Color:  White Cream">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dog3Price" layoutX="1326.0" layoutY="1807.0" text="Price: ₱300,000">
+                  <Label fx:id="dog3Price" layoutX="1326.0" layoutY="1793.0" text="Price: ₱300,000">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
@@ -275,27 +276,27 @@
                      </image>
                   </ImageView>
                   <Line endX="303.0" layoutX="896.0" layoutY="2677.0" startX="-184.0" />
-                  <Label fx:id="cat2Name" layoutX="731.0" layoutY="2712.0" text="Name: Yosh">
+                  <Label fx:id="cat2Name" layoutX="731.0" layoutY="2693.0" text="Name: Yosh">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="cat2Breed" layoutX="734.0" layoutY="2755.0" text="Breed: British Longhair">
+                  <Label fx:id="cat2Breed" layoutX="734.0" layoutY="2736.0" text="Breed: British Longhair">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="cat2Age" layoutX="733.0" layoutY="2799.0" text="Age: 1 Year Old">
+                  <Label fx:id="cat2Age" layoutX="733.0" layoutY="2780.0" text="Age: 1 Year Old">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="cat2Color" layoutX="733.0" layoutY="2841.0" text="Color: Grey">
+                  <Label fx:id="cat2Color" layoutX="733.0" layoutY="2822.0" text="Color: Grey">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="cat2Price" layoutX="735.0" layoutY="2886.0" text="Price: ₱150,000 ">
+                  <Label fx:id="cat2Price" layoutX="735.0" layoutY="2867.0" text="Price: ₱150,000 ">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
@@ -307,27 +308,27 @@
                      </image>
                   </ImageView>
                   <Line endX="303.0" layoutX="1514.0" layoutY="2670.0" startX="-184.0" />
-                  <Label fx:id="cat3Name" layoutX="1349.0" layoutY="2705.0" text="Name: Mheil">
+                  <Label fx:id="cat3Name" layoutX="1349.0" layoutY="2686.0" text="Name: Mheil">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="cat3Breed" layoutX="1352.0" layoutY="2748.0" text="Breed: Sokoke">
+                  <Label fx:id="cat3Breed" layoutX="1352.0" layoutY="2729.0" text="Breed: Sokoke">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="cat3Age" layoutX="1351.0" layoutY="2792.0" text="Age: 8 Months Old">
+                  <Label fx:id="cat3Age" layoutX="1351.0" layoutY="2773.0" text="Age: 8 Months Old">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="cat3Color" layoutX="1351.0" layoutY="2834.0" text="Color: Orange">
+                  <Label fx:id="cat3Color" layoutX="1351.0" layoutY="2815.0" text="Color: Orange">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="cat3Price" layoutX="1353.0" layoutY="2879.0" text="Price: ₱50,000">
+                  <Label fx:id="cat3Price" layoutX="1353.0" layoutY="2860.0" text="Price: ₱50,000">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
@@ -422,6 +423,95 @@
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
+                  <Label fx:id="bird1Price1" layoutX="71.0" layoutY="707.0" text="Stock:">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="tabird1" editable="false" layoutX="145.0" layoutY="701.0" prefHeight="0.0" prefWidth="128.0" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font></TextArea>
+                  <Label fx:id="bird1Price11" layoutX="734.0" layoutY="715.0" text="Stock:">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="tabird2" editable="false" layoutX="808.0" layoutY="709.0" prefHeight="0.0" prefWidth="128.0" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </TextArea>
+                  <Label fx:id="bird1Price111" layoutX="1361.0" layoutY="701.0" text="Stock:">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="tabird3" editable="false" layoutX="1435.0" layoutY="695.0" prefHeight="0.0" prefWidth="128.0" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </TextArea>
+                  <Label fx:id="bird1Price12" layoutX="102.0" layoutY="1829.0" text="Stock:">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="tadog1" editable="false" layoutX="176.0" layoutY="1823.0" prefHeight="0.0" prefWidth="128.0" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </TextArea>
+                  <Label fx:id="bird1Price121" layoutX="714.0" layoutY="1820.0" text="Stock:">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="tadog2" editable="false" layoutX="788.0" layoutY="1814.0" prefHeight="0.0" prefWidth="128.0" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </TextArea>
+                  <Label fx:id="bird1Price122" layoutX="1330.0" layoutY="1829.0" text="Stock:">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="tadog3" editable="false" layoutX="1404.0" layoutY="1804.0" prefHeight="0.0" prefWidth="128.0" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </TextArea>
+                  <TextArea fx:id="tacAt1" editable="false" layoutX="203.0" layoutY="2909.0" prefHeight="0.0" prefWidth="128.0" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </TextArea>
+                  <Label fx:id="bird1Price123" layoutX="129.0" layoutY="2915.0" text="Stock:">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bird1Price1231" layoutX="735.0" layoutY="2914.0" text="Stock:">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="tacAt2" editable="false" layoutX="809.0" layoutY="2908.0" prefHeight="0.0" prefWidth="128.0" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </TextArea>
+                  <Label fx:id="bird1Price1232" layoutX="1354.0" layoutY="2907.0" text="Stock:">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="tacAt3" editable="false" layoutX="1428.0" layoutY="2901.0" prefHeight="0.0" prefWidth="128.0" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </TextArea>
                </children>
             </AnchorPane>
          </content>
