@@ -165,6 +165,10 @@ public class CartFrameController {
             }
         });
     }
+    public void clearCartData() {
+        Cart cart = Cart.getInstance();
+        cart.clear();
+    }
     private void undostock(String product, int quantity) {
         //birds
         if(product.equals("Parakeet")) {

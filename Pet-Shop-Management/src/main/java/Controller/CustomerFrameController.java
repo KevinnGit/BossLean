@@ -12,6 +12,8 @@ import javafx.scene.layout.*;
 import java.io.*;
 import java.text.DecimalFormat;
 
+import static Implementation.DBConnector.AddSales;
+
 
 public class CustomerFrameController {
 
@@ -59,7 +61,7 @@ public class CustomerFrameController {
 
     @FXML
     void PrintReceipt(ActionEvent event) {
-
+        Cart cart = Cart.getInstance();
         String firstName = Fname.getText(), lastName = Lname.getText(),
                 middleName = Mname.getText(), address = Address.getText(),
                 contactNumber = ConNum.getText();
@@ -90,6 +92,24 @@ public class CustomerFrameController {
                 System.out.println("Failed to print the receipt.");
             }
         }
+        cart.getCartItems().forEach(cartItem -> {
+            String product = cartItem.getProduct().getName();
+            int quantity = cartItem.getQuantity();
+            double price = cartItem.getTotalPrice();
+            double grossIncome = quantity * price;
+            String saleDate = java.time.LocalDate.now().toString();
+
+
+            boolean result = AddSales(product, quantity, grossIncome, saleDate);
+
+            if (result) {
+                System.out.println("Successfully added to sales: " + product);
+            } else {
+                System.out.println("Failed to add to sales: " + product);
+            }
+        });
+        CartFrameController cartController = new CartFrameController();
+        cartController.clearCartData();
     }
 
     @FXML
@@ -188,4 +208,5 @@ public class CustomerFrameController {
 
         return receiptText;
     }
+
 }

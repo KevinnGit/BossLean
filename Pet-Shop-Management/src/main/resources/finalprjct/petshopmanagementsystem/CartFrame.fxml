@@ -26,11 +26,11 @@
                         <Font name="Segoe UI Black" size="43.0" />
                      </font>
                   </Label>
-                  <TableView fx:id="cartTable" layoutX="419.0" layoutY="168.0" prefHeight="755.0" prefWidth="1137.0" style="-fx-min-height: 20px; -fx-font-size: 20px; -fx-fixed-cell-size: 50px;">
+                  <TableView fx:id="cartTable" layoutX="419.0" layoutY="168.0" prefHeight="755.0" prefWidth="1140.0" style="-fx-min-height: 20px; -fx-font-size: 20px; -fx-fixed-cell-size: 50px;">
                     <columns>
-                      <TableColumn fx:id="Product" maxWidth="-1.0" minWidth="379.0" prefWidth="75.0" style="-fx-border-color: black; -fx-border-width: 0.5px;" text="Product" />
-                      <TableColumn fx:id="Quantity" maxWidth="-1.0" minWidth="379.0" prefWidth="75.0" style="-fx-border-color: black; -fx-border-width: 0.5px;" text="Quantity" />
-                        <TableColumn fx:id="Price" maxWidth="-1.0" minWidth="378.0" prefWidth="75.0" style="-fx-border-color: black; -fx-border-width: 0.5px;" text="Price" />
+                      <TableColumn fx:id="Product" minWidth="379.0" prefWidth="-1.0" style="-fx-border-color: black; -fx-border-width: 0.5px;" text="Product" />
+                      <TableColumn fx:id="Quantity" minWidth="379.0" prefWidth="-1.0" style="-fx-border-color: black; -fx-border-width: 0.5px;" text="Quantity" />
+                        <TableColumn fx:id="Price" minWidth="379.0" prefWidth="-1.0" style="-fx-border-color: black; -fx-border-width: 0.5px;" text="Price" />
                     </columns>
                   </TableView>
                   <Label layoutX="422.0" layoutY="938.0" text="Total:">

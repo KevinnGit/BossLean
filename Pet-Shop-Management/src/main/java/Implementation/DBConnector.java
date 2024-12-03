@@ -1,4 +1,6 @@
 package Implementation;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.scene.control.Alert;
 
 import javax.swing.*;
@@ -333,6 +335,60 @@ public class DBConnector {
         }
 
         return updatedStock; // Return the updated stock value
+    }
+    public static boolean AddSales(String product, int quantity, double grossIncome, String saleDate) {
+        boolean isAdded = false; // Tracks if the insertion was successful
+
+        try (Connection con = ConnectionDB()) { // Use try-with-resources for auto-closing
+            // Prepare the SQL query for inserting a new sale
+            String insertQuery = "INSERT INTO Sales (Product, Quantity, Gross_Income, date) VALUES (?, ?, ?, ?)";
+
+            try (PreparedStatement pst = con.prepareStatement(insertQuery)) {
+                // Set the parameters for the prepared statement
+                pst.setString(1, product);
+                pst.setInt(2, quantity);
+                pst.setDouble(3, grossIncome);
+                pst.setString(4, saleDate);
+
+                // Execute the query
+                int rowsAffected = pst.executeUpdate();
+
+                if (rowsAffected > 0) {
+                    isAdded = true; // Mark as successful
+                    System.out.println("Sale added successfully for product: " + product);
+                } else {
+                    System.out.println("Failed to add sale for product: " + product);
+                }
+            }
+        } catch (SQLException e) {
+            System.out.println("Error adding sale for product: " + product + ". Error: " + e.getMessage());
+        }
+
+        return isAdded; // Return success status
+    }
+    public static ObservableList<SalesRecord> loadSalesData() {
+        ObservableList<SalesRecord> salesList = FXCollections.observableArrayList();
+
+        String query = "SELECT Product, Quantity, Gross_Income, date FROM Sales";
+
+        try (Connection con = ConnectionDB();
+             PreparedStatement pst = con.prepareStatement(query);
+             ResultSet rs = pst.executeQuery()) {
+
+            while (rs.next()) {
+                String productName = rs.getString("Product");
+                int quantity = rs.getInt("Quantity");
+                double grossIncome = rs.getDouble("Gross_Income");
+                String saleDate = rs.getString("date");
+
+                SalesRecord record = new SalesRecord(productName, quantity, grossIncome, saleDate);
+                salesList.add(record);
+            }
+        } catch (SQLException e) {
+            System.out.println("Error loading sales data: " + e.getMessage());
+        }
+
+        return salesList;
     }
 }
 
