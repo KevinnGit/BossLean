@@ -112,7 +112,7 @@ public class GroomingFrameController {
     @FXML
     void goToCart(ActionEvent event) {
         try {
-            new SceneSwitch(GroomingPane, "CartFrame.fxml");
+            new SceneSwitch(GroomingPane, "CartFrame.fxml", true);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -121,7 +121,7 @@ public class GroomingFrameController {
     @FXML
     void goToHome(ActionEvent event) {
         try {
-            new SceneSwitch(GroomingPane, "mainFrame.fxml");
+            new SceneSwitch(GroomingPane, "mainFrame.fxml", true);
         } catch (IOException e) {
             e.printStackTrace();
         }

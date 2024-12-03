@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainMenuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="968.0" prefWidth="972.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.mainMenuController">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="968.0" prefWidth="972.0" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="968.0" prefWidth="974.0" style="-fx-background-color: EFDCCB;">
+               <children>
+                  <AnchorPane layoutX="39.0" layoutY="57.0" prefHeight="854.0" prefWidth="888.0" style="-fx-background-color: #eaceb4; -fx-background-radius: 15;">
+                     <children>
+                        <Button layoutX="248.0" layoutY="400.0" mnemonicParsing="false" onAction="#goToLogIn" prefHeight="131.0" prefWidth="394.0" stylesheets="@button.css" text="ADMIN">
+                           <font>
+                              <Font name="Segoe UI Black" size="43.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="249.0" layoutY="557.0" mnemonicParsing="false" onAction="#goToMainFrame" prefHeight="131.0" prefWidth="394.0" stylesheets="@button.css" text="CUSTOMER">
+                           <font>
+                              <Font name="Segoe UI Black" size="42.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="131.0" layoutY="262.0" text="Boss Lean PetMalu">
+                           <font>
+                              <Font name="Segoe UI Black" size="72.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="276.0" fitWidth="279.0" layoutX="306.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@ICONS/logo%20boss%20lean.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

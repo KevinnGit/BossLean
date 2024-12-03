@@ -29,7 +29,7 @@ public class PetFrameController {
     Animals bird3 = new Animals("Macaw", 1000000, DBConnector.getStockByBreedName("Macaw"), "green forehead, fading into a teal blue", 1, "Ken");
 
     Animals dog1 = new Animals("Golden Retriever", 15000, DBConnector.getStockByBreedName("Golden Retriever"), "Light golden", 11, "Ryan" );
-    Animals dog2 = new Animals("Chihuahua", 20000, DBConnector.getStockByBreedName("Chichuchua"), "Brownish Cream", 1, "Jonathan");
+    Animals dog2 = new Animals("Chihuahua", 20000, DBConnector.getStockByBreedName("Chihuahua"), "Brownish Cream", 1, "Jonathan");
     Animals dog3 = new Animals("Chow Chow", 300000, DBConnector.getStockByBreedName("Chow Chow"), "White Cream", 6, "Troy");
 
     Animals cat1 = new Animals("Scottish Fold", 1000000, DBConnector.getStockByBreedName("Scottish Fold"), "Orange", 6, "Fletcher");
@@ -363,7 +363,7 @@ public class PetFrameController {
     void addToCartChihuahua(ActionEvent event) {
         handleAddToCart(dog2, "Chihuahua");
         MinusStockByBreedName("Chihuahua", lastAddedQuantity);
-        Platform.runLater(() -> ld2.setText("Stock: " +dog2.getStockQuantity()));
+        Platform.runLater(() -> ld2.setText("Stock: " + dog2.getStockQuantity()));
     }
 
     @FXML
@@ -400,7 +400,7 @@ public class PetFrameController {
     void goToCart(ActionEvent event) {
         try {
             // Switch to the CartFrame scene and track the navigation
-            new SceneSwitch(PetPane, "CartFrame.fxml");
+            new SceneSwitch(PetPane, "CartFrame.fxml",true);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -408,7 +408,7 @@ public class PetFrameController {
 
     @FXML
         void goToHome(ActionEvent event) throws IOException {
-        new SceneSwitch(PetPane, "mainFrame.fxml");
+        new SceneSwitch(PetPane, "mainFrame.fxml",true);
         }
 
 }

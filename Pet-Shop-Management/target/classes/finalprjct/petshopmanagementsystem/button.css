@@ -19,3 +19,24 @@
     -fx-background-color: #8e7b60; /* Slightly darker for pressed state */
     -fx-border-color: #8e7b60; /* Optional: match border with pressed background */
 }
+
+
+.button {
+    -fx-background-color: #a28f70;
+    -fx-text-fill: white;
+    -fx-border-radius: 12px; /* Rounded corners */
+    -fx-background-radius: 12px;
+    -fx-padding: 10 20;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 6, 0.3, 0, 4); /* Shadow effect */
+    -fx-cursor: hand; /* Pointer on hover */
+}
+
+.button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8, 0.4, 0, 6); /* Hover shadow */
+    -fx-translate-y: -2; /* Slight lift effect */
+}
+
+.button:pressed {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0.3, 0, 2); /* Reduced shadow */
+    -fx-translate-y: 2; /* Pressed effect */
+}
