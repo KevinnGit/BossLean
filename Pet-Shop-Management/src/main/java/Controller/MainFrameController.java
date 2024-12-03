@@ -75,12 +75,6 @@ public class MainFrameController implements Initializable {
         }
 
     @FXML
-    void goToAdmin(ActionEvent event) throws IOException {
-        new SceneSwitch(mainFrame, "adminMenu.fxml",true);
-    }
-
-
-    @FXML
     void NextPicture(ActionEvent event) {
         click++;
         if (click >= preclick) {

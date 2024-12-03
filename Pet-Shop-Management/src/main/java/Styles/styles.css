@@ -15,3 +15,27 @@
     -fx-font-size: 20px; /* Adjust the font size */
     -fx-font-family: "Segoe UI"; /* Set the font family */
 }
+
+.hover-button {
+    -fx-background-color: transparent;  /* Make background transparent */
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;  /* Hand cursor on hover */
+}
+
+/* Hover effect: Scale image and add shadow */
+.hover-button:hover {
+    -fx-scale-x: 1.1;  /* Slightly scale up the image horizontally */
+    -fx-scale-y: 1.1;  /* Slightly scale up the image vertically */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0);  /* Shadow effect */
+}
+
+/* Styling for the image inside the button */
+.hover-button .image-view {
+    -fx-opacity: 1;  /* Default opacity */
+}
+
+/* Hover state for the image */
+.hover-button:hover .image-view {
+    -fx-opacity: 0.8;  /* Change opacity on hover */
+}

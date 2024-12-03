@@ -42,7 +42,7 @@
                                     <Font name="Microsoft Sans Serif" size="24.0" />
                                  </font>
                               </Button>
-                              <TextField fx:id="passwordShowField" layoutX="71.0" layoutY="220.0" prefHeight="63.0" prefWidth="729.0" promptText="User Name" styleClass="custom-text-field" stylesheets="@textAreaStyle.css" visible="false" />
+                              <TextField fx:id="passwordShowField" layoutX="71.0" layoutY="220.0" prefHeight="63.0" prefWidth="729.0" promptText="Password" styleClass="custom-text-field" stylesheets="@textAreaStyle.css" visible="false" />
                               <PasswordField fx:id="passField" layoutX="71.0" layoutY="220.0" prefHeight="64.0" prefWidth="729.0" promptText="Password" styleClass="custom-text-field" stylesheets="@textAreaStyle.css" />
                               <CheckBox fx:id="showPassword" layoutX="73.0" layoutY="299.0" mnemonicParsing="false" onAction="#showPass" text="Show Password">
                                  <font>
