@@ -5,6 +5,7 @@ import Implementation.Cart;
 import Implementation.DBConnector;
 import Implementation.Product;
 import finalprjct.petshopmanagementsystem.SceneSwitch;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -18,9 +19,12 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.util.Optional;
 
+import static Implementation.DBConnector.MinusStockByBreedName;
+
 public class PetFrameController {
 
-    Animals bird1 = new Animals("Parakeet", 100000, DBConnector.getStockByBreedName("Parakeet"), "green with yellow, with black stripes", 2, "Ryle");
+    int ParakeetStock = DBConnector.getStockByBreedName("Parakeet");
+    Animals bird1 = new Animals("Parakeet", 100000, ParakeetStock, "green with yellow, with black stripes", 2, "Ryle");
     Animals bird2 = new Animals("Canary", 500000, DBConnector.getStockByBreedName("Canary"), "Yellow with a touch of black", 5, "Lloyd");
     Animals bird3 = new Animals("Macaw", 1000000, DBConnector.getStockByBreedName("Macaw"), "green forehead, fading into a teal blue", 1, "Ken");
 
@@ -33,6 +37,7 @@ public class PetFrameController {
     Animals cat3 = new Animals("Sokoke", 50000, DBConnector.getStockByBreedName("Sokoke"), "Orange with red stripes", 8, "Mheil");
 
 
+    private int lastAddedQuantity;
     @FXML
     private AnchorPane PetPane;
 
@@ -172,31 +177,32 @@ public class PetFrameController {
     private Label dog3Price;
 
     @FXML
-    private TextArea tabird1;
+    private Label lb1;
 
     @FXML
-    private TextArea tabird2;
+    private Label lb2;
 
     @FXML
-    private TextArea tabird3;
+    private Label lb3;
 
     @FXML
-    private TextArea tadog1;
+    private Label lc1;
 
     @FXML
-    private TextArea tadog2;
+    private Label lc2;
 
     @FXML
-    private TextArea tadog3;
+    private Label lc3;
 
     @FXML
-    private TextArea tacAt1;
+    private Label ld1;
 
     @FXML
-    private TextArea tacAt2;
+    private Label ld2;
 
     @FXML
-    private TextArea tacAt3;
+    private Label ld3;
+
 
 
 
@@ -208,21 +214,21 @@ public class PetFrameController {
         bird1Color.setText("Color: " + bird1.getDescription());
         bird1Breed.setText("Breed: " + bird1.getBreed());
         bird1Price.setText("Price: " + bird1.getPrice());
-        tabird1.setText("Stock: " + bird1.getStockQuantity());
+        lb1.setText("Stock: " + bird1.getStockQuantity());
 
         // Set labels for bird2
         bird2Age.setText("Age: " + bird2.getAge() + " Months old");
         bird2Color.setText("Color: " + bird2.getDescription());
         bird2Breed.setText("Breed: " + bird2.getBreed());
         bird2Price.setText("Price: " + bird2.getPrice());
-        tabird2.setText("Stock: " + bird2.getStockQuantity());
+        lb2.setText("Stock: " + bird2.getStockQuantity());
 
         // Set labels for bird3
         bird3Age.setText("Age: " + bird3.getAge() + " years old");
         bird3Color.setText("Color: " + bird3.getDescription());
         bird3Breed.setText("Breed: " + bird3.getBreed());
         bird3Price.setText("Price: " + bird3.getPrice());
-        tabird3.setText("Stock: " + bird3.getStockQuantity());
+        lb3.setText("Stock: " + bird3.getStockQuantity());
 
         // Set labels for dog1
 
@@ -230,7 +236,7 @@ public class PetFrameController {
         dog1Color.setText("Color: " + dog1.getDescription());
         dog1Breed.setText("Breed: " + dog1.getBreed());
         dog1Price.setText("Price: " + dog1.getPrice());
-        tadog1.setText("Stock: " + dog1.getStockQuantity());
+        ld1.setText("Stock: " + dog1.getStockQuantity());
 
         // Set labels for dog2
 
@@ -238,7 +244,7 @@ public class PetFrameController {
         dog2Color.setText("Color: " + dog2.getDescription());
         dog2Breed.setText("Breed: " + dog2.getBreed());
         dog2Price.setText("Price: " + dog2.getPrice());
-        tadog2.setText("Stock: " + dog2.getStockQuantity());
+        ld2.setText("Stock: " + dog2.getStockQuantity());
 
 
         // Set labels for dog3
@@ -247,7 +253,7 @@ public class PetFrameController {
         dog3Color.setText("Color: " + dog3.getDescription());
         dog3Breed.setText("Breed: " + dog3.getBreed());
         dog3Price.setText("Price: " + dog3.getPrice());
-        tadog3.setText("Stock: " + dog3.getStockQuantity());
+        ld3.setText("Stock: " + dog3.getStockQuantity());
 
         // Set labels for cat1
 
@@ -255,7 +261,7 @@ public class PetFrameController {
         cat1Color.setText("Color: " + cat1.getDescription());
         cat1Breed.setText("Breed: " + cat1.getBreed());
         cat1Price.setText("Price: " + cat1.getPrice());
-        tacAt1.setText("Stock: " + cat1.getStockQuantity());
+        lc1.setText("Stock: " + cat1.getStockQuantity());
 
 
 
@@ -265,7 +271,7 @@ public class PetFrameController {
         cat2Color.setText("Color: " + cat2.getDescription());
         cat2Breed.setText("Breed: " + cat2.getBreed());
         cat2Price.setText("Price: " + cat2.getPrice());
-        tacAt2.setText("Stock: " + cat2.getStockQuantity());
+        lc2.setText("Stock: " + cat2.getStockQuantity());
 
         // Set labels for cat3
 
@@ -273,7 +279,7 @@ public class PetFrameController {
         cat3Color.setText("Color: " + cat3.getDescription()+ " Months old");
         cat3Breed.setText("Breed: " + cat3.getBreed());
         cat3Price.setText("Price: " + cat3.getPrice());
-        tacAt3.setText("Stock: " + cat3.getStockQuantity());
+        lc3.setText("Stock: " + cat3.getStockQuantity());
     }
 
     private void showAlert(String title, String message) {
@@ -296,7 +302,7 @@ public class PetFrameController {
         // Check if the user entered something and parse it to an integer
         result.ifPresent(quantityString -> {
             try {
-                int quantity = Integer.parseInt(quantityString);
+                 int quantity = Integer.parseInt(quantityString);
 
                 if (quantity > 0) {
                     // Check if there's enough stock
@@ -305,6 +311,7 @@ public class PetFrameController {
                         Cart cart = Cart.getInstance();
                         cart.addProduct(product, quantity);
                         System.out.println("Product added to cart: " + productName + ", Quantity: " + quantity);
+                        lastAddedQuantity = quantity;
 
                         // Show success message
                         showAlert("Success", "Item successfully added to the cart!");
@@ -325,46 +332,67 @@ public class PetFrameController {
     @FXML
     void addToCartRyle(ActionEvent event) {
         handleAddToCart(bird1, "Parakeet");
+        MinusStockByBreedName("Parakeet", lastAddedQuantity);
+        Platform.runLater(() -> lb1.setText("Stock: " + bird1.getStockQuantity()));
     }
 
     @FXML
     void addToCartLloyd(ActionEvent event) {
         handleAddToCart(bird2, "Canary");
+        MinusStockByBreedName("Canary", lastAddedQuantity);
+        Platform.runLater(() -> lb2.setText("Stock: " + bird2.getStockQuantity()));
     }
+
 
     @FXML
     void addToCartKen(ActionEvent event) {
         handleAddToCart(bird3, "Macaw");
+        MinusStockByBreedName("Macaw", lastAddedQuantity);
+        Platform.runLater(() -> lb3.setText("Stock: " + bird3.getStockQuantity()));
+
     }
 
     @FXML
     void addToCartGolden(ActionEvent event) {
         handleAddToCart(dog1, "Golden Retriever");
+        MinusStockByBreedName("Golden Retriever", lastAddedQuantity);
+        Platform.runLater(() -> ld1.setText("Stock: " +dog1.getStockQuantity()));
     }
 
     @FXML
     void addToCartChihuahua(ActionEvent event) {
         handleAddToCart(dog2, "Chihuahua");
+        MinusStockByBreedName("Chihuahua", lastAddedQuantity);
+        Platform.runLater(() -> ld2.setText("Stock: " +dog2.getStockQuantity()));
     }
 
     @FXML
     void addToCartChow(ActionEvent event) {
         handleAddToCart(dog3, "Chow Chow");
+        MinusStockByBreedName("Chow Chow", lastAddedQuantity);
+        Platform.runLater(() -> ld3.setText("Stock: " +dog3.getStockQuantity()));
     }
 
     @FXML
     void addToCartScottish(ActionEvent event) {
         handleAddToCart(cat1, "Scottish");
+        MinusStockByBreedName("Scottish", lastAddedQuantity);
+        Platform.runLater(() -> lc1.setText("Stock: " +cat1.getStockQuantity()));
     }
 
     @FXML
     void addToCartBritish(ActionEvent event) {
         handleAddToCart(cat2, "British Long Hair");
+        MinusStockByBreedName("British Long Hair", lastAddedQuantity);
+        Platform.runLater(() -> lc2.setText("Stock: " +cat2.getStockQuantity()));
     }
 
     @FXML
     void addToCartSokoke(ActionEvent event) {
         handleAddToCart(cat3, "Sokoke");
+        MinusStockByBreedName("Sokoke", lastAddedQuantity);
+        Platform.runLater(() -> lc3.setText("Stock: " +cat3.getStockQuantity()));
+
     }
 
 

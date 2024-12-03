@@ -560,22 +560,60 @@ public class adminStocksController {
     private void viewStockAnimals(String breed, Label stock) {
         if (selectedValue.equals(breed)) {
             String Sstock = String.valueOf(DBConnector.getStockByBreedName(breed));
-            Platform.runLater(() -> stock.setText(Sstock));
+            if(breed.equals("Parakeet") ||breed.equals("Canary") || breed.equals("Macaw")) {
+                Platform.runLater(() -> MenuBirds.setText(breed));
+                Platform.runLater(() -> stock.setText(Sstock));
+            }
+
+            else if (breed.equals("Golden Retriever") ||breed.equals("Chihuahua") || breed.equals("Chow Chow")) {
+                Platform.runLater(() -> MenuDogs.setText(breed));
+                Platform.runLater(() -> stock.setText(Sstock));
+            }
+            else if(breed.equals("Scottish Fold") ||breed.equals("British Long Hair") || breed.equals("Sokoke")) {
+                Platform.runLater(() -> MenuCats.setText(breed));
+                Platform.runLater(() -> stock.setText(Sstock));
+            }
         }
 
     }
+
     private void viewStockPetFood(String PetFood, Label stock) {
         if (selectedValue.equals(PetFood)) {
             String Sstock = String.valueOf(DBConnector.getStockByPetFoodName(PetFood));
-            Platform.runLater(() -> stock.setText(Sstock));
+            if(PetFood.equals("VitaCraft") ||PetFood.equals("Kaytee") || PetFood.equals("Nut N' Berry")) {
+                Platform.runLater(() -> MenuBirdFood.setText(PetFood));
+                Platform.runLater(() -> stock.setText(Sstock));
+            }
+            else if(PetFood.equals("Boss Dogs") ||PetFood.equals("Kibble n' Bits") || PetFood.equals("Pedigree")) {
+                Platform.runLater(() -> MenuDogFood.setText(PetFood));
+                Platform.runLater(() -> stock.setText(Sstock));
+            }
+            else if(PetFood.equals("Pro Plan") ||PetFood.equals("Whiskas") || PetFood.equals("Goodest")) {
+                Platform.runLater(() -> MenuCatFood.setText(PetFood));
+                Platform.runLater(() -> stock.setText(Sstock));
+            }
         }
 
     }
     private void viewStockAccessories(String Accessories, Label stock) {
         if (selectedValue.equals(Accessories)) {
             String Sstock = String.valueOf(DBConnector.getStockByAccessoriesName(Accessories));
-            Platform.runLater(() -> stock.setText(Sstock));
+            if (Accessories.equals("Dog Collar(S)") || Accessories.equals("Dog Collar(M)") || Accessories.equals("Dog Collar(L)")) {
+                Platform.runLater(() -> MenuDogCollar.setText(Accessories));
+                Platform.runLater(() -> stock.setText(Sstock));
+            }
+            else if (Accessories.equals("Dog Leash(S)") || Accessories.equals("Dog Leash(M)") || Accessories.equals("Dog Leash(L)")) {
+                Platform.runLater(() -> MenuDogLeash.setText(Accessories));
+                Platform.runLater(() -> stock.setText(Sstock));
+            }
+            else if (Accessories.equals("Cat Collar(S)") || Accessories.equals("Cat Collar(M)") || Accessories.equals("Cat Collar(L)")) {
+                Platform.runLater(() -> MenuCatCollar.setText(Accessories));
+                Platform.runLater(() -> stock.setText(Sstock));
         }
-
+            else if (Accessories.equals("Cat Leash(S)") || Accessories.equals("Cat Leash(M)") || Accessories.equals("Cat Leash(L)")) {
+                Platform.runLater(() -> MenuCatLeash.setText(Accessories));
+                Platform.runLater(() -> stock.setText(Sstock));
     }
+}
+}
 }

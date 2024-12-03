@@ -13,9 +13,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="mainFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainFrameController">
+<AnchorPane fx:id="mainFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5000.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainFrameController">
    <children>
-      <ScrollPane hbarPolicy="NEVER" layoutX="10.0" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1096.0" prefWidth="1920.0" vbarPolicy="NEVER" AnchorPane.bottomAnchor="-16.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5016.0" prefWidth="1920.0" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="5332.0" prefWidth="1928.0" style="-fx-background-color: EFDCCB;">
                <children>
@@ -181,16 +181,6 @@
                               <Font name="Franklin Gothic Demi" size="64.0" />
                            </font>
                         </Label>
-                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="151.0" layoutY="3439.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@ICONS/address%20icon.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1111.0" layoutY="3439.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@ICONS/download.png" />
-                           </image>
-                        </ImageView>
                         <AnchorPane layoutX="27.0" layoutY="1377.0" prefHeight="575.0" prefWidth="1864.0" style="-fx-background-color: #c7b198; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0, 4); -fx-background-radius: 35;">
                            <children>
                               <Text layoutX="77.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At our pet shop, love for animals is at the heart of everything we do,and it shines brightest through the dedication of our most hardworking employee. This person embodies compassion, treating every pet with care and ensuring their needs are met with patience and tenderness. Whether it's arranging comfortable habitats, assisting customers with expert advice, or staying late to ensure every animal is fed and safe, their commitment goes above and beyond. Their passion for animals is contagious, inspiring the rest of the team and creating a warm, welcoming atmosphere where pets and their owners feel valued. They remind us daily that our mission is not just about running a business but about making a difference in the lives of animals and the people who love them." textAlignment="JUSTIFY" wrappingWidth="936.8033447265625">

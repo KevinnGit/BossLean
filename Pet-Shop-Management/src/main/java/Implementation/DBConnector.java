@@ -27,7 +27,9 @@ public class DBConnector {
         }
 
 
-    } public static void main(String []args){
+    }
+
+    public static void main(String[] args) {
         Connection con = ConnectionDB();
     }
 
@@ -48,6 +50,7 @@ public class DBConnector {
         }
         return stock;
     }
+
     public static int getStockByPetFoodName(String productName) {
         int stock = 0; // Default stock value
         try {
@@ -65,6 +68,7 @@ public class DBConnector {
         }
         return stock;
     }
+
     public static int getStockByAccessoriesName(String productName) {
         int stock = 0; // Default stock value
         try {
@@ -82,6 +86,7 @@ public class DBConnector {
         }
         return stock;
     }
+
     public static int AddStockByBreedName(String productName, int additionalStock) {
         int updatedStock = 0;
 
@@ -121,6 +126,7 @@ public class DBConnector {
 
         return updatedStock; // Return the updated stock value
     }
+
     public static int AddStockByPetFoodName(String productName, int additionalStock) {
         int updatedStock = 0;
 
@@ -208,6 +214,125 @@ public class DBConnector {
         alert.setHeaderText("Stock for " + breed + " Updated");
         alert.setContentText("The stock for " + breed + " has been updated successfully. New stock: " + updatedStock);
         alert.showAndWait();
+    }
+
+    public static int MinusStockByBreedName(String productName, int additionalStock) {
+        int updatedStock = 0;
+
+        try (Connection con = ConnectionDB()) { // Use try-with-resources to close the connection
+            // First, fetch the current stock for the breed
+            String fetchQuery = "SELECT quantity FROM BreedInventory WHERE breed = ?";
+            try (PreparedStatement fetchPst = con.prepareStatement(fetchQuery)) {
+                fetchPst.setString(1, productName);
+                ResultSet rs = fetchPst.executeQuery();
+
+                if (rs.next()) {
+                    int currentStock = rs.getInt("quantity"); // Get the current stock value
+                    updatedStock = currentStock - additionalStock; // Calculate updated stock
+                } else {
+                    System.out.println("Breed not found in inventory: " + productName);
+                    return updatedStock; // Return 0 if breed not found
+                }
+
+                // Now, update the stock in the database
+                String updateQuery = "UPDATE BreedInventory SET quantity = ? WHERE breed = ?";
+                try (PreparedStatement updatePst = con.prepareStatement(updateQuery)) {
+                    updatePst.setInt(1, updatedStock); // Set the new stock value
+                    updatePst.setString(2, productName); // Set the breed name
+                    int rowsAffected = updatePst.executeUpdate();
+
+                    if (rowsAffected > 0) {
+                        // If the update was successful, show success notification
+                        showStockUpdateSuccessNotification(productName, updatedStock);
+                    } else {
+                        System.out.println("Failed to update stock for " + productName);
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            System.out.println("Error updating stock for " + productName + ": " + e.getMessage());
+        }
+
+        return updatedStock; // Return the updated stock value
+    }
+
+    public static int MinusStockByPetFoodName(String productName, int additionalStock) {
+        int updatedStock = 0;
+
+        try (Connection con = ConnectionDB()) { // Use try-with-resources to close the connection
+            // First, fetch the current stock for the breed
+            String fetchQuery = "SELECT quantity FROM PetFoodInventory WHERE product = ?";
+            try (PreparedStatement fetchPst = con.prepareStatement(fetchQuery)) {
+                fetchPst.setString(1, productName);
+                ResultSet rs = fetchPst.executeQuery();
+
+                if (rs.next()) {
+                    int currentStock = rs.getInt("quantity"); // Get the current stock value
+                    updatedStock = currentStock - additionalStock; // Calculate updated stock
+                } else {
+                    System.out.println("Product not found in inventory: " + productName);
+                    return updatedStock; // Return 0 if breed not found
+                }
+
+                // Now, update the stock in the database
+                String updateQuery = "UPDATE PetFoodInventory SET quantity = ? WHERE product = ?";
+                try (PreparedStatement updatePst = con.prepareStatement(updateQuery)) {
+                    updatePst.setInt(1, updatedStock); // Set the new stock value
+                    updatePst.setString(2, productName); // Set the breed name
+                    int rowsAffected = updatePst.executeUpdate();
+
+                    if (rowsAffected > 0) {
+                        // If the update was successful, show success notification
+                        showStockUpdateSuccessNotification(productName, updatedStock);
+                    } else {
+                        System.out.println("Failed to update stock for " + productName);
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            System.out.println("Error updating stock for " + productName + ": " + e.getMessage());
+        }
+
+        return updatedStock; // Return the updated stock value
+    }
+    public static int MinusStockByAccessoriesName(String productName, int additionalStock) {
+        int updatedStock = 0;
+
+        try (Connection con = ConnectionDB()) { // Use try-with-resources to close the connection
+            // First, fetch the current stock for the breed
+            String fetchQuery = "SELECT quantity FROM AccessoriesInventory WHERE product = ?";
+            try (PreparedStatement fetchPst = con.prepareStatement(fetchQuery)) {
+                fetchPst.setString(1, productName);
+                ResultSet rs = fetchPst.executeQuery();
+
+                if (rs.next()) {
+                    int currentStock = rs.getInt("quantity"); // Get the current stock value
+                    updatedStock = currentStock - additionalStock; // Calculate updated stock
+                } else {
+                    System.out.println("Product not found in inventory: " + productName);
+                    return updatedStock; // Return 0 if breed not found
+                }
+
+                // Now, update the stock in the database
+                String updateQuery = "UPDATE AccessoriesInventory SET quantity = ? WHERE product = ?";
+                try (PreparedStatement updatePst = con.prepareStatement(updateQuery)) {
+                    updatePst.setInt(1, updatedStock); // Set the new stock value
+                    updatePst.setString(2, productName); // Set the breed name
+                    int rowsAffected = updatePst.executeUpdate();
+
+                    if (rowsAffected > 0) {
+                        // If the update was successful, show success notification
+                        showStockUpdateSuccessNotification(productName, updatedStock);
+                    } else {
+                        System.out.println("Failed to update stock for " + productName);
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            System.out.println("Error updating stock for " + productName + ": " + e.getMessage());
+        }
+
+        return updatedStock; // Return the updated stock value
     }
 }
 

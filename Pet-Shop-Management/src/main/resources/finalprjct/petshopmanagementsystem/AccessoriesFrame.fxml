@@ -3,7 +3,6 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -33,19 +32,19 @@
                         <Font name="Segoe UI Black" size="64.0" />
                      </font>
                   </Label>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="67.0" layoutY="321.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="783.0" layoutX="67.0" layoutY="321.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
                   <ImageView fitHeight="375.0" fitWidth="376.0" layoutX="115.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/collard.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="120.0" layoutY="914.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="93.0" layoutY="988.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
                   <Line endX="285.66668701171875" layoutX="271.0" layoutY="619.0" startX="-202.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="70.0" layoutY="1187.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="783.0" layoutX="70.0" layoutY="1187.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
                   <ImageView fitHeight="375.0" fitWidth="376.0" layoutX="126.0" layoutY="1235.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/leashd.png" />
@@ -56,19 +55,19 @@
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="120.0" layoutY="1769.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="103.0" layoutY="1844.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
                   <Line endX="285.66668701171875" layoutX="274.0" layoutY="1485.0" startX="-202.0" />
-                  <Line endX="1770.0" endY="-6.0" layoutX="146.0" layoutY="1987.0" startX="-147.0" startY="-6.0" />
+                  <Line endX="1770.0" endY="-6.0" layoutX="146.0" layoutY="2038.0" startX="-147.0" startY="-6.0" />
                   <Label layoutX="737.0" layoutY="2060.0" text="Cat Accesories">
                      <font>
                         <Font name="Segoe UI Black" size="64.0" />
                      </font>
                   </Label>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="91.0" layoutY="2266.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="783.0" layoutX="91.0" layoutY="2266.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
                   <ImageView fitHeight="375.0" fitWidth="376.0" layoutX="139.0" layoutY="2235.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/collarc.png" />
@@ -79,13 +78,13 @@
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="120.0" layoutY="2865.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="112.0" layoutY="2944.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
                   <Line endX="295.0" layoutX="293.0" layoutY="3413.0" startX="-202.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="85.0" layoutY="3137.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="783.0" layoutX="85.0" layoutY="3137.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
                   <ImageView fitHeight="375.0" fitWidth="376.0" layoutX="133.0" layoutY="3106.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/leashc.png" />
@@ -96,13 +95,13 @@
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="120.0" layoutY="3735.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="112.0" layoutY="3814.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
                   <Line endX="259.0" layoutX="309.0" layoutY="3440.0" startX="-229.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="717.0" layoutY="317.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="783.0" layoutX="717.0" layoutY="317.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
                   <ImageView fitHeight="429.0" fitWidth="427.0" layoutX="751.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/COLLARD2.png" />
@@ -113,13 +112,13 @@
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="765.0" layoutY="914.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="757.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
                   <Line endX="285.66668701171875" layoutX="921.0" layoutY="615.0" startX="-202.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="1336.0" layoutY="314.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="783.0" layoutX="1336.0" layoutY="314.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
                   <ImageView fitHeight="375.0" fitWidth="376.0" layoutX="1387.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/COLLARD3.png" />
@@ -130,13 +129,13 @@
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1375.0" layoutY="917.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1379.0" layoutY="986.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
                   <Line endX="285.66668701171875" layoutX="1540.0" layoutY="612.0" startX="-202.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="715.0" layoutY="1173.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="783.0" layoutX="715.0" layoutY="1173.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
                   <ImageView fitHeight="375.0" fitWidth="376.0" layoutX="781.0" layoutY="1127.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/LEASHD2.png" />
@@ -147,13 +146,13 @@
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="765.0" layoutY="1769.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="753.0" layoutY="1842.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
                   <Line endX="285.66668701171875" layoutX="919.0" layoutY="1471.0" startX="-202.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="1335.0" layoutY="1166.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="783.0" layoutX="1335.0" layoutY="1166.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
                   <ImageView fitHeight="287.0" fitWidth="301.0" layoutX="1438.0" layoutY="1165.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/LEASHD3.png" />
@@ -164,13 +163,13 @@
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1375.0" layoutY="1769.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1375.0" layoutY="1829.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
                   <Line endX="285.66668701171875" layoutX="1539.0" layoutY="1464.0" startX="-202.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="725.0" layoutY="2262.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="783.0" layoutX="725.0" layoutY="2262.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
                   <ImageView fitHeight="375.0" fitWidth="376.0" layoutX="773.0" layoutY="2231.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/COLLARC2.png" />
@@ -181,13 +180,13 @@
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="765.0" layoutY="2865.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="757.0" layoutY="2944.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
                   <Line endX="295.0" layoutX="918.0" layoutY="2543.0" startX="-202.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="1331.0" layoutY="2268.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="783.0" layoutX="1331.0" layoutY="2268.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
                   <ImageView fitHeight="375.0" fitWidth="376.0" layoutX="1379.0" layoutY="2237.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/COLLARC3.png" />
@@ -198,13 +197,13 @@
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1375.0" layoutY="2865.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1367.0" layoutY="2944.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
                   <Line endX="295.0" layoutX="1524.0" layoutY="2549.0" startX="-202.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="734.0" layoutY="3140.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="783.0" layoutX="734.0" layoutY="3140.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
                   <ImageView fitHeight="375.0" fitWidth="376.0" layoutX="783.0" layoutY="3138.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/LEASHC2.png" />
@@ -215,13 +214,13 @@
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="765.0" layoutY="3730.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="757.0" layoutY="3809.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
                   <Line endX="259.0" layoutX="958.0" layoutY="3443.0" startX="-229.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="681.0" layoutX="1350.0" layoutY="3138.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ddc597" height="783.0" layoutX="1350.0" layoutY="3138.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
                   <ImageView fitHeight="333.0" fitWidth="355.0" layoutX="1438.0" layoutY="3101.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/LEASHC3.png" />
@@ -232,13 +231,13 @@
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1375.0" layoutY="3731.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="69.0" fitWidth="91.0" layoutX="1367.0" layoutY="3810.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
                   <Line endX="259.0" layoutX="1574.0" layoutY="3441.0" startX="-229.0" />
-                  <Label fx:id="dogcollar1length" layoutX="120.0" layoutY="780.0" text="20-30cm  ">
+                  <Label fx:id="dogcollar1length" layoutX="93.0" layoutY="780.0" text="20-30cm  ">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
@@ -298,7 +297,7 @@
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dogcollar1price" layoutX="120.0" layoutY="843.0" text=" ₱500">
+                  <Label fx:id="dogcollar1price" layoutX="93.0" layoutY="843.0" text=" ₱500">
                      <font>
                         <Font name="Segoe UI Black" size="48.0" />
                      </font>
@@ -358,7 +357,7 @@
                         <Font name="Segoe UI Black" size="48.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dogcollar1color" layoutX="120.0" layoutY="710.0" text="Black">
+                  <Label fx:id="dogcollar1color" layoutX="93.0" layoutY="710.0" text="Black">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
@@ -419,191 +418,131 @@
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <Button layoutX="133.0" layoutY="901.0" mnemonicParsing="false" onAction="#AddtoCartDCollarS" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                  <Button layoutX="126.0" layoutY="975.0" mnemonicParsing="false" onAction="#AddtoCartDCollarS" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
                      <font>
                         <Font name="Segoe UI Black" size="48.0" />
                      </font></Button>
-                  <Button layoutX="751.0" layoutY="905.0" mnemonicParsing="false" onAction="#AddtoCartDCollarM" prefHeight="81.0" prefWidth="382.0" style="-fx-background-color: transparent;" />
-                  <Label fx:id="dogcollar1type" layoutX="120.0" layoutY="633.0" text="(S)">
+                  <Button layoutX="738.0" layoutY="985.0" mnemonicParsing="false" onAction="#AddtoCartDCollarM" prefHeight="81.0" prefWidth="382.0" style="-fx-background-color: transparent;" />
+                  <Label fx:id="dogcollar1type" layoutX="93.0" layoutY="633.0" text="(S)">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <Button layoutX="776.0" layoutY="898.0" mnemonicParsing="false" onAction="#AddtoCartDCollarM" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                  <Button layoutX="776.0" layoutY="988.0" mnemonicParsing="false" onAction="#AddtoCartDCollarM" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
                      <font>
                         <Font name="Segoe UI Black" size="48.0" />
                      </font>
                   </Button>
-                  <Button layoutX="1380.0" layoutY="905.0" mnemonicParsing="false" onAction="#AddtoCartDCollarL" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                  <Button layoutX="1405.0" layoutY="980.0" mnemonicParsing="false" onAction="#AddtoCartDCollarL" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
                      <font>
                         <Font name="Segoe UI Black" size="48.0" />
                      </font>
                   </Button>
-                  <Button layoutX="130.0" layoutY="1759.0" mnemonicParsing="false" onAction="#AddtoCartDLeashS" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                  <Button layoutX="130.0" layoutY="1832.0" mnemonicParsing="false" onAction="#AddtoCartDLeashS" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
                      <font>
                         <Font name="Segoe UI Black" size="48.0" />
                      </font>
                   </Button>
-                  <Button layoutX="777.0" layoutY="1755.0" mnemonicParsing="false" onAction="#AddtoCartDLeashM" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                  <Button layoutX="777.0" layoutY="1833.0" mnemonicParsing="false" onAction="#AddtoCartDLeashM" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
                      <font>
                         <Font name="Segoe UI Black" size="48.0" />
                      </font>
                   </Button>
-                  <Button layoutX="1393.0" layoutY="1751.0" mnemonicParsing="false" onAction="#AddtoCartDLeashL" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                  <Button layoutX="1394.0" layoutY="1825.0" mnemonicParsing="false" onAction="#AddtoCartDLeashL" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
                      <font>
                         <Font name="Segoe UI Black" size="48.0" />
                      </font>
                   </Button>
-                  <Button layoutX="138.0" layoutY="2851.0" mnemonicParsing="false" onAction="#AddtoCartCCollarS" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                  <Button layoutX="138.0" layoutY="2937.0" mnemonicParsing="false" onAction="#AddtoCartCCollarS" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
                      <font>
                         <Font name="Segoe UI Black" size="48.0" />
                      </font>
                   </Button>
-                  <Button layoutX="781.0" layoutY="2850.0" mnemonicParsing="false" onAction="#AddtoCartCCollarM" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                  <Button layoutX="781.0" layoutY="2936.0" mnemonicParsing="false" onAction="#AddtoCartCCollarM" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
                      <font>
                         <Font name="Segoe UI Black" size="48.0" />
                      </font>
                   </Button>
-                  <Button layoutX="1381.0" layoutY="2850.0" mnemonicParsing="false" onAction="#AddtoCartCCollarL" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                  <Button layoutX="1381.0" layoutY="2936.0" mnemonicParsing="false" onAction="#AddtoCartCCollarL" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
                      <font>
                         <Font name="Segoe UI Black" size="48.0" />
                      </font>
                   </Button>
-                  <Button layoutX="130.0" layoutY="3717.0" mnemonicParsing="false" onAction="#AddtoCartCLeashS" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                  <Button layoutX="130.0" layoutY="3803.0" mnemonicParsing="false" onAction="#AddtoCartCLeashS" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
                      <font>
                         <Font name="Segoe UI Black" size="48.0" />
                      </font>
                   </Button>
-                  <Button layoutX="776.0" layoutY="3716.0" mnemonicParsing="false" onAction="#AddtoCartCLeashM" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                  <Button layoutX="776.0" layoutY="3802.0" mnemonicParsing="false" onAction="#AddtoCartCLeashM" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
                      <font>
                         <Font name="Segoe UI Black" size="48.0" />
                      </font>
                   </Button>
-                  <Button layoutX="1381.0" layoutY="3715.0" mnemonicParsing="false" onAction="#AddtoCartCLeashL" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
+                  <Button layoutX="1381.0" layoutY="3801.0" mnemonicParsing="false" onAction="#AddtoCartCLeashL" prefHeight="102.0" prefWidth="405.0" style="-fx-background-color: transparent;" text="Add To Cart">
                      <font>
                         <Font name="Segoe UI Black" size="48.0" />
                      </font>
                   </Button>
-                  <Label fx:id="dogcollar1type1" layoutX="376.0" layoutY="634.0" text="Stock:">
+                  <Label fx:id="ldc1" layoutX="93.0" layoutY="911.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="dcs" layoutX="350.0" layoutY="691.0" prefHeight="67.0" prefWidth="192.0">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </TextField>
-                  <Label fx:id="dogcollar1type11" layoutX="1044.0" layoutY="621.0" text="Stock:">
+                  <Label fx:id="ldc2" layoutX="765.0" layoutY="914.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="dcm" layoutX="998.0" layoutY="678.0" prefHeight="67.0" prefWidth="198.0">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </TextField>
-                  <Label fx:id="dogcollar1type12" layoutX="1633.0" layoutY="637.0" text="Stock:">
+                  <Label fx:id="ldc3" layoutX="1375.0" layoutY="909.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="dcl" layoutX="1607.0" layoutY="694.0" prefHeight="67.0" prefWidth="210.0">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </TextField>
-                  <Label fx:id="dogcollar1type121" layoutX="1650.0" layoutY="1472.0" text="Stock:">
+                  <Label fx:id="ldl3" layoutX="1375.0" layoutY="1756.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="dll" layoutX="1608.0" layoutY="1529.0" prefHeight="67.0" prefWidth="194.0">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </TextField>
-                  <Label fx:id="dogcollar1type122" layoutX="1046.0" layoutY="1484.0" text="Stock:">
+                  <Label fx:id="ldl2" layoutX="765.0" layoutY="1762.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="dlm" layoutX="1008.0" layoutY="1541.0" prefHeight="67.0" prefWidth="190.0">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </TextField>
-                  <Label fx:id="dogcollar1type123" layoutX="396.0" layoutY="1511.0" text="Stock:">
+                  <Label fx:id="ldl1" layoutX="120.0" layoutY="1770.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="dls" layoutX="350.0" layoutY="1568.0" prefHeight="67.0" prefWidth="198.0">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </TextField>
-                  <Label fx:id="dogcollar1type1231" layoutX="421.0" layoutY="2568.0" text="Stock:">
+                  <Label fx:id="lcc1" layoutX="120.0" layoutY="2865.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="ccs" layoutX="373.0" layoutY="2625.0" prefHeight="67.0" prefWidth="200.0">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </TextField>
-                  <Label fx:id="dogcollar1type12311" layoutX="1052.0" layoutY="2568.0" text="Stock:">
+                  <Label fx:id="lcc2" layoutX="765.0" layoutY="2864.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="ccm" layoutX="1006.0" layoutY="2625.0" prefHeight="67.0" prefWidth="198.0">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </TextField>
-                  <Label fx:id="dogcollar1type12312" layoutX="1656.0" layoutY="2571.0" text="Stock:">
+                  <Label fx:id="lcc3" layoutX="1375.0" layoutY="2864.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="ccl" layoutX="1604.0" layoutY="2628.0" prefHeight="67.0" prefWidth="204.0">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </TextField>
-                  <Label fx:id="dogcollar1type12313" layoutX="1053.0" layoutY="3453.0" text="Stock:">
+                  <Label fx:id="lcl2" layoutX="764.0" layoutY="3728.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="clm" layoutX="995.0" layoutY="3510.0" prefHeight="67.0" prefWidth="210.0">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </TextField>
-                  <Label fx:id="dogcollar1type12314" layoutX="417.0" layoutY="3467.0" text="Stock:">
+                  <Label fx:id="lcl1" layoutX="128.0" layoutY="3737.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="cls" layoutX="339.0" layoutY="3524.0" prefHeight="67.0" prefWidth="230.0">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </TextField>
-                  <Label fx:id="dogcollar1type123131" layoutX="1677.0" layoutY="3458.0" text="Stock:">
+                  <Label fx:id="lcl3" layoutX="1388.0" layoutY="3734.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="48.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="cll" layoutX="1621.0" layoutY="3515.0" prefHeight="67.0" prefWidth="208.0">
-                     <font>
-                        <Font name="Segoe UI" size="36.0" />
-                     </font>
-                  </TextField>
                     </children>
                 </AnchorPane>
             </content>

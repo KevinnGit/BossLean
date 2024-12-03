@@ -5,6 +5,7 @@ import Implementation.DBConnector;
 import Implementation.Food;
 import Implementation.Product;
 import finalprjct.petshopmanagementsystem.SceneSwitch;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -15,6 +16,8 @@ import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 import java.util.Optional;
+
+import static Implementation.DBConnector.*;
 
 public class PetFoodFrameController {
 
@@ -31,6 +34,7 @@ public class PetFoodFrameController {
     Food Catfood3 = new Food("Pro Plan", 1000, DBConnector.getStockByPetFoodName("Pro Plan"), "1000 Grams", "Treats");
 
 
+    private int lastAddedQuantity;
 
     @FXML
     private Label BfoodName2;
@@ -116,32 +120,33 @@ public class PetFoodFrameController {
     @FXML
     private AnchorPane PetFoodPane;
 
-    @FXML
-    private TextField tabf1;
 
     @FXML
-    private TextField tabf2;
+    private Label lbf1;
 
     @FXML
-    private TextField tabf3;
+    private Label lbf2;
 
     @FXML
-    private TextField tacf1;
+    private Label lbf3;
 
     @FXML
-    private TextField tacf2;
+    private Label lcf1;
 
     @FXML
-    private TextField tacf3;
+    private Label lcf2;
 
     @FXML
-    private TextField tadf1;
+    private Label lcf3;
 
     @FXML
-    private TextField tadf2;
+    private Label ldf1;
 
     @FXML
-    private TextField tadf3;
+    private Label ldf2;
+
+    @FXML
+    private Label ldf3;
 
     @FXML
     public void initialize() {
@@ -149,49 +154,49 @@ public class PetFoodFrameController {
         BfoodName1.setText("Brand: " + Birdfood1.getName());
         BfoodDes1.setText(Birdfood1.getDescription());
         BfoodPrice1.setText("Price: " + Birdfood1.getPrice());
-        tabf1.setText("Stock: " + Birdfood1.getStockQuantity());
+        lbf1.setText("Stock: " + Birdfood1.getStockQuantity());
 
         BfoodName2.setText("Brand: " + Birdfood2.getName());
         BfoodDes2.setText(Birdfood2.getDescription());
         BfoodPrice2.setText("Price: " + Birdfood2.getPrice());
-        tabf2.setText("Stock: " + Birdfood2.getStockQuantity());
+        lbf2.setText("Stock: " + Birdfood2.getStockQuantity());
 
         BfoodName3.setText("Brand: " + Birdfood3.getName());
         BfoodDes3.setText(Birdfood3.getDescription());
         BfoodPrice3.setText("Price: " + Birdfood3.getPrice());
-        tabf3.setText("Stock: " + Birdfood3.getStockQuantity());
+        lbf3.setText("Stock: " + Birdfood3.getStockQuantity());
 
         // Set Label for Dog Food
         DfoodName1.setText("Brand: " + Dogfood1.getName());
         DfoodDes1.setText(Dogfood1.getDescription());
         DfoodPrice1.setText("Price: " + Dogfood1.getPrice());
-        tadf1.setText("Stock: " + Dogfood1.getStockQuantity());
+        ldf1.setText("Stock: " + Dogfood1.getStockQuantity());
 
         DfoodName2.setText("Brand: " + Dogfood2.getName());
         DfoodDes2.setText(Dogfood2.getDescription());
         DfoodPrice2.setText("Price: " + Dogfood2.getPrice());
-        tadf2.setText("Stock: " + Dogfood2.getStockQuantity());
+        ldf2.setText("Stock: " + Dogfood2.getStockQuantity());
 
         DfoodName3.setText("Brand: " + Dogfood3.getName());
         DfoodDes3.setText(Dogfood3.getDescription());
         DfoodPrice3.setText("Price: " + Dogfood3.getPrice());
-        tadf3.setText("Stock: " + Dogfood3.getStockQuantity());
+        ldf3.setText("Stock: " + Dogfood3.getStockQuantity());
 
         // Set Label for Cat Food
         CfoodName1.setText("Brand: " + Catfood1.getName());
         CfoodDes1.setText(Catfood1.getDescription());
         CfoodPrice1.setText("Price: " + Catfood1.getPrice());
-        tacf1.setText("Stock: " + Catfood1.getStockQuantity());
+        lcf1.setText("Stock: " + Catfood1.getStockQuantity());
 
         CfoodName2.setText("Brand: " + Catfood2.getName());
         CfoodDes2.setText(Catfood2.getDescription());
         CfoodPrice2.setText("Price: " + Catfood2.getPrice());
-        tacf2.setText("Stock: " + Catfood2.getStockQuantity());
+        lcf2.setText("Stock: " + Catfood2.getStockQuantity());
 
         CfoodName3.setText("Brand: " + Catfood3.getName());
         CfoodDes3.setText(Catfood3.getDescription());
         CfoodPrice3.setText("Price: " + Catfood3.getPrice());
-        tacf3.setText("Stock: " + Catfood3.getStockQuantity());
+        lcf3.setText("Stock: " + Catfood3.getStockQuantity());
     }
 
     private void showAlert(String title, String message) {
@@ -223,6 +228,7 @@ public class PetFoodFrameController {
                         Cart cart = Cart.getInstance();
                         cart.addProduct(product, quantity);
                         System.out.println("Product added to cart: " + productName + ", Quantity: " + quantity);
+                        lastAddedQuantity = quantity;
 
                         // Show success message
                         showAlert("Success", "Item successfully added to the cart!");
@@ -242,47 +248,86 @@ public class PetFoodFrameController {
 
     @FXML
     void AddToCartPedigree(ActionEvent event) {
+
         handleAddToCart(Dogfood1, "Dogfood1");
+        MinusStockByPetFoodName("Pedigree",lastAddedQuantity);
+        Platform.runLater(() -> ldf1.setText("Stock: " + Dogfood1.getStockQuantity()));
+
     }
 
     @FXML
     void AddToCartVitacraft(ActionEvent event) {
         handleAddToCart(Birdfood1, "Birdfood1");
+        MinusStockByPetFoodName("Vitacraft" ,lastAddedQuantity);
+        Platform.runLater(() -> lbf1.setText("Stock: " + Birdfood1.getStockQuantity()));
+
     }
 
     @FXML
     void addToCartBossDogs(ActionEvent event) {
+
         handleAddToCart(Dogfood3, "Dogfood3");
+        MinusStockByPetFoodName(Dogfood3.getName(),lastAddedQuantity);
+        Platform.runLater(() -> ldf3.setText("Stock: " + Dogfood3.getStockQuantity()));
+
     }
 
     @FXML
     void addToCartGoodest(ActionEvent event) {
+
         handleAddToCart(Catfood1, "Catfood1");
+        MinusStockByPetFoodName(Catfood1.getName(),lastAddedQuantity);
+        Platform.runLater(() -> lcf1.setText("Stock: " + Catfood1.getStockQuantity()));
+
+
     }
 
     @FXML
     void addToCartKaytee(ActionEvent event) {
+
         handleAddToCart(Birdfood2, "Birdfood2");
+        MinusStockByPetFoodName(Birdfood2.getName(),lastAddedQuantity);
+        Platform.runLater(() -> lbf2.setText("Stock: " + Catfood2.getStockQuantity()));
+
+
     }
 
     @FXML
     void addToCartKibbl(ActionEvent event) {
+
         handleAddToCart(Dogfood2, "Dogfood2");
+        MinusStockByPetFoodName(Dogfood2.getName(),lastAddedQuantity);
+        Platform.runLater(() -> ldf2.setText("Stock: " + Dogfood2.getStockQuantity()));
+
+
     }
 
     @FXML
     void addToCartProPlan(ActionEvent event) {
+
         handleAddToCart(Catfood3, "Catfood3");
+        MinusStockByPetFoodName(Catfood3.getName(),lastAddedQuantity);
+        Platform.runLater(() -> lcf3.setText("Stock: " + Catfood3.getStockQuantity()));
+
     }
 
     @FXML
     void addToCartWhiskas(ActionEvent event) {
+
         handleAddToCart(Catfood2, "Catfood2");
+        MinusStockByPetFoodName(Catfood2.getName(),lastAddedQuantity);
+        Platform.runLater(() -> lcf2.setText("Stock: " + Catfood2.getStockQuantity()));
+
+
     }
 
     @FXML
     void addtoCartNut(ActionEvent event) {
+
         handleAddToCart(Birdfood3, "Birdfood3");
+        MinusStockByPetFoodName(Birdfood3.getName(),lastAddedQuantity);
+        Platform.runLater(() -> lbf3.setText("Stock: " + Birdfood3.getStockQuantity()));
+
     }
 
     @FXML

@@ -3,7 +3,6 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -423,95 +422,51 @@
                         <Image url="@ICONS/shopping-cart.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="bird1Price1" layoutX="71.0" layoutY="707.0" text="Stock:">
+                  <Label fx:id="lb2" layoutX="740.0" layoutY="715.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <TextArea fx:id="tabird1" editable="false" layoutX="145.0" layoutY="701.0" prefHeight="0.0" prefWidth="128.0" wrapText="true">
-                     <font>
-                        <Font name="Segoe UI" size="24.0" />
-                     </font></TextArea>
-                  <Label fx:id="bird1Price11" layoutX="734.0" layoutY="715.0" text="Stock:">
+                  <Label fx:id="lb3" layoutX="1365.0" layoutY="701.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <TextArea fx:id="tabird2" editable="false" layoutX="808.0" layoutY="709.0" prefHeight="0.0" prefWidth="128.0" wrapText="true">
-                     <font>
-                        <Font name="Segoe UI" size="24.0" />
-                     </font>
-                  </TextArea>
-                  <Label fx:id="bird1Price111" layoutX="1361.0" layoutY="701.0" text="Stock:">
+                  <Label fx:id="ld1" layoutX="102.0" layoutY="1829.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <TextArea fx:id="tabird3" editable="false" layoutX="1435.0" layoutY="695.0" prefHeight="0.0" prefWidth="128.0" wrapText="true">
-                     <font>
-                        <Font name="Segoe UI" size="24.0" />
-                     </font>
-                  </TextArea>
-                  <Label fx:id="bird1Price12" layoutX="102.0" layoutY="1829.0" text="Stock:">
+                  <Label fx:id="ld2" layoutX="713.0" layoutY="1820.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <TextArea fx:id="tadog1" editable="false" layoutX="176.0" layoutY="1823.0" prefHeight="0.0" prefWidth="128.0" wrapText="true">
-                     <font>
-                        <Font name="Segoe UI" size="24.0" />
-                     </font>
-                  </TextArea>
-                  <Label fx:id="bird1Price121" layoutX="714.0" layoutY="1820.0" text="Stock:">
+                  <Label fx:id="ld3" layoutX="1326.0" layoutY="1829.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <TextArea fx:id="tadog2" editable="false" layoutX="788.0" layoutY="1814.0" prefHeight="0.0" prefWidth="128.0" wrapText="true">
-                     <font>
-                        <Font name="Segoe UI" size="24.0" />
-                     </font>
-                  </TextArea>
-                  <Label fx:id="bird1Price122" layoutX="1330.0" layoutY="1829.0" text="Stock:">
+                  <Label fx:id="lc1" layoutX="126.0" layoutY="2915.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <TextArea fx:id="tadog3" editable="false" layoutX="1404.0" layoutY="1804.0" prefHeight="0.0" prefWidth="128.0" wrapText="true">
-                     <font>
-                        <Font name="Segoe UI" size="24.0" />
-                     </font>
-                  </TextArea>
-                  <TextArea fx:id="tacAt1" editable="false" layoutX="203.0" layoutY="2909.0" prefHeight="0.0" prefWidth="128.0" wrapText="true">
-                     <font>
-                        <Font name="Segoe UI" size="24.0" />
-                     </font>
-                  </TextArea>
-                  <Label fx:id="bird1Price123" layoutX="129.0" layoutY="2915.0" text="Stock:">
+                  <Label fx:id="lc2" layoutX="735.0" layoutY="2914.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="bird1Price1231" layoutX="735.0" layoutY="2914.0" text="Stock:">
+                  <Label fx:id="lc3" layoutX="1353.0" layoutY="2907.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <TextArea fx:id="tacAt2" editable="false" layoutX="809.0" layoutY="2908.0" prefHeight="0.0" prefWidth="128.0" wrapText="true">
-                     <font>
-                        <Font name="Segoe UI" size="24.0" />
-                     </font>
-                  </TextArea>
-                  <Label fx:id="bird1Price1232" layoutX="1354.0" layoutY="2907.0" text="Stock:">
+                  <Label fx:id="lb1" layoutX="70.0" layoutY="709.0" text="0">
                      <font>
                         <Font name="Segoe UI" size="24.0" />
                      </font>
                   </Label>
-                  <TextArea fx:id="tacAt3" editable="false" layoutX="1428.0" layoutY="2901.0" prefHeight="0.0" prefWidth="128.0" wrapText="true">
-                     <font>
-                        <Font name="Segoe UI" size="24.0" />
-                     </font>
-                  </TextArea>
                </children>
             </AnchorPane>
          </content>
