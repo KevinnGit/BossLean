@@ -15,6 +15,8 @@ import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 
+import static Implementation.DBConnector.*;
+
 public class CartFrameController {
 
     @FXML
@@ -106,14 +108,18 @@ public class CartFrameController {
             confirmationAlert.setHeaderText("Are you sure you want to remove this item?");
             confirmationAlert.setContentText("Product: " + selectedItem.getProduct().getName());
 
+            String productName = selectedItem.getProduct().getName();
+            int quantity = selectedItem.getQuantity();
+
             // Wait for the user's response
             confirmationAlert.showAndWait().ifPresent(response -> {
                 if (response == javafx.scene.control.ButtonType.OK) {
                     // Remove the item from the Cart singleton
                     Cart cart = Cart.getInstance();
                     cart.removeCartItem(selectedItem);
+                    undostock(productName, quantity);
 
-                    // Refresh the table to show the updated cart
+
                     updateCartTable();
                 }
             });
@@ -143,13 +149,162 @@ public class CartFrameController {
                 Cart cart = Cart.getInstance();
                 cart.clear();
 
-                // Clear the data in the observable list
+                ObservableList<CartItem> items = cartTable.getItems();
+                for (CartItem item : items) {
+                    String productName = item.getProduct().getName();
+                    int quantity = item.getQuantity();
+                    undostock(productName, quantity);
+                }
                 cartData.clear();
+
+
+
 
                 // Update the total price display
                 Total.setText("₱0.00");
             }
         });
     }
+    private void undostock(String product, int quantity) {
+        //birds
+        if(product.equals("Parakeet")) {
+            product = "Parakeet";
+            AddStockByBreedName(product, quantity);
+        }
+        else if(product.equals("Canary")) {
+            product = "Canary";
+            AddStockByBreedName(product, quantity);
+        }
+        else if(product.equals("Macaw")) {
+            product = "Macaw";
+            AddStockByBreedName(product, quantity);
+        }
 
+        //dogs
+        else if(product.equals("Golden Retriever")) {
+            product = "Golden Retriever";
+            AddStockByBreedName(product, quantity);
+        }
+        else if(product.equals("Chihuahua")) {
+            product = "Chihuahua";
+            AddStockByBreedName(product, quantity);
+        }
+        else if(product.equals("Chow Chow")) {
+            product = "Chow Chow";
+            AddStockByBreedName(product, quantity);
+        }
+
+        //cats
+        else if(product.equals("Scottish Fold")) {
+            product = "Scottish Fold";
+            AddStockByBreedName(product, quantity);
+        }
+        else if(product.equals("British Long Hair")) {
+            product = "British Long Hair";
+            AddStockByBreedName(product, quantity);
+        }
+        else if(product.equals("Sokoke")) {
+            product = "Sokoke";
+            AddStockByBreedName(product, quantity);
+        }
+
+        //bird food
+        else if(product.equals("VitaCraft")) {
+            product = "VitaCraft";
+            AddStockByPetFoodName(product, quantity);
+        }
+        else if(product.equals("Kaytee")) {
+            product = "Kaytee";
+            AddStockByPetFoodName(product, quantity);
+        }
+        else if(product.equals("Nut N' Berry")) {
+            product = "Nut N' Berry";
+            AddStockByPetFoodName(product, quantity);
+        }
+
+        //dog food
+        else if(product.equals("Pedigree")) {
+            product = "Pedigree";
+            AddStockByPetFoodName(product, quantity);
+        }
+        else if(product.equals("Kibble n' Bits")) {
+            product = "Kibble n' Bits";
+            AddStockByPetFoodName(product, quantity);
+        }
+        else if(product.equals("Boss Dogs")) {
+            product = "Boss Dogs";
+            AddStockByPetFoodName(product, quantity);
+        }
+
+        //cat food
+        else if(product.equals("Goodest")) {
+            product = "Goodest";
+            AddStockByPetFoodName(product, quantity);
+        }
+        else if(product.equals("Whiskas")) {
+            product = "Whiskas";
+            AddStockByPetFoodName(product, quantity);
+        }
+        else if(product.equals("Pro Plan")) {
+            product = "Pro Plan";
+            AddStockByPetFoodName(product, quantity);
+        }
+
+        //dog collar
+        else if(product.equals("Dog Collar(S)")) {
+            product = "Dog Collar(S)";
+            AddStockByAccessoriesName(product, quantity);
+        }
+        else if(product.equals("Dog Collar(M)")) {
+            product = "Dog Collar(M)";
+            AddStockByAccessoriesName(product, quantity);
+        }
+        else if(product.equals("Dog Collar(L)")) {
+            product = "Dog Collar(L)";
+            AddStockByAccessoriesName(product, quantity);
+        }
+
+        //dog leash
+        else if(product.equals("Dog Leash(S)")) {
+            product = "Dog Leash(S)";
+            AddStockByAccessoriesName(product, quantity);
+        }
+        else if(product.equals("Dog Leash(M)")) {
+            product = "Dog Leash(M)";
+            AddStockByAccessoriesName(product, quantity);
+        }
+        else if(product.equals("Dog Leash(L)")) {
+            product = "Dog Leash(L)";
+            AddStockByAccessoriesName(product, quantity);
+        }
+
+        //cat collar
+        else if(product.equals("Cat Collar(S)")) {
+            product = "Cat Collar(S)";
+            AddStockByAccessoriesName(product, quantity);
+        }
+        else if(product.equals("Cat Collar(M)")) {
+            product = "Cat Collar(M)";
+            AddStockByAccessoriesName(product, quantity);
+        }
+        else if(product.equals("Cat Collar(L)")) {
+            product = "Cat Collar(L)";
+            AddStockByAccessoriesName(product, quantity);
+        }
+
+        //cat leash
+        else if(product.equals("Cat Leash(S)")) {
+            product = "Cat Leash(S)";
+            AddStockByAccessoriesName(product, quantity);
+        }
+        else if(product.equals("Cat Leash(M)")) {
+            product = "Cat Leash(M)";
+            AddStockByAccessoriesName(product, quantity);
+        }
+        else if(product.equals("Cat Leash(L)")) {
+            product = "Cat Leash(L)";
+            AddStockByAccessoriesName(product, quantity);
+        }
+
+    }
 }
