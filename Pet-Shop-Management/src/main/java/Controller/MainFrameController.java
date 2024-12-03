@@ -18,8 +18,6 @@ import java.util.ResourceBundle;
 
 public class MainFrameController implements Initializable {
 
-
-
     @FXML
     private StackPane ImageSlider;
 
