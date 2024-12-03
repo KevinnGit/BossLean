@@ -14,7 +14,7 @@ public class mainFrame extends Application {
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Boss Lean PetMalu");
         stage.setScene(scene);
-        //stage.setMaximized(true);
+        //stage.setMaximized(c);
         stage.show();
     }
 

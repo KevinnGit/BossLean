@@ -453,12 +453,12 @@ public class AccessoriesFrameController {
 
     @FXML
     void goToCart(ActionEvent event) throws IOException {
-        new SceneSwitch(AccessoriesPane, "CartFrame.fxml");
+        new SceneSwitch(AccessoriesPane, "CartFrame.fxml",true);
     }
 
     @FXML
     void goToHome(ActionEvent event) throws IOException {
-        new SceneSwitch(AccessoriesPane, "mainFrame.fxml");
+        new SceneSwitch(AccessoriesPane, "mainFrame.fxml",true);
     }
 
 

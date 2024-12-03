@@ -89,7 +89,7 @@ public class CartFrameController {
             alert.showAndWait();
         } else {
         try {
-            new SceneSwitch(CartPane, "CustomerFrame.fxml");
+            new SceneSwitch(CartPane, "CustomerFrame.fxml", true);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

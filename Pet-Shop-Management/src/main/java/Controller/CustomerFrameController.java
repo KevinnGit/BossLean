@@ -114,7 +114,7 @@ public class CustomerFrameController {
     @FXML
     private void goToHome(ActionEvent event) {
         try {
-            new SceneSwitch(CustomerPane, "CartFrame.fxml");
+            new SceneSwitch(CustomerPane, "CartFrame.fxml",true);
         } catch (IOException e) {
             e.printStackTrace();
         }

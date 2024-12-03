@@ -37,7 +37,7 @@ public class AdminLogInController {
     @FXML
     void goToAdmin(ActionEvent event) throws IOException {
         if (userField.getText().equals(CORRECT_USERNAME) && passField.getText().equals(CORRECT_PASSWORD)) {
-            new SceneSwitch(logInPane, "adminMenu.fxml");
+            new SceneSwitch(logInPane, "adminMenu.fxml",true);
         } else {
             showErrorAlert("Invalid username or password. Please try again.");
         }

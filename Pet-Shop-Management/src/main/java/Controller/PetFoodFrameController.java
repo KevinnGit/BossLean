@@ -334,7 +334,7 @@ public class PetFoodFrameController {
     void goToCart(ActionEvent event) {
         try {
             // Switch to the CartFrame scene and track the navigation
-            new SceneSwitch (PetFoodPane, "CartFrame.fxml");
+            new SceneSwitch (PetFoodPane, "CartFrame.fxml",true);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -343,7 +343,7 @@ public class PetFoodFrameController {
 
     @FXML
     void goToHome(ActionEvent event) throws IOException {
-        new SceneSwitch(PetFoodPane, "mainFrame.fxml");
+        new SceneSwitch(PetFoodPane, "mainFrame.fxml",true);
     }
 
 

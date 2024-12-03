@@ -14,12 +14,12 @@ public class mainMenuController {
 
     @FXML
     void goToLogIn(ActionEvent event) throws IOException {
-        new SceneSwitch(mainMenuPane, "adminLogIn.fxml");
+        new SceneSwitch(mainMenuPane, "adminLogIn.fxml",false);
     }
 
     @FXML
     void goToMainFrame(ActionEvent event) throws IOException {
-        new SceneSwitch(mainMenuPane, "mainFrame.fxml");
+        new SceneSwitch(mainMenuPane, "mainFrame.fxml",true);
     }
 
 }

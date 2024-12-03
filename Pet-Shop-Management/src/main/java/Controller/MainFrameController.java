@@ -50,33 +50,33 @@ public class MainFrameController implements Initializable {
 
     @FXML
     void goToCart(ActionEvent event) throws IOException {
-        new SceneSwitch(mainFrame, "CartFrame.fxml");
+        new SceneSwitch(mainFrame, "CartFrame.fxml",true);
     }
 
     @FXML
     void goToAccessories(ActionEvent event) throws IOException {
-        new SceneSwitch(mainFrame, "AccessoriesFrame.fxml");
+        new SceneSwitch(mainFrame, "AccessoriesFrame.fxml",true);
     }
 
     @FXML
     void goToFood(ActionEvent event) throws IOException {
-        new SceneSwitch(mainFrame, "PetFoodFrame.fxml");
+        new SceneSwitch(mainFrame, "PetFoodFrame.fxml",true);
     }
 
     @FXML
     void goToGroomings(ActionEvent event) throws IOException {
-        new SceneSwitch(mainFrame, "GroomingFrame.fxml");
+        new SceneSwitch(mainFrame, "GroomingFrame.fxml",true);
     }
 
     @FXML
     void goToPets(ActionEvent event) throws IOException {
-        new SceneSwitch(mainFrame, "PetFrame.fxml");
+        new SceneSwitch(mainFrame, "PetFrame.fxml",true);
 
         }
 
     @FXML
     void goToAdmin(ActionEvent event) throws IOException {
-        new SceneSwitch(mainFrame, "adminMenu.fxml");
+        new SceneSwitch(mainFrame, "adminMenu.fxml",true);
     }
 
 

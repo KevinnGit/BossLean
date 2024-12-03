@@ -178,12 +178,12 @@ public class adminStocksController {
     }
     @FXML
     void goToMain(ActionEvent event) throws IOException {
-        new SceneSwitch(manageStocksPane, "mainFrame.fxml");
+        new SceneSwitch(manageStocksPane, "mainFrame.fxml",true);
     }
 
     @FXML
     void goToSales(ActionEvent event) throws IOException {
-        new SceneSwitch(manageStocksPane,"adminSales.fxml");
+        new SceneSwitch(manageStocksPane,"adminSales.fxml",true);
     }
 
     @FXML
