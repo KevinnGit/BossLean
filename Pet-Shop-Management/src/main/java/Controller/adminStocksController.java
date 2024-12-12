@@ -15,6 +15,9 @@ public class adminStocksController {
 
     private String selectedValue;
     private MenuItem selectedItem;
+    private int maxStockBreed = 20;
+    private int maxStockPetFood = 30;
+    private int maxStockAccessories = 50;
 
     private static EventObject event;
     @FXML
@@ -206,23 +209,45 @@ public class adminStocksController {
         if (selectedValue.equals("Parakeet")) {
             String productName = "Parakeet";
             String birdStock = String.valueOf(DBConnector.getStockByBreedName("Parakeet") + num);
+            int birdie = DBConnector.getStockByBreedName("Parakeet") + num;
             AddStockByBreedName(productName, num);
-            Platform.runLater(() -> BirdStock.setText(birdStock));
+            if(birdie< maxStockBreed) {
+                Platform.runLater(() -> BirdStock.setText(birdStock));
+                TxtBirdStock.setText("");
+            }
+            else{
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtBirdStock.setText("");
+
         }
 
         else if (selectedValue.equals("Canary")) {
             String productName = "Canary";
             String birdStock = String.valueOf(DBConnector.getStockByBreedName("Canary") + num);
+            int birdie = DBConnector.getStockByBreedName("Canary") + num;
             AddStockByBreedName(productName, num);
-            Platform.runLater(() -> BirdStock.setText(birdStock));
+            if(birdie< maxStockBreed) {
+                Platform.runLater(() -> BirdStock.setText(birdStock));
+                TxtBirdStock.setText("");
+            }
+            else{
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtBirdStock.setText("");
         }
         else if (selectedValue.equals("Macaw")) {
             String productName = "Macaw";
             String birdStock = String.valueOf(DBConnector.getStockByBreedName("Macaw") + num);
+            int birdie = DBConnector.getStockByBreedName("Macaw") + num;
             AddStockByBreedName(productName, num);
-            Platform.runLater(() -> BirdStock.setText(birdStock));
+            if (birdie < maxStockBreed) {
+                Platform.runLater(() -> BirdStock.setText(birdStock));
+                TxtBirdStock.setText("");
+            }
+            else{
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtBirdStock.setText("");
         }
     }
@@ -240,28 +265,49 @@ public class adminStocksController {
 
         int num = Integer.parseInt(TxtCatStock.getText());
 
+
         if (selectedValue.equals("Scottish Fold")) {
             String productName = "Scottish Fold";
             String catStock = String.valueOf(DBConnector.getStockByBreedName("Scottish Fold") + num);
-            AddStockByBreedName(productName, num);
-            Platform.runLater(() -> CatsStock.setText(catStock));
+            int kitty = DBConnector.getStockByBreedName("Scottish Fold")+ num;
+            if(kitty < maxStockBreed) {
+                AddStockByBreedName(productName, num);
+                Platform.runLater(() -> CatsStock.setText(catStock));
+                TxtCatStock.setText("");
+            }
+            else{
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtCatStock.setText("");
         }
         else if (selectedValue.equals("British Long Hair")) {
             String productName = "British Long Hair";
             String catStock = String.valueOf(DBConnector.getStockByBreedName("British Long Hair") + num);
-            AddStockByBreedName(productName, num);
-            Platform.runLater(() -> CatsStock.setText(catStock));
+            int kitty = DBConnector.getStockByBreedName("British Long Hair")+ num;
+            if(kitty < maxStockBreed) {
+                AddStockByBreedName(productName, num);
+                Platform.runLater(() -> CatsStock.setText(catStock));
+                TxtCatStock.setText("");
+            }
+            else{
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtCatStock.setText("");
         }
         else if (selectedValue.equals("Sokoke")) {
             String productName = "Sokoke";
             String catStock = String.valueOf(DBConnector.getStockByBreedName(" Sokoke") + num);
-            AddStockByBreedName(productName, num);
-            Platform.runLater(() -> CatsStock.setText(catStock));
+            int kitty = DBConnector.getStockByBreedName("Sokoke") + num;
+            if (kitty < maxStockBreed) {
+                AddStockByBreedName(productName, num);
+                Platform.runLater(() -> CatsStock.setText(catStock));
+                TxtCatStock.setText("");
+            }
+            else{
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtCatStock.setText("");
         }
-
     }
     @FXML
     void AddStockDogs(ActionEvent event) {
@@ -278,22 +324,45 @@ public class adminStocksController {
         if (selectedValue.equals("Golden Retriever")) {
             String productName = "Golden Retriever";
             String dogStock = String.valueOf(DBConnector.getStockByBreedName("Golden Retriever") + num);
-            AddStockByBreedName(productName, num);
-            Platform.runLater(() -> DogsStock.setText(dogStock));
+            int doggie = DBConnector.getStockByBreedName("Golden Retriever") + num;
+            if(doggie < maxStockBreed) {
+                AddStockByBreedName(productName, num);
+                Platform.runLater(() -> DogsStock.setText(dogStock));
+                TxtDogStock.setText("");
+            }
+            else{
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtDogStock.setText("");
         }
+
         else if (selectedValue.equals("Chihuahua")) {
             String productName = "Chihuahua";
             String dogStock = String.valueOf(DBConnector.getStockByBreedName("Chihuahua") + num);
-            AddStockByBreedName(productName, num);
-            Platform.runLater(() -> DogsStock.setText(dogStock));
+            int doggie = DBConnector.getStockByBreedName("Chihuahua") + num;
+            if(doggie < maxStockBreed) {
+                AddStockByBreedName(productName, num);
+                Platform.runLater(() -> DogsStock.setText(dogStock));
+                TxtDogStock.setText("");
+            }
+            else{
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtDogStock.setText("");
         }
+
         else if (selectedValue.equals("Chow Chow")) {
             String productName = "Chow Chow";
             String dogStock = String.valueOf(DBConnector.getStockByBreedName("Chow Chow") + num);
-            AddStockByBreedName(productName, num);
-            Platform.runLater(() -> DogsStock.setText(dogStock));
+            int doggie = DBConnector.getStockByBreedName("Chow Chow") + num;
+            if(doggie < maxStockBreed) {
+                AddStockByBreedName(productName, num);
+                Platform.runLater(() -> DogsStock.setText(dogStock));
+                TxtDogStock.setText("");
+            }
+            else{
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtDogStock.setText("");
         }
 
@@ -316,25 +385,47 @@ public class adminStocksController {
         if (selectedValue.equals("Goodest")) {
             String productName = "Goodest";
             String catfoodStock = String.valueOf(DBConnector.getStockByPetFoodName("Goodest") + num);
-            Platform.runLater(() -> CatFoodStock.setText(catfoodStock));
-            AddStockByPetFoodName(productName, num);
-            TxtCatFoodStock.setText("");
-        }
-        else if (selectedValue.equals("Whiskas")) {
-            String productName = "Whiskas";
-            String catfoodStock = String.valueOf(DBConnector.getStockByPetFoodName("Whiskas") + num);
-            Platform.runLater(() -> CatFoodStock.setText(catfoodStock));
-            AddStockByPetFoodName(productName, num);
-            TxtCatFoodStock.setText("");
-        }
-        else if (selectedValue.equals("Pro Plan")) {
-            String productName = "Pro Plan";
-            String catfoodStock = String.valueOf(DBConnector.getStockByPetFoodName("Pro Plan") + num);
-            Platform.runLater(() -> CatFoodStock.setText(catfoodStock));
-            AddStockByPetFoodName(productName, num);
+            int food = DBConnector.getStockByPetFoodName("Goodest") + num;
+            if (food < maxStockPetFood) {
+                Platform.runLater(() -> CatFoodStock.setText(catfoodStock));
+                AddStockByPetFoodName(productName, num);
+                TxtCatFoodStock.setText("");
+            }
+            else{
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtCatFoodStock.setText("");
         }
 
+        else if (selectedValue.equals("Whiskas")) {
+            String productName = "Whiskas";
+            String catfoodStock = String.valueOf(DBConnector.getStockByPetFoodName("Whiskas") + num);
+            int food = DBConnector.getStockByPetFoodName("Whiskas") + num;
+            if (food < maxStockPetFood) {
+                Platform.runLater(() -> CatFoodStock.setText(catfoodStock));
+                AddStockByPetFoodName(productName, num);
+                TxtCatFoodStock.setText("");
+            }
+            else{
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
+            TxtCatFoodStock.setText("");
+        }
+
+        else if (selectedValue.equals("Pro Plan")) {
+            String productName = "Pro Plan";
+            String catfoodStock = String.valueOf(DBConnector.getStockByPetFoodName("Pro Plan") + num);
+            int food = DBConnector.getStockByPetFoodName("Whiskas") + num;
+            if (food < maxStockPetFood) {
+                Platform.runLater(() -> CatFoodStock.setText(catfoodStock));
+                AddStockByPetFoodName(productName, num);
+                TxtCatFoodStock.setText("");
+            }
+            else{
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
+            TxtCatFoodStock.setText("");
+}
     }
     @FXML
     void AddStockBirdFood(ActionEvent event) {
@@ -352,22 +443,45 @@ public class adminStocksController {
         if (selectedValue.equals("VitaCraft")) {
             String productName = "VitaCraft";
             String birdfoodStock = String.valueOf(DBConnector.getStockByPetFoodName("VitaCraft") + num);
-            Platform.runLater(() -> BirdFoodStock.setText(birdfoodStock));
-            AddStockByPetFoodName(productName, num);
+            int food = DBConnector.getStockByPetFoodName("VitaCraft") + num;
+            if(food < maxStockPetFood) {
+                Platform.runLater(() -> BirdFoodStock.setText(birdfoodStock));
+                AddStockByPetFoodName(productName, num);
+                TxtBirdFoodStock.setText("");
+            }
+            else{
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtBirdFoodStock.setText("");
         }
+
         else if (selectedValue.equals("Kaytee")) {
             String productName = "Kaytee";
             String birdfoodStock = String.valueOf(DBConnector.getStockByPetFoodName("Kaytee") + num);
-            Platform.runLater(() -> BirdFoodStock.setText(birdfoodStock));
-            AddStockByPetFoodName(productName, num);
+            int food = DBConnector.getStockByPetFoodName("Kaytee") + num;
+            if(food < maxStockPetFood) {
+                Platform.runLater(() -> BirdFoodStock.setText(birdfoodStock));
+                AddStockByPetFoodName(productName, num);
+                TxtBirdFoodStock.setText("");
+            }
+            else{
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtBirdFoodStock.setText("");
         }
+
         else if (selectedValue.equals("Nut N' Berry")) {
             String productName = "Nut N' Berry";
             String birdfoodStock = String.valueOf(DBConnector.getStockByPetFoodName("Nut N' Berry") + num);
-            Platform.runLater(() -> BirdFoodStock.setText(birdfoodStock));
-            AddStockByPetFoodName(productName, num);
+            int food = DBConnector.getStockByPetFoodName("Nut N' Berry") + num;
+            if(food < maxStockPetFood) {
+                Platform.runLater(() -> BirdFoodStock.setText(birdfoodStock));
+                AddStockByPetFoodName(productName, num);
+                TxtBirdFoodStock.setText("");
+            }
+            else{
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtBirdFoodStock.setText("");
         }
     }
@@ -387,25 +501,45 @@ public class adminStocksController {
         if (selectedValue.equals("Pedigree")) {
             String productName = "Pedigree";
             String dogfoodStock = String.valueOf(DBConnector.getStockByPetFoodName("Pedigree") + num);
-            Platform.runLater(() -> DogFoodStock.setText(dogfoodStock));
-            AddStockByPetFoodName(productName, num);
+            int food = DBConnector.getStockByPetFoodName("Pedigree") + num;
+            if(food < maxStockPetFood) {
+                Platform.runLater(() -> DogFoodStock.setText(dogfoodStock));
+                AddStockByPetFoodName(productName, num);
+                TxtDogFoodStock.setText("");
+            }
+            else{
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtDogFoodStock.setText("");
         }
 
         else if (selectedValue.equals("Kibble n' Bits")) {
             String productName = "Kibble n' Bits";
             String dogfoodStock = String.valueOf(DBConnector.getStockByPetFoodName("Kibble n' Bits") + num);
-            Platform.runLater(() -> DogFoodStock.setText(dogfoodStock));
-            AddStockByPetFoodName(productName, num);
+            int food = DBConnector.getStockByPetFoodName("Kibble n' Bits") + num;
+            if(food < maxStockPetFood) {
+                Platform.runLater(() -> DogFoodStock.setText(dogfoodStock));
+                AddStockByPetFoodName(productName, num);
+                TxtDogFoodStock.setText("");
+            }
+            else{
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtDogFoodStock.setText("");
         }
 
         else if (selectedValue.equals("Boss Dogs")) {
             String productName = "Boss Dogs";
             String dogfoodStock = String.valueOf(DBConnector.getStockByPetFoodName("Boss Dogs") + num);
-
-            Platform.runLater(() -> DogFoodStock.setText(dogfoodStock));
-            AddStockByPetFoodName(productName, num);
+            int food = DBConnector.getStockByPetFoodName("Boss Dogs") + num;
+            if(food < maxStockPetFood) {
+                Platform.runLater(() -> DogFoodStock.setText(dogfoodStock));
+                AddStockByPetFoodName(productName, num);
+                TxtDogFoodStock.setText("");
+            }
+            else{
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtDogFoodStock.setText("");
         }
     }
@@ -425,22 +559,45 @@ public class adminStocksController {
         if (selectedValue.equals("Dog Collar(S)")) {
             String productName = "Dog Collar(S)";
             String dogcollarStock = String.valueOf(DBConnector.getStockByAccessoriesName("Dog Collar(S)") + num);
-            AddStockByAccessoriesName(productName, num);
-            Platform.runLater(() -> DogCollarStock.setText(dogcollarStock));
+            int collar = DBConnector.getStockByAccessoriesName("Dog Collar(S)") + num;
+            if(collar < maxStockAccessories) {
+                AddStockByAccessoriesName(productName, num);
+                Platform.runLater(() -> DogCollarStock.setText(dogcollarStock));
+                TxtDogCollarStock.setText("");
+            }
+            else {
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtDogCollarStock.setText("");
         }
+
         else if (selectedValue.equals("Dog Collar(M)")) {
             String productName = "Dog Collar(M)";
             String dogcollarStock = String.valueOf(DBConnector.getStockByAccessoriesName("Dog Collar(M)") + num);
-            Platform.runLater(() -> DogCollarStock.setText(dogcollarStock));
-            AddStockByAccessoriesName(productName, num);
+            int collar = DBConnector.getStockByAccessoriesName("Dog Collar(M)") + num;
+            if(collar < maxStockAccessories) {
+                AddStockByAccessoriesName(productName, num);
+                Platform.runLater(() -> DogCollarStock.setText(dogcollarStock));
+                TxtDogCollarStock.setText("");
+            }
+            else {
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtDogCollarStock.setText("");
         }
+
         else if (selectedValue.equals("Dog Collar(L)")) {
             String productName = "Dog Collar(L)";
             String dogcollarStock = String.valueOf(DBConnector.getStockByAccessoriesName("Dog Collar(L)") + num);
-            Platform.runLater(() -> DogCollarStock.setText(dogcollarStock));
-            AddStockByAccessoriesName(productName, num);
+            int collar = DBConnector.getStockByAccessoriesName("Dog Collar(L)") + num;
+            if(collar < maxStockAccessories) {
+                AddStockByAccessoriesName(productName, num);
+                Platform.runLater(() -> DogCollarStock.setText(dogcollarStock));
+                TxtDogCollarStock.setText("");
+            }
+            else {
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtDogCollarStock.setText("");
         }
     }
@@ -461,22 +618,43 @@ public class adminStocksController {
         if (selectedValue.equals("Dog Leash(S)")) {
             String productName = "Dog Leash(S)";
             String dogleashStock = String.valueOf(DBConnector.getStockByAccessoriesName("Dog Leash(S)") + num);
-            Platform.runLater(() -> DogLeashStock.setText(dogleashStock));
-            AddStockByAccessoriesName(productName, num);
+            int leash = DBConnector.getStockByAccessoriesName("Dog Leash(S)") + num;
+            if(leash < maxStockAccessories) {
+                AddStockByAccessoriesName(productName, num);
+                Platform.runLater(() -> DogLeashStock.setText(dogleashStock));
+                TxtDogLeashStock.setText("");
+            }
+            else {
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtDogLeashStock.setText("");
         }
         else if (selectedValue.equals("Dog Leash(M)")) {
             String productName = "Dog Leash(M)";
             String dogleashStock = String.valueOf(DBConnector.getStockByAccessoriesName("Dog Leash(M)") + num);
-            Platform.runLater(() -> DogLeashStock.setText(dogleashStock));
-            AddStockByAccessoriesName(productName, num);
+            int leash = DBConnector.getStockByAccessoriesName("Dog Leash(M)") + num;
+            if(leash < maxStockAccessories) {
+                AddStockByAccessoriesName(productName, num);
+                Platform.runLater(() -> DogLeashStock.setText(dogleashStock));
+                TxtDogLeashStock.setText("");
+            }
+            else {
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtDogLeashStock.setText("");
         }
         else if (selectedValue.equals("Dog Leash(L)")) {
             String productName = "Dog Leash(L)";
             String dogleashStock = String.valueOf(DBConnector.getStockByAccessoriesName("Dog Leash(L)") + num);
-            Platform.runLater(() -> DogLeashStock.setText(dogleashStock));
-            AddStockByAccessoriesName(productName, num);
+            int leash = DBConnector.getStockByAccessoriesName("Dog Leash(L)") + num;
+            if(leash < maxStockAccessories) {
+                AddStockByAccessoriesName(productName, num);
+                Platform.runLater(() -> DogLeashStock.setText(dogleashStock));
+                TxtDogLeashStock.setText("");
+            }
+            else {
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtDogLeashStock.setText("");
         }
     }
@@ -496,22 +674,41 @@ public class adminStocksController {
         if (selectedValue.equals("Cat Collar(S)")) {
             String productName = "Cat Collar(S)";
             String catcollarStock = String.valueOf(DBConnector.getStockByAccessoriesName("Cat Collar(S)") + num);
-            Platform.runLater(() -> CatCollarStock.setText(catcollarStock));
-            AddStockByAccessoriesName(productName, num);
+            int collar = DBConnector.getStockByAccessoriesName("Cat Collar(S)") + num;
+            if (collar < maxStockAccessories) {
+                AddStockByAccessoriesName(productName, num);
+                Platform.runLater(() -> CatCollarStock.setText(catcollarStock));
+                TxtCatCollarStock.setText("");
+            } else {
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtCatCollarStock.setText("");
         }
+
         else if (selectedValue.equals("Cat Collar(M)")) {
             String productName = "Cat Collar(M)";
             String catcollarStock = String.valueOf(DBConnector.getStockByAccessoriesName("Cat Collar(M)") + num);
-            Platform.runLater(() -> CatCollarStock.setText(catcollarStock));
-            AddStockByAccessoriesName(productName, num);
+            int collar = DBConnector.getStockByAccessoriesName("Cat Collar(M)") + num;
+            if (collar < maxStockAccessories) {
+                AddStockByAccessoriesName(productName, num);
+                Platform.runLater(() -> CatCollarStock.setText(catcollarStock));
+                TxtCatCollarStock.setText("");
+            } else {
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtCatCollarStock.setText("");
         }
         else if (selectedValue.equals("Cat Collar(L)")) {
             String productName = "Cat Collar(L)";
             String catcollarStock = String.valueOf(DBConnector.getStockByAccessoriesName("Cat Collar(L)") + num);
-            Platform.runLater(() -> CatCollarStock.setText(catcollarStock));
-            AddStockByAccessoriesName(productName, num);
+            int collar = DBConnector.getStockByAccessoriesName("Cat Collar(L)") + num;
+            if (collar < maxStockAccessories) {
+                AddStockByAccessoriesName(productName, num);
+                Platform.runLater(() -> CatCollarStock.setText(catcollarStock));
+                TxtCatCollarStock.setText("");
+            } else {
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtCatCollarStock.setText("");
         }
     }
@@ -531,22 +728,42 @@ public class adminStocksController {
         if (selectedValue.equals("Cat Leash(S)")) {
             String productName = "Cat Leash(S)";
             String catleashStock = String.valueOf(DBConnector.getStockByAccessoriesName("Cat Leash(S)") + num);
-            Platform.runLater(() -> CatLeashStock.setText(catleashStock));
-            AddStockByAccessoriesName(productName, num);
+            int collar = DBConnector.getStockByAccessoriesName("Cat Collar(S)") + num;
+            if (collar < maxStockAccessories) {
+                AddStockByAccessoriesName(productName, num);
+                Platform.runLater(() -> CatLeashStock.setText(catleashStock));
+                TxtCatLeashStock.setText("");
+            } else {
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtCatLeashStock.setText("");
         }
+
         else if (selectedValue.equals("Cat Leash(M)")) {
             String productName = "Cat Leash(M)";
             String catleashStock = String.valueOf(DBConnector.getStockByAccessoriesName("Cat Leash(M)") + num);
-            Platform.runLater(() -> CatLeashStock.setText(catleashStock));
-            AddStockByAccessoriesName(productName, num);
+            int collar = DBConnector.getStockByAccessoriesName("Cat Collar(M)") + num;
+            if (collar < maxStockAccessories) {
+                AddStockByAccessoriesName(productName, num);
+                Platform.runLater(() -> CatLeashStock.setText(catleashStock));
+                TxtCatLeashStock.setText("");
+            } else {
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtCatLeashStock.setText("");
         }
+
         else if (selectedValue.equals("Cat Leash(L)")) {
             String productName = "Cat Leash(L)";
             String catleashStock = String.valueOf(DBConnector.getStockByAccessoriesName("Cat Leash(L)") + num);
-            Platform.runLater(() -> CatLeashStock.setText(catleashStock));
-            AddStockByAccessoriesName(productName, num);
+            int collar = DBConnector.getStockByAccessoriesName("Cat Collar(L)") + num;
+            if (collar < maxStockAccessories) {
+                AddStockByAccessoriesName(productName, num);
+                Platform.runLater(() -> CatLeashStock.setText(catleashStock));
+                TxtCatLeashStock.setText("");
+            } else {
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+            }
             TxtCatLeashStock.setText("");
         }
     }
@@ -616,4 +833,11 @@ public class adminStocksController {
     }
 }
 }
+    private static void showAlert(String title, String message) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION); // Information type alert
+        alert.setTitle(title);
+        alert.setHeaderText(null); // No header text
+        alert.setContentText(message);
+        alert.showAndWait(); // Show the alert and wait for user acknowledgment
+    }
 }
