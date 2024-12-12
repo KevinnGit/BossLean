@@ -1,0 +1,11 @@
+.custom-text-field {
+    -fx-background-color: #b29e87; /* Slightly darker background */
+    -fx-text-fill: #ffffff; /* White text for contrast */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-border-radius: 12px; /* Rounded corners for the border */
+    -fx-border-color: #8a735b; /* Darker border to complement background */
+    -fx-border-width: 2px; /* Border width */
+    -fx-padding: 5 10; /* Inner padding for text */
+    -fx-font-size: 14px; /* Adjust font size for clarity */
+    -fx-prompt-text-fill: #d8c4a0; /* Light shade for the prompt text */
+}
