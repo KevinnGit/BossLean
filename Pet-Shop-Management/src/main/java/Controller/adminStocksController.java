@@ -216,7 +216,7 @@ public class adminStocksController {
                 TxtBirdStock.setText("");
             }
             else{
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of "+ maxStockBreed);
             }
             TxtBirdStock.setText("");
         }
@@ -231,7 +231,7 @@ public class adminStocksController {
                 TxtBirdStock.setText("");
             }
             else{
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of "+ maxStockBreed);
             }
             TxtBirdStock.setText("");
         }
@@ -246,7 +246,7 @@ public class adminStocksController {
                 TxtBirdStock.setText("");
             }
             else{
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of "+ maxStockBreed);
             }
             TxtBirdStock.setText("");
         }
@@ -276,7 +276,7 @@ public class adminStocksController {
                 TxtCatStock.setText("");
             }
             else{
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of "+ maxStockBreed);
             }
             TxtCatStock.setText("");
         }
@@ -290,7 +290,7 @@ public class adminStocksController {
                 TxtCatStock.setText("");
             }
             else{
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of "+ maxStockBreed);
             }
             TxtCatStock.setText("");
         }
@@ -304,7 +304,7 @@ public class adminStocksController {
                 TxtCatStock.setText("");
             }
             else{
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of "+ maxStockBreed);
             }
             TxtCatStock.setText("");
         }
@@ -331,7 +331,7 @@ public class adminStocksController {
                 TxtDogStock.setText("");
             }
             else{
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of "+ maxStockBreed);
             }
             TxtDogStock.setText("");
         }
@@ -346,7 +346,7 @@ public class adminStocksController {
                 TxtDogStock.setText("");
             }
             else{
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of "+ maxStockBreed);
             }
             TxtDogStock.setText("");
         }
@@ -361,7 +361,7 @@ public class adminStocksController {
                 TxtDogStock.setText("");
             }
             else{
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of "+ maxStockBreed);
             }
             TxtDogStock.setText("");
         }
@@ -392,7 +392,7 @@ public class adminStocksController {
                 TxtCatFoodStock.setText("");
             }
             else{
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockPetFood);
             }
             TxtCatFoodStock.setText("");
         }
@@ -407,7 +407,7 @@ public class adminStocksController {
                 TxtCatFoodStock.setText("");
             }
             else{
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockPetFood);
             }
             TxtCatFoodStock.setText("");
         }
@@ -422,7 +422,7 @@ public class adminStocksController {
                 TxtCatFoodStock.setText("");
             }
             else{
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockPetFood);
             }
             TxtCatFoodStock.setText("");
 }
@@ -450,7 +450,7 @@ public class adminStocksController {
                 TxtBirdFoodStock.setText("");
             }
             else{
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockPetFood);
             }
             TxtBirdFoodStock.setText("");
         }
@@ -465,7 +465,7 @@ public class adminStocksController {
                 TxtBirdFoodStock.setText("");
             }
             else{
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockPetFood);
             }
             TxtBirdFoodStock.setText("");
         }
@@ -480,7 +480,7 @@ public class adminStocksController {
                 TxtBirdFoodStock.setText("");
             }
             else{
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockPetFood);
             }
             TxtBirdFoodStock.setText("");
         }
@@ -508,7 +508,7 @@ public class adminStocksController {
                 TxtDogFoodStock.setText("");
             }
             else{
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockPetFood);
             }
             TxtDogFoodStock.setText("");
         }
@@ -523,7 +523,7 @@ public class adminStocksController {
                 TxtDogFoodStock.setText("");
             }
             else{
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockPetFood);
             }
             TxtDogFoodStock.setText("");
         }
@@ -538,7 +538,7 @@ public class adminStocksController {
                 TxtDogFoodStock.setText("");
             }
             else{
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockPetFood);
             }
             TxtDogFoodStock.setText("");
         }
@@ -566,7 +566,7 @@ public class adminStocksController {
                 TxtDogCollarStock.setText("");
             }
             else {
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockAccessories);
             }
             TxtDogCollarStock.setText("");
         }
@@ -581,7 +581,7 @@ public class adminStocksController {
                 TxtDogCollarStock.setText("");
             }
             else {
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockAccessories);
             }
             TxtDogCollarStock.setText("");
         }
@@ -596,7 +596,7 @@ public class adminStocksController {
                 TxtDogCollarStock.setText("");
             }
             else {
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockAccessories);
             }
             TxtDogCollarStock.setText("");
         }
@@ -625,7 +625,7 @@ public class adminStocksController {
                 TxtDogLeashStock.setText("");
             }
             else {
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockAccessories);
             }
             TxtDogLeashStock.setText("");
         }
@@ -639,7 +639,7 @@ public class adminStocksController {
                 TxtDogLeashStock.setText("");
             }
             else {
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockAccessories);
             }
             TxtDogLeashStock.setText("");
         }
@@ -653,7 +653,7 @@ public class adminStocksController {
                 TxtDogLeashStock.setText("");
             }
             else {
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockAccessories);
             }
             TxtDogLeashStock.setText("");
         }
@@ -680,7 +680,7 @@ public class adminStocksController {
                 Platform.runLater(() -> CatCollarStock.setText(catcollarStock));
                 TxtCatCollarStock.setText("");
             } else {
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockAccessories);
             }
             TxtCatCollarStock.setText("");
         }
@@ -694,7 +694,7 @@ public class adminStocksController {
                 Platform.runLater(() -> CatCollarStock.setText(catcollarStock));
                 TxtCatCollarStock.setText("");
             } else {
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockAccessories);
             }
             TxtCatCollarStock.setText("");
         }
@@ -707,7 +707,7 @@ public class adminStocksController {
                 Platform.runLater(() -> CatCollarStock.setText(catcollarStock));
                 TxtCatCollarStock.setText("");
             } else {
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockAccessories);
             }
             TxtCatCollarStock.setText("");
         }
@@ -734,7 +734,7 @@ public class adminStocksController {
                 Platform.runLater(() -> CatLeashStock.setText(catleashStock));
                 TxtCatLeashStock.setText("");
             } else {
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockAccessories);
             }
             TxtCatLeashStock.setText("");
         }
@@ -748,7 +748,7 @@ public class adminStocksController {
                 Platform.runLater(() -> CatLeashStock.setText(catleashStock));
                 TxtCatLeashStock.setText("");
             } else {
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockAccessories);
             }
             TxtCatLeashStock.setText("");
         }
@@ -762,7 +762,7 @@ public class adminStocksController {
                 Platform.runLater(() -> CatLeashStock.setText(catleashStock));
                 TxtCatLeashStock.setText("");
             } else {
-                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
+                showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity of " + maxStockAccessories);
             }
             TxtCatLeashStock.setText("");
         }
