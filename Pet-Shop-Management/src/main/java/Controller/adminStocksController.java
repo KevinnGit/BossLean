@@ -210,8 +210,8 @@ public class adminStocksController {
             String productName = "Parakeet";
             String birdStock = String.valueOf(DBConnector.getStockByBreedName("Parakeet") + num);
             int birdie = DBConnector.getStockByBreedName("Parakeet") + num;
-            AddStockByBreedName(productName, num);
-            if(birdie< maxStockBreed) {
+            if(birdie<= maxStockBreed) {
+                AddStockByBreedName(productName, num);
                 Platform.runLater(() -> BirdStock.setText(birdStock));
                 TxtBirdStock.setText("");
             }
@@ -219,15 +219,14 @@ public class adminStocksController {
                 showAlert("Max Stock Limit Reached", "The requested stock exceeds the maximum allowed quantity.");
             }
             TxtBirdStock.setText("");
-
         }
 
         else if (selectedValue.equals("Canary")) {
             String productName = "Canary";
             String birdStock = String.valueOf(DBConnector.getStockByBreedName("Canary") + num);
             int birdie = DBConnector.getStockByBreedName("Canary") + num;
-            AddStockByBreedName(productName, num);
-            if(birdie< maxStockBreed) {
+            if(birdie<= maxStockBreed) {
+                AddStockByBreedName(productName, num);
                 Platform.runLater(() -> BirdStock.setText(birdStock));
                 TxtBirdStock.setText("");
             }
@@ -236,12 +235,13 @@ public class adminStocksController {
             }
             TxtBirdStock.setText("");
         }
+
         else if (selectedValue.equals("Macaw")) {
             String productName = "Macaw";
             String birdStock = String.valueOf(DBConnector.getStockByBreedName("Macaw") + num);
             int birdie = DBConnector.getStockByBreedName("Macaw") + num;
-            AddStockByBreedName(productName, num);
-            if (birdie < maxStockBreed) {
+            if (birdie <= maxStockBreed) {
+                AddStockByBreedName(productName, num);
                 Platform.runLater(() -> BirdStock.setText(birdStock));
                 TxtBirdStock.setText("");
             }

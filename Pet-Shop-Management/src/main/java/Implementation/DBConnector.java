@@ -108,15 +108,10 @@ public class DBConnector {
                 }
 
                 // Now, update the stock in the database
-                if (updatedStock > MaxStock) {
-
-                    return updatedStock; // Exit early to prevent further processing
-                }
                     String updateQuery = "UPDATE BreedInventory SET quantity = ? WHERE breed = ?";
                     try (PreparedStatement updatePst = con.prepareStatement(updateQuery)) {
                         updatePst.setInt(1, updatedStock); // Set the new stock value
                         updatePst.setString(2, productName); // Set the breed name
-                        if(updatedStock >= MaxStock) {
                             int rowsAffected = updatePst.executeUpdate();
                             if (rowsAffected > 0) {
                                 // If the update was successful, show success notification
@@ -124,11 +119,7 @@ public class DBConnector {
                             } else {
                                 System.out.println("Failed to update stock for " + productName);
                             }
-                        }
-
-
                     }
-
             }
         } catch (SQLException e) {
             System.out.println("Error updating stock for " + productName + ": " + e.getMessage());
