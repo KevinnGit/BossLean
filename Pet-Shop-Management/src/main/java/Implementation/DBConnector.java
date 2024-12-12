@@ -230,7 +230,15 @@ public class DBConnector {
 
                 if (rs.next()) {
                     int currentStock = rs.getInt("quantity"); // Get the current stock value
-                    updatedStock = currentStock - additionalStock; // Calculate updated stock
+
+                    // Calculate updated stock
+                    updatedStock = currentStock - additionalStock;
+
+                    // Ensure stock doesn't go below zero
+                    if (updatedStock < 0) {
+                        System.out.println("Cannot reduce stock for " + productName + " to negative. Current stock: " + currentStock + ", Attempted to reduce by: " + additionalStock);
+                        return currentStock; // Return the current stock if attempted reduction is invalid
+                    }
                 } else {
                     System.out.println("Breed not found in inventory: " + productName);
                     return updatedStock; // Return 0 if breed not found
@@ -258,11 +266,12 @@ public class DBConnector {
         return updatedStock; // Return the updated stock value
     }
 
+
     public static int MinusStockByPetFoodName(String productName, int additionalStock) {
         int updatedStock = 0;
 
         try (Connection con = ConnectionDB()) { // Use try-with-resources to close the connection
-            // First, fetch the current stock for the breed
+            // First, fetch the current stock for the product
             String fetchQuery = "SELECT quantity FROM PetFoodInventory WHERE product = ?";
             try (PreparedStatement fetchPst = con.prepareStatement(fetchQuery)) {
                 fetchPst.setString(1, productName);
@@ -270,17 +279,25 @@ public class DBConnector {
 
                 if (rs.next()) {
                     int currentStock = rs.getInt("quantity"); // Get the current stock value
-                    updatedStock = currentStock - additionalStock; // Calculate updated stock
+
+                    // Calculate updated stock
+                    updatedStock = currentStock - additionalStock;
+
+                    // Ensure stock doesn't go below zero
+                    if (updatedStock < 0) {
+                        System.out.println("Cannot reduce stock for " + productName + " to negative. Current stock: " + currentStock + ", Attempted to reduce by: " + additionalStock);
+                        return currentStock; // Return the current stock if attempted reduction is invalid
+                    }
                 } else {
                     System.out.println("Product not found in inventory: " + productName);
-                    return updatedStock; // Return 0 if breed not found
+                    return updatedStock; // Return 0 if product not found
                 }
 
                 // Now, update the stock in the database
                 String updateQuery = "UPDATE PetFoodInventory SET quantity = ? WHERE product = ?";
                 try (PreparedStatement updatePst = con.prepareStatement(updateQuery)) {
                     updatePst.setInt(1, updatedStock); // Set the new stock value
-                    updatePst.setString(2, productName); // Set the breed name
+                    updatePst.setString(2, productName); // Set the product name
                     int rowsAffected = updatePst.executeUpdate();
 
                     if (rowsAffected > 0) {
@@ -297,11 +314,13 @@ public class DBConnector {
 
         return updatedStock; // Return the updated stock value
     }
+
+
     public static int MinusStockByAccessoriesName(String productName, int additionalStock) {
         int updatedStock = 0;
 
         try (Connection con = ConnectionDB()) { // Use try-with-resources to close the connection
-            // First, fetch the current stock for the breed
+            // First, fetch the current stock for the product
             String fetchQuery = "SELECT quantity FROM AccessoriesInventory WHERE product = ?";
             try (PreparedStatement fetchPst = con.prepareStatement(fetchQuery)) {
                 fetchPst.setString(1, productName);
@@ -309,17 +328,25 @@ public class DBConnector {
 
                 if (rs.next()) {
                     int currentStock = rs.getInt("quantity"); // Get the current stock value
-                    updatedStock = currentStock - additionalStock; // Calculate updated stock
+
+                    // Calculate updated stock
+                    updatedStock = currentStock - additionalStock;
+
+                    // Ensure stock doesn't go below zero
+                    if (updatedStock < 0) {
+                        System.out.println("Cannot reduce stock for " + productName + " to negative. Current stock: " + currentStock + ", Attempted to reduce by: " + additionalStock);
+                        return currentStock; // Return the current stock if attempted reduction is invalid
+                    }
                 } else {
                     System.out.println("Product not found in inventory: " + productName);
-                    return updatedStock; // Return 0 if breed not found
+                    return updatedStock; // Return 0 if product not found
                 }
 
                 // Now, update the stock in the database
                 String updateQuery = "UPDATE AccessoriesInventory SET quantity = ? WHERE product = ?";
                 try (PreparedStatement updatePst = con.prepareStatement(updateQuery)) {
                     updatePst.setInt(1, updatedStock); // Set the new stock value
-                    updatePst.setString(2, productName); // Set the breed name
+                    updatePst.setString(2, productName); // Set the product name
                     int rowsAffected = updatePst.executeUpdate();
 
                     if (rowsAffected > 0) {
@@ -336,6 +363,8 @@ public class DBConnector {
 
         return updatedStock; // Return the updated stock value
     }
+
+
     public static boolean AddSales(String product, int quantity, double grossIncome, String saleDate) {
         boolean isAdded = false; // Tracks if the insertion was successful
 
